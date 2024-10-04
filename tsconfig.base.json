@@ -1,0 +1,30 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2020", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "types": [
+      "node",
+      "@nx/react/typings/cssmodule.d.ts",
+      "@nx/react/typings/image.d.ts"
+    ],
+    "paths": {
+      "@verisure-assets": ["modules/assets/src/index.ts"],
+      "@verisure-commons": ["modules/commons/src/index.ts"],
+      "@verisure-core": ["modules/core/src/index.ts"],
+      "@verisure-services": ["modules/services/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}
