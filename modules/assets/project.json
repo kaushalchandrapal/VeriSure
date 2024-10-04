@@ -1,0 +1,9 @@
+{
+  "name": "modules-assets",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "modules/assets/src",
+  "projectType": "library",
+  "tags": [],
+  "// targets": "to see all targets run: nx show project modules-assets --web",
+  "targets": {}
+}

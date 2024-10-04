@@ -1,0 +1,1990 @@
+{
+  "nm": "Comp 2",
+  "ddd": 0,
+  "h": 350,
+  "w": 350,
+  "meta": { "g": "@lottiefiles/toolkit-js 0.33.2" },
+  "layers": [
+    {
+      "ty": 3,
+      "nm": "Null 2",
+      "sr": 1,
+      "st": 0,
+      "op": 120,
+      "ip": 0,
+      "hd": false,
+      "ddd": 0,
+      "bm": 0,
+      "hasMask": false,
+      "ao": 0,
+      "ks": {
+        "a": { "a": 0, "k": [50, 50, 0], "ix": 1 },
+        "s": { "a": 0, "k": [100, 100, 100], "ix": 6 },
+        "sk": { "a": 0, "k": 0 },
+        "p": { "a": 0, "k": [175, 175, 0], "ix": 2 },
+        "r": { "a": 0, "k": 0, "ix": 10 },
+        "sa": { "a": 0, "k": 0 },
+        "o": { "a": 0, "k": 0, "ix": 11 }
+      },
+      "ef": [],
+      "ind": 1
+    },
+    {
+      "ty": 4,
+      "nm": "Layer 11",
+      "sr": 1,
+      "st": 27,
+      "op": 62,
+      "ip": 52,
+      "hd": false,
+      "ddd": 0,
+      "bm": 0,
+      "hasMask": false,
+      "ao": 0,
+      "ks": {
+        "a": { "a": 0, "k": [598.355, 506.118, 0], "ix": 1 },
+        "s": { "a": 0, "k": [97.223, 97.223, 100], "ix": 6 },
+        "sk": { "a": 0, "k": 0 },
+        "p": { "a": 0, "k": [232.958, 142.98, 0], "ix": 2 },
+        "r": { "a": 0, "k": 0, "ix": 10 },
+        "sa": { "a": 0, "k": 0 },
+        "o": { "a": 0, "k": 100, "ix": 11 }
+      },
+      "ef": [],
+      "shapes": [
+        {
+          "ty": "gr",
+          "bm": 0,
+          "hd": false,
+          "mn": "ADBE Vector Group",
+          "nm": "Group 1",
+          "ix": 1,
+          "cix": 2,
+          "np": 2,
+          "it": [
+            {
+              "ty": "sh",
+              "bm": 0,
+              "hd": false,
+              "mn": "ADBE Vector Shape - Group",
+              "nm": "Path 1",
+              "ix": 1,
+              "d": 1,
+              "ks": {
+                "a": 0,
+                "k": {
+                  "c": false,
+                  "i": [
+                    [0, 0],
+                    [-3.302, 1.867]
+                  ],
+                  "o": [
+                    [3.302, -1.867],
+                    [0, 0]
+                  ],
+                  "v": [
+                    [-4.953, 2.8],
+                    [4.953, -2.8]
+                  ]
+                },
+                "ix": 2
+              }
+            },
+            {
+              "ty": "st",
+              "bm": 0,
+              "hd": false,
+              "mn": "ADBE Vector Graphic - Stroke",
+              "nm": "Stroke 1",
+              "lc": 2,
+              "lj": 2,
+              "ml": 1,
+              "o": { "a": 0, "k": 100, "ix": 4 },
+              "w": { "a": 0, "k": 4.595, "ix": 5 },
+              "c": { "a": 0, "k": [0.5686, 0.6196, 0.6706], "ix": 3 }
+            },
+            {
+              "ty": "tr",
+              "a": { "a": 0, "k": [0, 0], "ix": 1 },
+              "s": { "a": 0, "k": [100, 100], "ix": 3 },
+              "sk": { "a": 0, "k": 0, "ix": 4 },
+              "p": { "a": 0, "k": [600.652, 514.426], "ix": 2 },
+              "r": { "a": 0, "k": 0, "ix": 6 },
+              "sa": { "a": 0, "k": 0, "ix": 5 },
+              "o": { "a": 0, "k": 100, "ix": 7 }
+            }
+          ]
+        },
+        {
+          "ty": "gr",
+          "bm": 0,
+          "hd": false,
+          "mn": "ADBE Vector Group",
+          "nm": "Group 2",
+          "ix": 2,
+          "cix": 2,
+          "np": 2,
+          "it": [
+            {
+              "ty": "sh",
+              "bm": 0,
+              "hd": false,
+              "mn": "ADBE Vector Shape - Group",
+              "nm": "Path 1",
+              "ix": 1,
+              "d": 1,
+              "ks": {
+                "a": 0,
+                "k": {
+                  "c": false,
+                  "i": [
+                    [0, 0],
+                    [-1.244, 5.699]
+                  ],
+                  "o": [
+                    [1.244, -5.699],
+                    [0, 0]
+                  ],
+                  "v": [
+                    [-1.865, 8.548],
+                    [1.865, -8.548]
+                  ]
+                },
+                "ix": 2
+              }
+            },
+            {
+              "ty": "st",
+              "bm": 0,
+              "hd": false,
+              "mn": "ADBE Vector Graphic - Stroke",
+              "nm": "Stroke 1",
+              "lc": 2,
+              "lj": 2,
+              "ml": 1,
+              "o": { "a": 0, "k": 100, "ix": 4 },
+              "w": { "a": 0, "k": 4.595, "ix": 5 },
+              "c": { "a": 0, "k": [0.5686, 0.6196, 0.6706], "ix": 3 }
+            },
+            {
+              "ty": "tr",
+              "a": { "a": 0, "k": [0, 0], "ix": 1 },
+              "s": { "a": 0, "k": [100, 100], "ix": 3 },
+              "sk": { "a": 0, "k": 0, "ix": 4 },
+              "p": { "a": 0, "k": [592.971, 503.557], "ix": 2 },
+              "r": { "a": 0, "k": 0, "ix": 6 },
+              "sa": { "a": 0, "k": 0, "ix": 5 },
+              "o": { "a": 0, "k": 100, "ix": 7 }
+            }
+          ]
+        },
+        {
+          "ty": "tm",
+          "bm": 0,
+          "hd": false,
+          "mn": "ADBE Vector Filter - Trim",
+          "nm": "Trim Paths 1",
+          "ix": 3,
+          "e": {
+            "a": 1,
+            "k": [
+              { "o": { "x": 0.333, "y": 0 }, "i": { "x": 0.667, "y": 1 }, "s": [0], "t": 57 },
+              { "s": [100], "t": 62 }
+            ],
+            "ix": 2
+          },
+          "o": { "a": 0, "k": 0, "ix": 3 },
+          "s": {
+            "a": 1,
+            "k": [
+              { "o": { "x": 0.333, "y": 0 }, "i": { "x": 0.667, "y": 1 }, "s": [0], "t": 52 },
+              { "s": [100], "t": 57 }
+            ],
+            "ix": 1
+          },
+          "m": 1
+        }
+      ],
+      "ind": 2,
+      "parent": 6
+    },
+    {
+      "ty": 4,
+      "nm": "Layer 10",
+      "sr": 1,
+      "st": 0,
+      "op": 35,
+      "ip": 25,
+      "hd": false,
+      "ddd": 0,
+      "bm": 0,
+      "hasMask": false,
+      "ao": 0,
+      "ks": {
+        "a": { "a": 0, "k": [598.355, 506.118, 0], "ix": 1 },
+        "s": { "a": 0, "k": [97.223, 97.223, 100], "ix": 6 },
+        "sk": { "a": 0, "k": 0 },
+        "p": { "a": 0, "k": [232.958, 142.98, 0], "ix": 2 },
+        "r": { "a": 0, "k": 0, "ix": 10 },
+        "sa": { "a": 0, "k": 0 },
+        "o": { "a": 0, "k": 100, "ix": 11 }
+      },
+      "ef": [],
+      "shapes": [
+        {
+          "ty": "gr",
+          "bm": 0,
+          "hd": false,
+          "mn": "ADBE Vector Group",
+          "nm": "Group 1",
+          "ix": 1,
+          "cix": 2,
+          "np": 2,
+          "it": [
+            {
+              "ty": "sh",
+              "bm": 0,
+              "hd": false,
+              "mn": "ADBE Vector Shape - Group",
+              "nm": "Path 1",
+              "ix": 1,
+              "d": 1,
+              "ks": {
+                "a": 0,
+                "k": {
+                  "c": false,
+                  "i": [
+                    [0, 0],
+                    [-3.302, 1.867]
+                  ],
+                  "o": [
+                    [3.302, -1.867],
+                    [0, 0]
+                  ],
+                  "v": [
+                    [-4.953, 2.8],
+                    [4.953, -2.8]
+                  ]
+                },
+                "ix": 2
+              }
+            },
+            {
+              "ty": "st",
+              "bm": 0,
+              "hd": false,
+              "mn": "ADBE Vector Graphic - Stroke",
+              "nm": "Stroke 1",
+              "lc": 2,
+              "lj": 2,
+              "ml": 1,
+              "o": { "a": 0, "k": 100, "ix": 4 },
+              "w": { "a": 0, "k": 4.595, "ix": 5 },
+              "c": { "a": 0, "k": [0.5686, 0.6196, 0.6706], "ix": 3 }
+            },
+            {
+              "ty": "tr",
+              "a": { "a": 0, "k": [0, 0], "ix": 1 },
+              "s": { "a": 0, "k": [100, 100], "ix": 3 },
+              "sk": { "a": 0, "k": 0, "ix": 4 },
+              "p": { "a": 0, "k": [600.652, 514.426], "ix": 2 },
+              "r": { "a": 0, "k": 0, "ix": 6 },
+              "sa": { "a": 0, "k": 0, "ix": 5 },
+              "o": { "a": 0, "k": 100, "ix": 7 }
+            }
+          ]
+        },
+        {
+          "ty": "gr",
+          "bm": 0,
+          "hd": false,
+          "mn": "ADBE Vector Group",
+          "nm": "Group 2",
+          "ix": 2,
+          "cix": 2,
+          "np": 2,
+          "it": [
+            {
+              "ty": "sh",
+              "bm": 0,
+              "hd": false,
+              "mn": "ADBE Vector Shape - Group",
+              "nm": "Path 1",
+              "ix": 1,
+              "d": 1,
+              "ks": {
+                "a": 0,
+                "k": {
+                  "c": false,
+                  "i": [
+                    [0, 0],
+                    [-1.244, 5.699]
+                  ],
+                  "o": [
+                    [1.244, -5.699],
+                    [0, 0]
+                  ],
+                  "v": [
+                    [-1.865, 8.548],
+                    [1.865, -8.548]
+                  ]
+                },
+                "ix": 2
+              }
+            },
+            {
+              "ty": "st",
+              "bm": 0,
+              "hd": false,
+              "mn": "ADBE Vector Graphic - Stroke",
+              "nm": "Stroke 1",
+              "lc": 2,
+              "lj": 2,
+              "ml": 1,
+              "o": { "a": 0, "k": 100, "ix": 4 },
+              "w": { "a": 0, "k": 4.595, "ix": 5 },
+              "c": { "a": 0, "k": [0.5686, 0.6196, 0.6706], "ix": 3 }
+            },
+            {
+              "ty": "tr",
+              "a": { "a": 0, "k": [0, 0], "ix": 1 },
+              "s": { "a": 0, "k": [100, 100], "ix": 3 },
+              "sk": { "a": 0, "k": 0, "ix": 4 },
+              "p": { "a": 0, "k": [592.971, 503.557], "ix": 2 },
+              "r": { "a": 0, "k": 0, "ix": 6 },
+              "sa": { "a": 0, "k": 0, "ix": 5 },
+              "o": { "a": 0, "k": 100, "ix": 7 }
+            }
+          ]
+        },
+        {
+          "ty": "tm",
+          "bm": 0,
+          "hd": false,
+          "mn": "ADBE Vector Filter - Trim",
+          "nm": "Trim Paths 1",
+          "ix": 3,
+          "e": {
+            "a": 1,
+            "k": [
+              { "o": { "x": 0.333, "y": 0 }, "i": { "x": 0.667, "y": 1 }, "s": [0], "t": 30 },
+              { "s": [100], "t": 35 }
+            ],
+            "ix": 2
+          },
+          "o": { "a": 0, "k": 0, "ix": 3 },
+          "s": {
+            "a": 1,
+            "k": [
+              { "o": { "x": 0.333, "y": 0 }, "i": { "x": 0.667, "y": 1 }, "s": [0], "t": 25 },
+              { "s": [100], "t": 30 }
+            ],
+            "ix": 1
+          },
+          "m": 1
+        }
+      ],
+      "ind": 3,
+      "parent": 6
+    },
+    {
+      "ty": 4,
+      "nm": "Layer 5",
+      "sr": 1,
+      "st": 40,
+      "op": 70,
+      "ip": 40,
+      "hd": false,
+      "ddd": 0,
+      "bm": 0,
+      "hasMask": false,
+      "ao": 0,
+      "ks": {
+        "a": { "a": 0, "k": [132.674, 191.13, 0], "ix": 1 },
+        "s": { "a": 0, "k": [100, 100, 100], "ix": 6 },
+        "sk": { "a": 0, "k": 0 },
+        "p": { "a": 0, "k": [132.674, 191.13, 0], "ix": 2 },
+        "r": { "a": 0, "k": 0, "ix": 10 },
+        "sa": { "a": 0, "k": 0 },
+        "o": { "a": 0, "k": 100, "ix": 11 }
+      },
+      "ef": [],
+      "shapes": [
+        {
+          "ty": "gr",
+          "bm": 0,
+          "hd": false,
+          "mn": "ADBE Vector Group",
+          "nm": "Group 1",
+          "ix": 1,
+          "cix": 2,
+          "np": 2,
+          "it": [
+            {
+              "ty": "sh",
+              "bm": 0,
+              "hd": false,
+              "mn": "ADBE Vector Shape - Group",
+              "nm": "Path 1",
+              "ix": 1,
+              "d": 1,
+              "ks": {
+                "a": 0,
+                "k": {
+                  "c": false,
+                  "i": [
+                    [0, 0],
+                    [0, 0]
+                  ],
+                  "o": [
+                    [0, 0],
+                    [0, 0]
+                  ],
+                  "v": [
+                    [-6.137, 0],
+                    [6.137, 0]
+                  ]
+                },
+                "ix": 2
+              }
+            },
+            {
+              "ty": "st",
+              "bm": 0,
+              "hd": false,
+              "mn": "ADBE Vector Graphic - Stroke",
+              "nm": "Stroke 1",
+              "lc": 2,
+              "lj": 2,
+              "ml": 1,
+              "o": { "a": 0, "k": 100, "ix": 4 },
+              "w": { "a": 0, "k": 4.595, "ix": 5 },
+              "c": { "a": 0, "k": [0.5686, 0.6196, 0.6706], "ix": 3 }
+            },
+            {
+              "ty": "tr",
+              "a": { "a": 0, "k": [0, 0], "ix": 1 },
+              "s": { "a": 0, "k": [100, 100], "ix": 3 },
+              "sk": { "a": 0, "k": 0, "ix": 4 },
+              "p": { "a": 0, "k": [106.891, 198.748], "ix": 2 },
+              "r": { "a": 0, "k": 0, "ix": 6 },
+              "sa": { "a": 0, "k": 0, "ix": 5 },
+              "o": { "a": 0, "k": 100, "ix": 7 }
+            }
+          ]
+        },
+        {
+          "ty": "gr",
+          "bm": 0,
+          "hd": false,
+          "mn": "ADBE Vector Group",
+          "nm": "Group 2",
+          "ix": 2,
+          "cix": 2,
+          "np": 2,
+          "it": [
+            {
+              "ty": "sh",
+              "bm": 0,
+              "hd": false,
+              "mn": "ADBE Vector Shape - Group",
+              "nm": "Path 1",
+              "ix": 1,
+              "d": 1,
+              "ks": {
+                "a": 0,
+                "k": {
+                  "c": false,
+                  "i": [
+                    [0, 0],
+                    [0, 0]
+                  ],
+                  "o": [
+                    [0, 0],
+                    [0, 0]
+                  ],
+                  "v": [
+                    [-12.666, 0],
+                    [12.666, 0]
+                  ]
+                },
+                "ix": 2
+              }
+            },
+            {
+              "ty": "st",
+              "bm": 0,
+              "hd": false,
+              "mn": "ADBE Vector Graphic - Stroke",
+              "nm": "Stroke 1",
+              "lc": 2,
+              "lj": 2,
+              "ml": 1,
+              "o": { "a": 0, "k": 100, "ix": 4 },
+              "w": { "a": 0, "k": 4.595, "ix": 5 },
+              "c": { "a": 0, "k": [0.5686, 0.6196, 0.6706], "ix": 3 }
+            },
+            {
+              "ty": "tr",
+              "a": { "a": 0, "k": [0, 0], "ix": 1 },
+              "s": { "a": 0, "k": [100, 100], "ix": 3 },
+              "sk": { "a": 0, "k": 0, "ix": 4 },
+              "p": { "a": 0, "k": [151.927, 198.748], "ix": 2 },
+              "r": { "a": 0, "k": 0, "ix": 6 },
+              "sa": { "a": 0, "k": 0, "ix": 5 },
+              "o": { "a": 0, "k": 100, "ix": 7 }
+            }
+          ]
+        },
+        {
+          "ty": "gr",
+          "bm": 0,
+          "hd": false,
+          "mn": "ADBE Vector Group",
+          "nm": "Group 3",
+          "ix": 3,
+          "cix": 2,
+          "np": 2,
+          "it": [
+            {
+              "ty": "sh",
+              "bm": 0,
+              "hd": false,
+              "mn": "ADBE Vector Shape - Group",
+              "nm": "Path 1",
+              "ix": 1,
+              "d": 1,
+              "ks": {
+                "a": 0,
+                "k": {
+                  "c": false,
+                  "i": [
+                    [0, 0],
+                    [0, 0]
+                  ],
+                  "o": [
+                    [0, 0],
+                    [0, 0]
+                  ],
+                  "v": [
+                    [-31.92, 0],
+                    [31.92, 0]
+                  ]
+                },
+                "ix": 2
+              }
+            },
+            {
+              "ty": "st",
+              "bm": 0,
+              "hd": false,
+              "mn": "ADBE Vector Graphic - Stroke",
+              "nm": "Stroke 1",
+              "lc": 2,
+              "lj": 2,
+              "ml": 1,
+              "o": { "a": 0, "k": 100, "ix": 4 },
+              "w": { "a": 0, "k": 4.595, "ix": 5 },
+              "c": { "a": 0, "k": [0.5686, 0.6196, 0.6706], "ix": 3 }
+            },
+            {
+              "ty": "tr",
+              "a": { "a": 0, "k": [0, 0], "ix": 1 },
+              "s": { "a": 0, "k": [100, 100], "ix": 3 },
+              "sk": { "a": 0, "k": 0, "ix": 4 },
+              "p": { "a": 0, "k": [132.674, 183.511], "ix": 2 },
+              "r": { "a": 0, "k": 0, "ix": 6 },
+              "sa": { "a": 0, "k": 0, "ix": 5 },
+              "o": { "a": 0, "k": 100, "ix": 7 }
+            }
+          ]
+        },
+        {
+          "ty": "tm",
+          "bm": 0,
+          "hd": false,
+          "mn": "ADBE Vector Filter - Trim",
+          "nm": "Trim Paths 1",
+          "ix": 4,
+          "e": {
+            "a": 1,
+            "k": [
+              { "o": { "x": 0.333, "y": 0 }, "i": { "x": 0.667, "y": 1 }, "s": [0], "t": 60 },
+              { "s": [100], "t": 70 }
+            ],
+            "ix": 2
+          },
+          "o": { "a": 0, "k": 0, "ix": 3 },
+          "s": {
+            "a": 1,
+            "k": [
+              { "o": { "x": 0.333, "y": 0 }, "i": { "x": 0.667, "y": 1 }, "s": [0], "t": 40 },
+              { "s": [100], "t": 50 }
+            ],
+            "ix": 1
+          },
+          "m": 1
+        }
+      ],
+      "ind": 4,
+      "parent": 7
+    },
+    {
+      "ty": 4,
+      "nm": "Layer 4",
+      "sr": 1,
+      "st": 0,
+      "op": 30,
+      "ip": 0,
+      "hd": false,
+      "ddd": 0,
+      "bm": 0,
+      "hasMask": false,
+      "ao": 0,
+      "ks": {
+        "a": { "a": 0, "k": [132.674, 191.13, 0], "ix": 1 },
+        "s": { "a": 0, "k": [100, 100, 100], "ix": 6 },
+        "sk": { "a": 0, "k": 0 },
+        "p": { "a": 0, "k": [132.674, 191.13, 0], "ix": 2 },
+        "r": { "a": 0, "k": 0, "ix": 10 },
+        "sa": { "a": 0, "k": 0 },
+        "o": { "a": 0, "k": 100, "ix": 11 }
+      },
+      "ef": [],
+      "shapes": [
+        {
+          "ty": "gr",
+          "bm": 0,
+          "hd": false,
+          "mn": "ADBE Vector Group",
+          "nm": "Group 1",
+          "ix": 1,
+          "cix": 2,
+          "np": 2,
+          "it": [
+            {
+              "ty": "sh",
+              "bm": 0,
+              "hd": false,
+              "mn": "ADBE Vector Shape - Group",
+              "nm": "Path 1",
+              "ix": 1,
+              "d": 1,
+              "ks": {
+                "a": 0,
+                "k": {
+                  "c": false,
+                  "i": [
+                    [0, 0],
+                    [0, 0]
+                  ],
+                  "o": [
+                    [0, 0],
+                    [0, 0]
+                  ],
+                  "v": [
+                    [-6.137, 0],
+                    [6.137, 0]
+                  ]
+                },
+                "ix": 2
+              }
+            },
+            {
+              "ty": "st",
+              "bm": 0,
+              "hd": false,
+              "mn": "ADBE Vector Graphic - Stroke",
+              "nm": "Stroke 1",
+              "lc": 2,
+              "lj": 2,
+              "ml": 1,
+              "o": { "a": 0, "k": 100, "ix": 4 },
+              "w": { "a": 0, "k": 4.595, "ix": 5 },
+              "c": { "a": 0, "k": [0.5686, 0.6196, 0.6706], "ix": 3 }
+            },
+            {
+              "ty": "tr",
+              "a": { "a": 0, "k": [0, 0], "ix": 1 },
+              "s": { "a": 0, "k": [100, 100], "ix": 3 },
+              "sk": { "a": 0, "k": 0, "ix": 4 },
+              "p": { "a": 0, "k": [106.891, 198.748], "ix": 2 },
+              "r": { "a": 0, "k": 0, "ix": 6 },
+              "sa": { "a": 0, "k": 0, "ix": 5 },
+              "o": { "a": 0, "k": 100, "ix": 7 }
+            }
+          ]
+        },
+        {
+          "ty": "gr",
+          "bm": 0,
+          "hd": false,
+          "mn": "ADBE Vector Group",
+          "nm": "Group 2",
+          "ix": 2,
+          "cix": 2,
+          "np": 2,
+          "it": [
+            {
+              "ty": "sh",
+              "bm": 0,
+              "hd": false,
+              "mn": "ADBE Vector Shape - Group",
+              "nm": "Path 1",
+              "ix": 1,
+              "d": 1,
+              "ks": {
+                "a": 0,
+                "k": {
+                  "c": false,
+                  "i": [
+                    [0, 0],
+                    [0, 0]
+                  ],
+                  "o": [
+                    [0, 0],
+                    [0, 0]
+                  ],
+                  "v": [
+                    [-12.666, 0],
+                    [12.666, 0]
+                  ]
+                },
+                "ix": 2
+              }
+            },
+            {
+              "ty": "st",
+              "bm": 0,
+              "hd": false,
+              "mn": "ADBE Vector Graphic - Stroke",
+              "nm": "Stroke 1",
+              "lc": 2,
+              "lj": 2,
+              "ml": 1,
+              "o": { "a": 0, "k": 100, "ix": 4 },
+              "w": { "a": 0, "k": 4.595, "ix": 5 },
+              "c": { "a": 0, "k": [0.5686, 0.6196, 0.6706], "ix": 3 }
+            },
+            {
+              "ty": "tr",
+              "a": { "a": 0, "k": [0, 0], "ix": 1 },
+              "s": { "a": 0, "k": [100, 100], "ix": 3 },
+              "sk": { "a": 0, "k": 0, "ix": 4 },
+              "p": { "a": 0, "k": [151.927, 198.748], "ix": 2 },
+              "r": { "a": 0, "k": 0, "ix": 6 },
+              "sa": { "a": 0, "k": 0, "ix": 5 },
+              "o": { "a": 0, "k": 100, "ix": 7 }
+            }
+          ]
+        },
+        {
+          "ty": "gr",
+          "bm": 0,
+          "hd": false,
+          "mn": "ADBE Vector Group",
+          "nm": "Group 3",
+          "ix": 3,
+          "cix": 2,
+          "np": 2,
+          "it": [
+            {
+              "ty": "sh",
+              "bm": 0,
+              "hd": false,
+              "mn": "ADBE Vector Shape - Group",
+              "nm": "Path 1",
+              "ix": 1,
+              "d": 1,
+              "ks": {
+                "a": 0,
+                "k": {
+                  "c": false,
+                  "i": [
+                    [0, 0],
+                    [0, 0]
+                  ],
+                  "o": [
+                    [0, 0],
+                    [0, 0]
+                  ],
+                  "v": [
+                    [-31.92, 0],
+                    [31.92, 0]
+                  ]
+                },
+                "ix": 2
+              }
+            },
+            {
+              "ty": "st",
+              "bm": 0,
+              "hd": false,
+              "mn": "ADBE Vector Graphic - Stroke",
+              "nm": "Stroke 1",
+              "lc": 2,
+              "lj": 2,
+              "ml": 1,
+              "o": { "a": 0, "k": 100, "ix": 4 },
+              "w": { "a": 0, "k": 4.595, "ix": 5 },
+              "c": { "a": 0, "k": [0.5686, 0.6196, 0.6706], "ix": 3 }
+            },
+            {
+              "ty": "tr",
+              "a": { "a": 0, "k": [0, 0], "ix": 1 },
+              "s": { "a": 0, "k": [100, 100], "ix": 3 },
+              "sk": { "a": 0, "k": 0, "ix": 4 },
+              "p": { "a": 0, "k": [132.674, 183.511], "ix": 2 },
+              "r": { "a": 0, "k": 0, "ix": 6 },
+              "sa": { "a": 0, "k": 0, "ix": 5 },
+              "o": { "a": 0, "k": 100, "ix": 7 }
+            }
+          ]
+        },
+        {
+          "ty": "tm",
+          "bm": 0,
+          "hd": false,
+          "mn": "ADBE Vector Filter - Trim",
+          "nm": "Trim Paths 1",
+          "ix": 4,
+          "e": {
+            "a": 1,
+            "k": [
+              { "o": { "x": 0.333, "y": 0 }, "i": { "x": 0.667, "y": 1 }, "s": [0], "t": 20 },
+              { "s": [100], "t": 30 }
+            ],
+            "ix": 2
+          },
+          "o": { "a": 0, "k": 0, "ix": 3 },
+          "s": {
+            "a": 1,
+            "k": [
+              { "o": { "x": 0.333, "y": 0 }, "i": { "x": 0.667, "y": 1 }, "s": [0], "t": 0 },
+              { "s": [100], "t": 10 }
+            ],
+            "ix": 1
+          },
+          "m": 1
+        }
+      ],
+      "ind": 5,
+      "parent": 7
+    },
+    {
+      "ty": 4,
+      "nm": "Layer 3",
+      "sr": 1,
+      "st": 0,
+      "op": 120,
+      "ip": 0,
+      "hd": false,
+      "ddd": 0,
+      "bm": 0,
+      "hasMask": false,
+      "ao": 0,
+      "ks": {
+        "a": { "a": 0, "k": [219.053, 208.176, 0], "ix": 1 },
+        "s": {
+          "a": 1,
+          "k": [
+            { "o": { "x": 0.333, "y": 0 }, "i": { "x": 0.667, "y": 1 }, "s": [0, 0, 100], "t": 10 },
+            { "s": [100, 100, 100], "t": 13.3330078125 }
+          ],
+          "ix": 6,
+          "x": "var $bm_rt;\nvar fx = effect('Kleaner');\nvar doAnticipation = fx(1).value;\nvar doInterpolation = fx(2).value;\nvar doFollowThrough = fx(3).value;\nvar damping = $bm_div(fx(15).value, 10);\nvar elasticity = $bm_div(fx(13).value, 10);\nvar bounce = fx(17).value;\nvar anticipationDuration = fx(5).value;\nvar anticipationQuantity = $bm_div(fx(6).value, 100);\nvar slowIn = $bm_div(fx(9).value, 100);\nvar slowOut = $bm_div(fx(10).value, 100);\nvar spatialMode = fx(21).value;\nvar spatialDoInterpolation = fx(20).value;\nvar moBlurPrecision = fx(32).value;\nvar elasticityRandom = fx(14).value;\nvar dampingRandom = fx(16).value;\nvar softBody = fx(28).value;\nvar flexibility = $bm_div(fx(29).value, 100);\nvar doOverlap = fx(23).value;\nvar overlapDuration = fx(24).value;\nvar overlapRandom = fx(25).value;\nvar threshold = $bm_div($bm_div(1, moBlurPrecision), 1000);\nvar zeroValue;\nif ($bm_isInstanceOfArray(value)) {\n    if (value.length == 2)\n        zeroValue = [\n            0,\n            0\n        ];\n    else if (value.length == 3)\n        zeroValue = [\n            0,\n            0,\n            0\n        ];\n    else if (value.length == 4)\n        zeroValue = [\n            0,\n            0,\n            0,\n            0\n        ];\n} else\n    zeroValue = 0;\nvar isThisSpatial = isSpatial(thisProperty);\nvar isThisPosition = thisProperty === $bm_transform.position;\nvar simulate = false;\nif (isThisSpatial) {\n    doInterpolation = doInterpolation && spatialDoInterpolation;\n    if (isThisPosition && thisProperty.numKeys > 0) {\n        doOverlap = false;\n        simulate = false;\n    } else {\n        simulate = spatialMode == 2;\n        doOverlap = overlapDuration != 0 && doOverlap && simulate;\n    }\n} else {\n    doOverlap = false;\n}\nif (!doOverlap) {\n    overlapDuration = 0;\n}\nif (simulate && softBody && isThisSpatial && !isThisPosition && (doFollowThrough || doOverlap)) {\n    var distanceRatio = $bm_div(length(valueAtTime(0), $bm_transform.anchorPoint), $bm_div(thisLayer.width, 2));\n    distanceRatio = $bm_div($bm_sum(1, $bm_mul(distanceRatio, flexibility)), 2);\n    if (doFollowThrough) {\n        elasticity = $bm_div(elasticity, distanceRatio);\n        damping = $bm_div(damping, distanceRatio);\n    }\n    if (doOverlap) {\n        overlapDuration = $bm_mul(overlapDuration, distanceRatio);\n    }\n}\nseedRandom(0, true);\nif (doFollowThrough) {\n    if (elasticityRandom > 0)\n        elasticity = addNoise(elasticity, elasticityRandom);\n    if (dampingRandom > 0)\n        damping = addNoise(damping, dampingRandom);\n}\nif (doOverlap) {\n    if (doOverlap && overlapRandom > 0)\n        overlapDuration = addNoise(overlapDuration, overlapRandom);\n}\nvar result = value;\nfunction isSpatial(prop) {\n    if (!(prop.value instanceof Array))\n        return false;\n    if (prop.value.length != 2 && prop.value.length != 3)\n        return false;\n    try {\n        if (typeof prop.speed !== 'undefined')\n            return true;\n    } catch (e) {\n        return false;\n    }\n}\nfunction addNoise(val, quantity) {\n    var randomValue = random(0.9, 1.1);\n    var noiseValue = noise($bm_mul(valueAtTime(0), randomValue));\n    noiseValue = $bm_mul(noiseValue, $bm_div(quantity, 100));\n    return $bm_mul(val, $bm_sum(noiseValue, 1));\n}\nfunction isAfterLastKey() {\n    if (numKeys == 0)\n        return false;\n    var nKey = nearestKey(time);\n    return nKey.time <= time && nKey.index == numKeys;\n}\nfunction isStill(t, threshold) {\n    var d = $bm_sub(valueAtTime(t), valueAtTime($bm_sum(t, framesToTime(1))));\n    if ($bm_isInstanceOfArray(d)) {\n        for (var i = 0; i < d.length; i++) {\n            d[i] = Math.abs(d[i]);\n            if (d[i] >= threshold) {\n                return false;\n            }\n        }\n        return true;\n    } else {\n        d = Math.abs(d);\n        return d < threshold;\n    }\n}\nfunction bezierInterpolation(t, tMin, tMax, value1, value2, bezierPoints) {\n    if (arguments.length !== 5 && arguments.length !== 6)\n        return t;\n    var a = $bm_sub(value2, value1);\n    var b = $bm_sub(tMax, tMin);\n    if (b == 0)\n        return t;\n    var c = clamp($bm_div($bm_sub(t, tMin), b), 0, 1);\n    if (!(bezierPoints instanceof Array) || bezierPoints.length !== 4)\n        bezierPoints = [\n            0.33,\n            0,\n            0.66,\n            1\n        ];\n    return $bm_sum($bm_mul(a, h(c, bezierPoints)), value1);\n    function h(f, g) {\n        var x = $bm_mul(3, g[0]);\n        var j = $bm_sub($bm_mul(3, $bm_sub(g[2], g[0])), x);\n        var k = $bm_sub($bm_sub(1, x), j);\n        var l = $bm_mul(3, g[1]);\n        var m = $bm_sub($bm_mul(3, $bm_sub(g[3], g[1])), l);\n        var n = $bm_sub($bm_sub(1, l), m);\n        var d = f;\n        for (var i = 0; i < 5; i++) {\n            var z = $bm_sub($bm_mul(d, $bm_sum(x, $bm_mul(d, $bm_sum(j, $bm_mul(d, k))))), f);\n            if (Math.abs(z) < 0.001)\n                break;\n            d = $bm_sub(d, $bm_div(z, $bm_sum(x, $bm_mul(d, $bm_sum($bm_mul(2, j), $bm_mul($bm_mul(3, k), d))))));\n        }\n        return $bm_mul(d, $bm_sum(l, $bm_mul(d, $bm_sum(m, $bm_mul(d, n)))));\n    }\n}\nfunction getPropWorldSpeed(t, prop) {\n    return length(getPropWorldVelocity(t, prop));\n}\nfunction getPrevKey(t) {\n    if (numKeys == 0)\n        return null;\n    var nKey = nearestKey(t);\n    if (nKey.time <= t)\n        return nKey;\n    if (nKey.index > 1)\n        return key($bm_sub(nKey.index, 1));\n    return null;\n}\nfunction getNextKey(t) {\n    if (numKeys == 0)\n        return null;\n    var nKey = nearestKey(t);\n    if (nKey.time >= t)\n        return nKey;\n    if (nKey.index < numKeys)\n        return key($bm_sum(nKey.index, 1));\n    return null;\n}\nfunction getPropWorldVelocity(t, prop) {\n    return $bm_mul($bm_sub(getPropWorldValue($bm_sum(t, 0.005), prop), getPropWorldValue($bm_sub(t, 0.005), prop)), 100);\n}\nfunction getLayerWorldPos(t, l) {\n    return l.toWorld(l.anchorPoint, t);\n}\nfunction getPropWorldValue(t, prop) {\n    if (isPosition(prop))\n        return getLayerWorldPos(t, thisLayer);\n    return thisLayer.toWorld(prop.valueAtTime(t), t);\n}\nfunction isPosition(prop) {\n    return prop === $bm_transform.position;\n}\nfunction isKeyTop(k, axis) {\n    var prevSpeed = velocityAtTime($bm_sub(k.time, threshold));\n    var nextSpeed = velocityAtTime($bm_sum(k.time, threshold));\n    if ($bm_isInstanceOfArray(value)) {\n        prevSpeed = prevSpeed[axis];\n        nextSpeed = nextSpeed[axis];\n    }\n    if (Math.abs(prevSpeed) < 0.01 || Math.abs(nextSpeed) < 0.01)\n        return true;\n    return $bm_mul(prevSpeed, nextSpeed) < 0;\n}\nfunction anticipate() {\n    var anticipation = zeroValue;\n    if (isAfterLastKey())\n        return anticipation;\n    if (numKeys < 2)\n        return anticipation;\n    var nextKey = getNextKey(time);\n    var aKey = nextKey;\n    if (!isStill(aKey.time - 0.1, 0.1)) {\n        aKey = getPrevKey(time);\n        if (!isStill(aKey.time - 0.1, 0.1))\n            return anticipation;\n    }\n    if (aKey.index == numKeys)\n        return anticipation;\n    var anticipationMiddle = aKey.time;\n    var anticipationStart = $bm_sub(anticipationMiddle, anticipationDuration);\n    var anticipationEnd = key(aKey.index + 1).time;\n    var startValue = anticipation;\n    var midValue = $bm_mul($bm_sum($bm_neg(valueAtTime($bm_sum(anticipationMiddle, anticipationDuration))), aKey.value), anticipationQuantity);\n    var endValue = anticipation;\n    if (time < anticipationStart) {\n        return anticipation;\n    } else if (time < anticipationMiddle) {\n        if ($bm_isInstanceOfArray(value)) {\n            for (var i = 0; i < value.length; i++) {\n                anticipation[i] = bezierInterpolation(time, anticipationStart, anticipationMiddle, startValue[i], midValue[i], [\n                    slowOut,\n                    0,\n                    slowIn,\n                    1\n                ]);\n            }\n            return anticipation;\n        } else {\n            return bezierInterpolation(time, anticipationStart, anticipationMiddle, startValue, midValue, [\n                slowOut,\n                0,\n                slowIn,\n                1\n            ]);\n        }\n    } else if (time <= anticipationEnd) {\n        if ($bm_isInstanceOfArray(value)) {\n            for (var i = 0; i < value.length; i++) {\n                anticipation[i] = bezierInterpolation(time, anticipationMiddle, anticipationEnd, midValue[i], endValue[i], [\n                    slowOut,\n                    0,\n                    slowIn,\n                    1\n                ]);\n            }\n            return anticipation;\n        } else {\n            return bezierInterpolation(time, anticipationMiddle, anticipationEnd, midValue, endValue, [\n                slowOut,\n                0,\n                slowIn,\n                1\n            ]);\n        }\n    } else {\n        return anticipation;\n    }\n}\nfunction followThroughAtTime(t) {\n    var fThrough = zeroValue;\n    if (elasticity == 0)\n        return fThrough;\n    var propSpeed;\n    if (!simulate) {\n        if (numKeys < 2)\n            return fThrough;\n        if (nearestKey(t).index == 1)\n            return fThrough;\n        propSpeed = length(velocityAtTime(t));\n        if (propSpeed >= threshold)\n            return fThrough;\n    } else {\n        propSpeed = getPropWorldSpeed(t, thisProperty);\n        if (propSpeed >= threshold)\n            return fThrough;\n    }\n    var fThroughStart = 0;\n    var fThroughTime = 0;\n    if (simulate) {\n        var speedI = getPropWorldSpeed(t, thisProperty);\n        var i = t;\n        while (speedI < threshold && i > 0) {\n            i = $bm_sub(i, $bm_div(thisComp.frameDuration, moBlurPrecision));\n            speedI = getPropWorldSpeed(i, thisProperty);\n        }\n        fThroughStart = i;\n    } else {\n        var fThroughKey = getPrevKey(t);\n        fThroughStart = fThroughKey.time;\n    }\n    if (fThroughStart == 0)\n        return fThrough;\n    fThroughTime = $bm_sub(t, fThroughStart);\n    if (simulate)\n        fThrough = $bm_div(getPropWorldVelocity($bm_sub(fThroughStart, thisComp.frameDuration), thisProperty), 2);\n    else\n        fThrough = $bm_div(velocityAtTime($bm_sub(fThroughStart, thisComp.frameDuration)), 2);\n    if (bounce) {\n        var cycleDamp = Math.exp($bm_mul($bm_mul(fThroughTime, damping), 0.1));\n        var damp = $bm_div(Math.exp($bm_mul(fThroughTime, damping)), $bm_div(elasticity, 2));\n        var cycleDuration = $bm_div(1, $bm_mul(elasticity, 2));\n        cycleDuration = Math.round(timeToFrames(cycleDuration));\n        cycleDuration = framesToTime(cycleDuration);\n        var midDuration = $bm_div(cycleDuration, 2);\n        var maxValue = $bm_mul(fThrough, midDuration);\n        var cycvarime = fThroughTime;\n        var numEndCycles = 1;\n        while (cycvarime > cycleDuration) {\n            cycvarime = $bm_sub(cycvarime, cycleDuration);\n            cycleDuration = $bm_div(cycleDuration, cycleDamp);\n            cycleDuration = Math.round(timeToFrames(cycleDuration));\n            if (cycleDuration < 2) {\n                cycleDuration = 2;\n                numEndCycles++;\n            }\n            cycleDuration = framesToTime(cycleDuration);\n            midDuration = $bm_div(cycleDuration, 2);\n            maxValue = $bm_div($bm_mul(fThrough, midDuration), damp);\n            if (numEndCycles > 100 / damping && maxValue < threshold)\n                return zeroValue;\n        }\n        if (cycvarime < midDuration)\n            fThrough = bezierInterpolation(cycvarime, 0, midDuration, 0, maxValue, [\n                0,\n                0.1,\n                slowIn,\n                1\n            ]);\n        else\n            fThrough = bezierInterpolation(cycvarime, midDuration, cycleDuration, maxValue, 0, [\n                $bm_sub(1, slowIn),\n                0,\n                1,\n                0.9\n            ]);\n    } else {\n        var damp = Math.exp($bm_mul(fThroughTime, damping));\n        var sinus = $bm_mul($bm_mul($bm_mul(elasticity, fThroughTime), 2), Math.PI);\n        sinus = Math.sin(sinus);\n        sinus = $bm_mul($bm_div(0.3, elasticity), sinus);\n        sinus = $bm_div(sinus, damp);\n        if (Math.abs(sinus) < $bm_div(threshold, 100))\n            return 0;\n        fThrough = $bm_mul(fThrough, sinus);\n        if (threshold > 0) {\n            fThrough = $bm_mul(fThrough, $bm_sub(1, $bm_div(propSpeed, threshold)));\n        }\n    }\n    if (bounce) {\n        var prevValue = valueAtTime($bm_sub(fThroughStart, thisComp.frameDuration));\n        var startValue = valueAtTime(fThroughStart);\n        if ($bm_isInstanceOfArray(value)) {\n            for (var i = 0; i < prevValue.length; i++) {\n                if (prevValue[i] > startValue[i])\n                    fThrough[i] = Math.abs(fThrough[i]);\n                if (prevValue[i] < startValue[i])\n                    fThrough[i] = $bm_neg(Math.abs(fThrough[i]));\n            }\n        } else {\n            if (prevValue > startValue)\n                fThrough = Math.abs(fThrough);\n            if (prevValue < startValue)\n                fThrough = $bm_neg(Math.abs(fThrough));\n        }\n    }\n    if (simulate) {\n        if (!isThisPosition) {\n            fThrough = $bm_sum(fThrough, getLayerWorldPos(time, thisLayer));\n            fThrough = $bm_sub(thisLayer.fromWorld(fThrough), thisLayer.anchorPoint);\n        } else if (thisLayer.hasParent) {\n            fThrough = $bm_sum(fThrough, getLayerWorldPos(time, thisLayer.parent));\n            fThrough = $bm_sub(thisLayer.parent.fromWorld(fThrough), thisLayer.parent.anchorPoint);\n        }\n    }\n    return fThrough;\n}\nfunction followThrough() {\n    var propSpeed = length(velocity);\n    if (propSpeed < threshold)\n        return followThroughAtTime($bm_sub(time, overlapDuration));\n    var fThrough = zeroValue;\n    var t = time;\n    while (t > 0) {\n        t = $bm_sub(t, thisComp.frameDuration);\n        if (simulate)\n            propSpeed = getPropWorldSpeed($bm_sub(t, overlapDuration), thisProperty);\n        else\n            propSpeed = length(velocityAtTime(t));\n        if (propSpeed < threshold) {\n            fThrough = followThroughAtTime($bm_sub(t, overlapDuration));\n            break;\n        }\n    }\n    return linear(time, t, $bm_sum(t, $bm_mul(anticipationDuration, 2)), fThrough, zeroValue);\n}\nfunction smartSmooth(axis) {\n    var startKey = nearestKey(time);\n    var endKey = startKey;\n    if (time == startKey.time)\n        return 0;\n    if (time < startKey.time && startKey.index == 1)\n        return 0;\n    if (time > startKey.time && startKey.index == numKeys)\n        return 0;\n    if (time < startKey.time)\n        startKey = key($bm_sub(startKey.index, 1));\n    if (time > startKey.time)\n        endKey = key($bm_sum(startKey.index, 1));\n    var sI = 0.66;\n    var sO = 0.33;\n    var sIV = 1;\n    var sOV = 0;\n    var sVal = startKey.value;\n    var eVal = endKey.value;\n    if ($bm_isInstanceOfArray(value)) {\n        sVal = sVal[axis];\n        eVal = eVal[axis];\n    }\n    var sTime = startKey.time;\n    var eTime = endKey.time;\n    if (isKeyTop(startKey, axis))\n        sO = slowOut;\n    else {\n        var prevKey = key($bm_sub(startKey.index, 1));\n        var pVal = prevKey.value;\n        if ($bm_isInstanceOfArray(value))\n            pVal = pVal[axis];\n        sOV = $bm_div($bm_sub(sVal, pVal), $bm_sub(eVal, pVal));\n    }\n    if (isKeyTop(endKey, axis)) {\n        sI = slowIn;\n        if (endKey.index != numKeys) {\n            var nextKey = key($bm_sum(endKey.index, 1));\n            var nVal = nextKey.value;\n            if ($bm_isInstanceOfArray(value))\n                nVal = nVal[axis];\n            if (Math.abs(nVal - eVal) < 0.01 && doFollowThrough)\n                sI = 1;\n        }\n    } else {\n        var nextKey = key($bm_sum(endKey.index, 1));\n        var nVal = nextKey.value;\n        if ($bm_isInstanceOfArray(value))\n            nVal = nVal[axis];\n        sIV = $bm_div($bm_sub(eVal, sVal), $bm_sub(nVal, sVal));\n    }\n    if (endKey.index == numKeys && doFollowThrough) {\n        sI = 1;\n    }\n    var val = value;\n    if ($bm_isInstanceOfArray(value))\n        val = val[axis];\n    return $bm_sub(bezierInterpolation(time, sTime, eTime, sVal, eVal, [\n        sO,\n        sOV,\n        sI,\n        sIV\n    ]), val);\n}\nfunction overlap() {\n    var ol = zeroValue;\n    if (isThisPosition && !hasParent)\n        return zeroValue;\n    ol = $bm_sub(getPropWorldValue($bm_sub(time, overlapDuration), thisProperty), getPropWorldValue(time, thisProperty));\n    var motionRatio = $bm_div($bm_div(length(zeroValue, ol), thisLayer.width), 2);\n    if (isThisPosition) {\n        var originalDistance = length(valueAtTime(0));\n        motionRatio = $bm_div(length(zeroValue, ol), thisComp.width);\n    }\n    ol = $bm_sum(ol, getPropWorldValue(time, thisProperty));\n    ol = $bm_sum(ol, $bm_mul($bm_mul($bm_sub(getPropWorldValue($bm_sub(time, overlapDuration), thisLayer.anchorPoint), ol), motionRatio), flexibility));\n    ol = thisLayer.fromWorld(ol);\n    if (!isThisPosition)\n        ol = $bm_sub(ol, value);\n    else {\n        ol = linear(flexibility, 0, 100, $bm_div(ol, 2), 0);\n        var prevParentWorldPos = getLayerWorldPos($bm_sub(time, overlapDuration), parent);\n        ol = $bm_sum(ol, $bm_mul($bm_mul($bm_mul(thisLayer.fromWorld(prevParentWorldPos), motionRatio), flexibility), 5));\n    }\n    return ol;\n}\nvar okToGo = false;\nif (simulate && fx.enabled)\n    okToGo = true;\nelse if (numKeys > 1 && fx.enabled)\n    okToGo = true;\nif (okToGo) {\n    var smartSmoothResult = zeroValue;\n    if (doInterpolation) {\n        if ($bm_isInstanceOfArray(value)) {\n            if (value.length == 2)\n                smartSmoothResult = [\n                    smartSmooth(0),\n                    smartSmooth(1)\n                ];\n            else if (value.length == 3)\n                smartSmoothResult = [\n                    smartSmooth(0),\n                    smartSmooth(1),\n                    smartSmooth(2)\n                ];\n            else if (value.length == 4)\n                smartSmoothResult = [\n                    smartSmooth(0),\n                    smartSmooth(1),\n                    smartSmooth(2),\n                    smartSmooth(3)\n                ];\n        } else {\n            smartSmoothResult = smartSmooth(0);\n        }\n    }\n    if (doAnticipation)\n        result = $bm_sum(result, anticipate());\n    result = $bm_sum(result, smartSmoothResult);\n    if (doFollowThrough)\n        result = $bm_sum(result, followThrough());\n    if (doOverlap)\n        result = $bm_sum(result, overlap());\n}\n$bm_rt = result;"
+        },
+        "sk": { "a": 0, "k": 0 },
+        "p": { "a": 0, "k": [94.053, 83.176, 0], "ix": 2, "x": "var $bm_rt;\n$bm_rt = loopOut('pingpong');" },
+        "r": { "a": 0, "k": 0, "ix": 10 },
+        "sa": { "a": 0, "k": 0 },
+        "o": { "a": 0, "k": 100, "ix": 11 }
+      },
+      "ef": [
+        {
+          "ty": 5,
+          "mn": "Pseudo/Duik Kleaner v3.2",
+          "nm": "Kleaner",
+          "ix": 1,
+          "en": 1,
+          "ef": [
+            { "ty": 7, "mn": "Pseudo/Duik Kleaner v3.2-0001", "nm": "Anticipation", "ix": 1, "v": { "a": 0, "k": 0, "ix": 1 } },
+            { "ty": 7, "mn": "Pseudo/Duik Kleaner v3.2-0002", "nm": "Smart Interpolation", "ix": 2, "v": { "a": 0, "k": 0, "ix": 2 } },
+            { "ty": 7, "mn": "Pseudo/Duik Kleaner v3.2-0003", "nm": "Follow Through", "ix": 3, "v": { "a": 0, "k": 1, "ix": 3 } },
+            { "ty": 6, "mn": "Pseudo/Duik Kleaner v3.2-0004", "nm": "Anticipation", "ix": 4, "v": 0 },
+            { "ty": 0, "mn": "Pseudo/Duik Kleaner v3.2-0005", "nm": "Duration (s)", "ix": 5, "v": { "a": 0, "k": 0.3, "ix": 5 } },
+            { "ty": 0, "mn": "Pseudo/Duik Kleaner v3.2-0006", "nm": "Amplitude", "ix": 6, "v": { "a": 0, "k": 50, "ix": 6 } },
+            { "ty": 6, "mn": "Pseudo/Duik Kleaner v3.2-0007", "nm": "", "ix": 7, "v": 0 },
+            { "ty": 6, "mn": "Pseudo/Duik Kleaner v3.2-0008", "nm": "Interpolation", "ix": 8, "v": 0 },
+            { "ty": 0, "mn": "Pseudo/Duik Kleaner v3.2-0009", "nm": "Slow In", "ix": 9, "v": { "a": 0, "k": 60, "ix": 9 } },
+            { "ty": 0, "mn": "Pseudo/Duik Kleaner v3.2-0010", "nm": "Slow Out", "ix": 10, "v": { "a": 0, "k": 25, "ix": 10 } },
+            { "ty": 6, "mn": "Pseudo/Duik Kleaner v3.2-0011", "nm": "", "ix": 11, "v": 0 },
+            { "ty": 6, "mn": "Pseudo/Duik Kleaner v3.2-0012", "nm": "Follow Through", "ix": 12, "v": 0 },
+            { "ty": 0, "mn": "Pseudo/Duik Kleaner v3.2-0013", "nm": "Elasticity", "ix": 13, "v": { "a": 0, "k": 10, "ix": 13 } },
+            { "ty": 0, "mn": "Pseudo/Duik Kleaner v3.2-0014", "nm": "Elasticity random", "ix": 14, "v": { "a": 0, "k": 0, "ix": 14 } },
+            { "ty": 0, "mn": "Pseudo/Duik Kleaner v3.2-0015", "nm": "Damping", "ix": 15, "v": { "a": 0, "k": 50, "ix": 15 } },
+            { "ty": 0, "mn": "Pseudo/Duik Kleaner v3.2-0016", "nm": "Damping random", "ix": 16, "v": { "a": 0, "k": 0, "ix": 16 } },
+            { "ty": 7, "mn": "Pseudo/Duik Kleaner v3.2-0017", "nm": "Bounce", "ix": 17, "v": { "a": 0, "k": 0, "ix": 17 } },
+            { "ty": 6, "mn": "Pseudo/Duik Kleaner v3.2-0018", "nm": "", "ix": 18, "v": 0 },
+            { "ty": 6, "mn": "Pseudo/Duik Kleaner v3.2-0019", "nm": "Spatial Options", "ix": 19, "v": 0 },
+            { "ty": 7, "mn": "Pseudo/Duik Kleaner v3.2-0020", "nm": "Smart Interpolation", "ix": 20, "v": { "a": 0, "k": 0, "ix": 20 } },
+            { "ty": 7, "mn": "Pseudo/Duik Kleaner v3.2-0021", "nm": "Mode", "ix": 21, "v": { "a": 0, "k": 1, "ix": 21 } },
+            { "ty": 6, "mn": "Pseudo/Duik Kleaner v3.2-0022", "nm": "Overlap (simulation)", "ix": 22, "v": 0 },
+            { "ty": 7, "mn": "Pseudo/Duik Kleaner v3.2-0023", "nm": "Overlap", "ix": 23, "v": { "a": 0, "k": 1, "ix": 23 } },
+            { "ty": 0, "mn": "Pseudo/Duik Kleaner v3.2-0024", "nm": "Delay (s)", "ix": 24, "v": { "a": 0, "k": 0.05, "ix": 24 } },
+            { "ty": 0, "mn": "Pseudo/Duik Kleaner v3.2-0025", "nm": "Overlap random", "ix": 25, "v": { "a": 0, "k": 0, "ix": 25 } },
+            { "ty": 6, "mn": "Pseudo/Duik Kleaner v3.2-0026", "nm": "", "ix": 26, "v": 0 },
+            { "ty": 6, "mn": "Pseudo/Duik Kleaner v3.2-0027", "nm": "Soft Body (simulation)", "ix": 27, "v": 0 },
+            { "ty": 7, "mn": "Pseudo/Duik Kleaner v3.2-0028", "nm": "Soft Body", "ix": 28, "v": { "a": 0, "k": 1, "ix": 28 } },
+            { "ty": 0, "mn": "Pseudo/Duik Kleaner v3.2-0029", "nm": "Soft-Body Flexibility", "ix": 29, "v": { "a": 0, "k": 100, "ix": 29 } },
+            { "ty": 6, "mn": "Pseudo/Duik Kleaner v3.2-0030", "nm": "", "ix": 30, "v": 0 },
+            { "ty": 6, "mn": "Pseudo/Duik Kleaner v3.2-0031", "nm": "", "ix": 31, "v": 0 },
+            { "ty": 0, "mn": "Pseudo/Duik Kleaner v3.2-0032", "nm": "Precision", "ix": 32, "v": { "a": 0, "k": 1, "ix": 32 } }
+          ]
+        }
+      ],
+      "shapes": [
+        {
+          "ty": "gr",
+          "bm": 0,
+          "hd": false,
+          "mn": "ADBE Vector Group",
+          "nm": "Group 1",
+          "ix": 1,
+          "cix": 2,
+          "np": 2,
+          "it": [
+            {
+              "ty": "gr",
+              "bm": 0,
+              "hd": false,
+              "mn": "ADBE Vector Group",
+              "nm": "Group 1",
+              "ix": 1,
+              "cix": 2,
+              "np": 2,
+              "it": [
+                {
+                  "ty": "sh",
+                  "bm": 0,
+                  "hd": false,
+                  "mn": "ADBE Vector Shape - Group",
+                  "nm": "Path 1",
+                  "ix": 1,
+                  "d": 1,
+                  "ks": {
+                    "a": 0,
+                    "k": {
+                      "c": true,
+                      "i": [
+                        [-2.082, -5.125],
+                        [0.799, -1.509],
+                        [0.903, -0.53],
+                        [-1.898, 4.857]
+                      ],
+                      "o": [
+                        [0.645, 1.587],
+                        [-0.488, 0.922],
+                        [-4.642, 2.722],
+                        [1.805, -4.619]
+                      ],
+                      "v": [
+                        [5.185, -2.295],
+                        [4.852, 2.652],
+                        [2.742, 4.898],
+                        [-5.173, -1.783]
+                      ]
+                    },
+                    "ix": 2
+                  }
+                },
+                {
+                  "ty": "st",
+                  "bm": 0,
+                  "hd": false,
+                  "mn": "ADBE Vector Graphic - Stroke",
+                  "nm": "Stroke 1",
+                  "lc": 1,
+                  "lj": 1,
+                  "ml": 10,
+                  "o": { "a": 0, "k": 100, "ix": 4 },
+                  "w": { "a": 0, "k": 4.595, "ix": 5 },
+                  "c": { "a": 0, "k": [1, 1, 1], "ix": 3 }
+                },
+                {
+                  "ty": "tr",
+                  "a": { "a": 0, "k": [0, 0], "ix": 1 },
+                  "s": { "a": 0, "k": [100, 100], "ix": 3 },
+                  "sk": { "a": 0, "k": 0, "ix": 4 },
+                  "p": { "a": 0, "k": [220.068, 236.077], "ix": 2 },
+                  "r": { "a": 0, "k": 0, "ix": 6 },
+                  "sa": { "a": 0, "k": 0, "ix": 5 },
+                  "o": { "a": 0, "k": 100, "ix": 7 }
+                }
+              ]
+            },
+            {
+              "ty": "gr",
+              "bm": 0,
+              "hd": false,
+              "mn": "ADBE Vector Group",
+              "nm": "Group 2",
+              "ix": 2,
+              "cix": 2,
+              "np": 2,
+              "it": [
+                {
+                  "ty": "sh",
+                  "bm": 0,
+                  "hd": false,
+                  "mn": "ADBE Vector Shape - Group",
+                  "nm": "Path 1",
+                  "ix": 1,
+                  "d": 1,
+                  "ks": {
+                    "a": 0,
+                    "k": {
+                      "c": true,
+                      "i": [
+                        [0.166, 4.607],
+                        [-0.048, 1.105],
+                        [-5.855, -2.481],
+                        [-0.111, -3.124],
+                        [3.976, 0.619],
+                        [0.469, 1.973]
+                      ],
+                      "o": [
+                        [-0.04, -1.101],
+                        [0.194, -4.467],
+                        [3.275, 1.387],
+                        [0.093, 2.618],
+                        [-2.529, -0.394],
+                        [-1.064, -4.481]
+                      ],
+                      "v": [
+                        [-6.562, -6.355],
+                        [-6.554, -9.664],
+                        [2.644, -18.893],
+                        [6.589, -10.358],
+                        [-0.139, 19.387],
+                        [-4.459, 7.299]
+                      ]
+                    },
+                    "ix": 2
+                  }
+                },
+                {
+                  "ty": "st",
+                  "bm": 0,
+                  "hd": false,
+                  "mn": "ADBE Vector Graphic - Stroke",
+                  "nm": "Stroke 1",
+                  "lc": 1,
+                  "lj": 1,
+                  "ml": 10,
+                  "o": { "a": 0, "k": 100, "ix": 4 },
+                  "w": { "a": 0, "k": 4.595, "ix": 5 },
+                  "c": { "a": 0, "k": [1, 1, 1], "ix": 3 }
+                },
+                {
+                  "ty": "tr",
+                  "a": { "a": 0, "k": [0, 0], "ix": 1 },
+                  "s": { "a": 0, "k": [100, 100], "ix": 3 },
+                  "sk": { "a": 0, "k": 0, "ix": 4 },
+                  "p": { "a": 0, "k": [220.068, 205.138], "ix": 2 },
+                  "r": { "a": 0, "k": 0, "ix": 6 },
+                  "sa": { "a": 0, "k": 0, "ix": 5 },
+                  "o": { "a": 0, "k": 100, "ix": 7 }
+                }
+              ]
+            },
+            {
+              "ty": "tr",
+              "a": { "a": 0, "k": [220.068, 205.138], "ix": 1 },
+              "s": {
+                "a": 1,
+                "k": [
+                  { "o": { "x": 0.333, "y": 0 }, "i": { "x": 0.667, "y": 1 }, "s": [0, 0], "t": 11.667 },
+                  { "s": [100, 100], "t": 15 }
+                ],
+                "ix": 3,
+                "x": "var $bm_rt;\nvar fx = effect('Kleaner');\nvar doAnticipation = fx(1).value;\nvar doInterpolation = fx(2).value;\nvar doFollowThrough = fx(3).value;\nvar damping = $bm_div(fx(15).value, 10);\nvar elasticity = $bm_div(fx(13).value, 10);\nvar bounce = fx(17).value;\nvar anticipationDuration = fx(5).value;\nvar anticipationQuantity = $bm_div(fx(6).value, 100);\nvar slowIn = $bm_div(fx(9).value, 100);\nvar slowOut = $bm_div(fx(10).value, 100);\nvar spatialMode = fx(21).value;\nvar spatialDoInterpolation = fx(20).value;\nvar moBlurPrecision = fx(32).value;\nvar elasticityRandom = fx(14).value;\nvar dampingRandom = fx(16).value;\nvar softBody = fx(28).value;\nvar flexibility = $bm_div(fx(29).value, 100);\nvar doOverlap = fx(23).value;\nvar overlapDuration = fx(24).value;\nvar overlapRandom = fx(25).value;\nvar threshold = $bm_div($bm_div(1, moBlurPrecision), 1000);\nvar zeroValue;\nif ($bm_isInstanceOfArray(value)) {\n    if (value.length == 2)\n        zeroValue = [\n            0,\n            0\n        ];\n    else if (value.length == 3)\n        zeroValue = [\n            0,\n            0,\n            0\n        ];\n    else if (value.length == 4)\n        zeroValue = [\n            0,\n            0,\n            0,\n            0\n        ];\n} else\n    zeroValue = 0;\nvar isThisSpatial = isSpatial(thisProperty);\nvar isThisPosition = thisProperty === $bm_transform.position;\nvar simulate = false;\nif (isThisSpatial) {\n    doInterpolation = doInterpolation && spatialDoInterpolation;\n    if (isThisPosition && thisProperty.numKeys > 0) {\n        doOverlap = false;\n        simulate = false;\n    } else {\n        simulate = spatialMode == 2;\n        doOverlap = overlapDuration != 0 && doOverlap && simulate;\n    }\n} else {\n    doOverlap = false;\n}\nif (!doOverlap) {\n    overlapDuration = 0;\n}\nif (simulate && softBody && isThisSpatial && !isThisPosition && (doFollowThrough || doOverlap)) {\n    var distanceRatio = $bm_div(length(valueAtTime(0), $bm_transform.anchorPoint), $bm_div(thisLayer.width, 2));\n    distanceRatio = $bm_div($bm_sum(1, $bm_mul(distanceRatio, flexibility)), 2);\n    if (doFollowThrough) {\n        elasticity = $bm_div(elasticity, distanceRatio);\n        damping = $bm_div(damping, distanceRatio);\n    }\n    if (doOverlap) {\n        overlapDuration = $bm_mul(overlapDuration, distanceRatio);\n    }\n}\nseedRandom(0, true);\nif (doFollowThrough) {\n    if (elasticityRandom > 0)\n        elasticity = addNoise(elasticity, elasticityRandom);\n    if (dampingRandom > 0)\n        damping = addNoise(damping, dampingRandom);\n}\nif (doOverlap) {\n    if (doOverlap && overlapRandom > 0)\n        overlapDuration = addNoise(overlapDuration, overlapRandom);\n}\nvar result = value;\nfunction isSpatial(prop) {\n    if (!(prop.value instanceof Array))\n        return false;\n    if (prop.value.length != 2 && prop.value.length != 3)\n        return false;\n    try {\n        if (typeof prop.speed !== 'undefined')\n            return true;\n    } catch (e) {\n        return false;\n    }\n}\nfunction addNoise(val, quantity) {\n    var randomValue = random(0.9, 1.1);\n    var noiseValue = noise($bm_mul(valueAtTime(0), randomValue));\n    noiseValue = $bm_mul(noiseValue, $bm_div(quantity, 100));\n    return $bm_mul(val, $bm_sum(noiseValue, 1));\n}\nfunction isAfterLastKey() {\n    if (numKeys == 0)\n        return false;\n    var nKey = nearestKey(time);\n    return nKey.time <= time && nKey.index == numKeys;\n}\nfunction isStill(t, threshold) {\n    var d = $bm_sub(valueAtTime(t), valueAtTime($bm_sum(t, framesToTime(1))));\n    if ($bm_isInstanceOfArray(d)) {\n        for (var i = 0; i < d.length; i++) {\n            d[i] = Math.abs(d[i]);\n            if (d[i] >= threshold) {\n                return false;\n            }\n        }\n        return true;\n    } else {\n        d = Math.abs(d);\n        return d < threshold;\n    }\n}\nfunction bezierInterpolation(t, tMin, tMax, value1, value2, bezierPoints) {\n    if (arguments.length !== 5 && arguments.length !== 6)\n        return t;\n    var a = $bm_sub(value2, value1);\n    var b = $bm_sub(tMax, tMin);\n    if (b == 0)\n        return t;\n    var c = clamp($bm_div($bm_sub(t, tMin), b), 0, 1);\n    if (!(bezierPoints instanceof Array) || bezierPoints.length !== 4)\n        bezierPoints = [\n            0.33,\n            0,\n            0.66,\n            1\n        ];\n    return $bm_sum($bm_mul(a, h(c, bezierPoints)), value1);\n    function h(f, g) {\n        var x = $bm_mul(3, g[0]);\n        var j = $bm_sub($bm_mul(3, $bm_sub(g[2], g[0])), x);\n        var k = $bm_sub($bm_sub(1, x), j);\n        var l = $bm_mul(3, g[1]);\n        var m = $bm_sub($bm_mul(3, $bm_sub(g[3], g[1])), l);\n        var n = $bm_sub($bm_sub(1, l), m);\n        var d = f;\n        for (var i = 0; i < 5; i++) {\n            var z = $bm_sub($bm_mul(d, $bm_sum(x, $bm_mul(d, $bm_sum(j, $bm_mul(d, k))))), f);\n            if (Math.abs(z) < 0.001)\n                break;\n            d = $bm_sub(d, $bm_div(z, $bm_sum(x, $bm_mul(d, $bm_sum($bm_mul(2, j), $bm_mul($bm_mul(3, k), d))))));\n        }\n        return $bm_mul(d, $bm_sum(l, $bm_mul(d, $bm_sum(m, $bm_mul(d, n)))));\n    }\n}\nfunction getPropWorldSpeed(t, prop) {\n    return length(getPropWorldVelocity(t, prop));\n}\nfunction getPrevKey(t) {\n    if (numKeys == 0)\n        return null;\n    var nKey = nearestKey(t);\n    if (nKey.time <= t)\n        return nKey;\n    if (nKey.index > 1)\n        return key($bm_sub(nKey.index, 1));\n    return null;\n}\nfunction getNextKey(t) {\n    if (numKeys == 0)\n        return null;\n    var nKey = nearestKey(t);\n    if (nKey.time >= t)\n        return nKey;\n    if (nKey.index < numKeys)\n        return key($bm_sum(nKey.index, 1));\n    return null;\n}\nfunction getPropWorldVelocity(t, prop) {\n    return $bm_mul($bm_sub(getPropWorldValue($bm_sum(t, 0.005), prop), getPropWorldValue($bm_sub(t, 0.005), prop)), 100);\n}\nfunction getLayerWorldPos(t, l) {\n    return l.toWorld(l.anchorPoint, t);\n}\nfunction getPropWorldValue(t, prop) {\n    if (isPosition(prop))\n        return getLayerWorldPos(t, thisLayer);\n    return thisLayer.toWorld(prop.valueAtTime(t), t);\n}\nfunction isPosition(prop) {\n    return prop === $bm_transform.position;\n}\nfunction isKeyTop(k, axis) {\n    var prevSpeed = velocityAtTime($bm_sub(k.time, threshold));\n    var nextSpeed = velocityAtTime($bm_sum(k.time, threshold));\n    if ($bm_isInstanceOfArray(value)) {\n        prevSpeed = prevSpeed[axis];\n        nextSpeed = nextSpeed[axis];\n    }\n    if (Math.abs(prevSpeed) < 0.01 || Math.abs(nextSpeed) < 0.01)\n        return true;\n    return $bm_mul(prevSpeed, nextSpeed) < 0;\n}\nfunction anticipate() {\n    var anticipation = zeroValue;\n    if (isAfterLastKey())\n        return anticipation;\n    if (numKeys < 2)\n        return anticipation;\n    var nextKey = getNextKey(time);\n    var aKey = nextKey;\n    if (!isStill(aKey.time - 0.1, 0.1)) {\n        aKey = getPrevKey(time);\n        if (!isStill(aKey.time - 0.1, 0.1))\n            return anticipation;\n    }\n    if (aKey.index == numKeys)\n        return anticipation;\n    var anticipationMiddle = aKey.time;\n    var anticipationStart = $bm_sub(anticipationMiddle, anticipationDuration);\n    var anticipationEnd = key(aKey.index + 1).time;\n    var startValue = anticipation;\n    var midValue = $bm_mul($bm_sum($bm_neg(valueAtTime($bm_sum(anticipationMiddle, anticipationDuration))), aKey.value), anticipationQuantity);\n    var endValue = anticipation;\n    if (time < anticipationStart) {\n        return anticipation;\n    } else if (time < anticipationMiddle) {\n        if ($bm_isInstanceOfArray(value)) {\n            for (var i = 0; i < value.length; i++) {\n                anticipation[i] = bezierInterpolation(time, anticipationStart, anticipationMiddle, startValue[i], midValue[i], [\n                    slowOut,\n                    0,\n                    slowIn,\n                    1\n                ]);\n            }\n            return anticipation;\n        } else {\n            return bezierInterpolation(time, anticipationStart, anticipationMiddle, startValue, midValue, [\n                slowOut,\n                0,\n                slowIn,\n                1\n            ]);\n        }\n    } else if (time <= anticipationEnd) {\n        if ($bm_isInstanceOfArray(value)) {\n            for (var i = 0; i < value.length; i++) {\n                anticipation[i] = bezierInterpolation(time, anticipationMiddle, anticipationEnd, midValue[i], endValue[i], [\n                    slowOut,\n                    0,\n                    slowIn,\n                    1\n                ]);\n            }\n            return anticipation;\n        } else {\n            return bezierInterpolation(time, anticipationMiddle, anticipationEnd, midValue, endValue, [\n                slowOut,\n                0,\n                slowIn,\n                1\n            ]);\n        }\n    } else {\n        return anticipation;\n    }\n}\nfunction followThroughAtTime(t) {\n    var fThrough = zeroValue;\n    if (elasticity == 0)\n        return fThrough;\n    var propSpeed;\n    if (!simulate) {\n        if (numKeys < 2)\n            return fThrough;\n        if (nearestKey(t).index == 1)\n            return fThrough;\n        propSpeed = length(velocityAtTime(t));\n        if (propSpeed >= threshold)\n            return fThrough;\n    } else {\n        propSpeed = getPropWorldSpeed(t, thisProperty);\n        if (propSpeed >= threshold)\n            return fThrough;\n    }\n    var fThroughStart = 0;\n    var fThroughTime = 0;\n    if (simulate) {\n        var speedI = getPropWorldSpeed(t, thisProperty);\n        var i = t;\n        while (speedI < threshold && i > 0) {\n            i = $bm_sub(i, $bm_div(thisComp.frameDuration, moBlurPrecision));\n            speedI = getPropWorldSpeed(i, thisProperty);\n        }\n        fThroughStart = i;\n    } else {\n        var fThroughKey = getPrevKey(t);\n        fThroughStart = fThroughKey.time;\n    }\n    if (fThroughStart == 0)\n        return fThrough;\n    fThroughTime = $bm_sub(t, fThroughStart);\n    if (simulate)\n        fThrough = $bm_div(getPropWorldVelocity($bm_sub(fThroughStart, thisComp.frameDuration), thisProperty), 2);\n    else\n        fThrough = $bm_div(velocityAtTime($bm_sub(fThroughStart, thisComp.frameDuration)), 2);\n    if (bounce) {\n        var cycleDamp = Math.exp($bm_mul($bm_mul(fThroughTime, damping), 0.1));\n        var damp = $bm_div(Math.exp($bm_mul(fThroughTime, damping)), $bm_div(elasticity, 2));\n        var cycleDuration = $bm_div(1, $bm_mul(elasticity, 2));\n        cycleDuration = Math.round(timeToFrames(cycleDuration));\n        cycleDuration = framesToTime(cycleDuration);\n        var midDuration = $bm_div(cycleDuration, 2);\n        var maxValue = $bm_mul(fThrough, midDuration);\n        var cycvarime = fThroughTime;\n        var numEndCycles = 1;\n        while (cycvarime > cycleDuration) {\n            cycvarime = $bm_sub(cycvarime, cycleDuration);\n            cycleDuration = $bm_div(cycleDuration, cycleDamp);\n            cycleDuration = Math.round(timeToFrames(cycleDuration));\n            if (cycleDuration < 2) {\n                cycleDuration = 2;\n                numEndCycles++;\n            }\n            cycleDuration = framesToTime(cycleDuration);\n            midDuration = $bm_div(cycleDuration, 2);\n            maxValue = $bm_div($bm_mul(fThrough, midDuration), damp);\n            if (numEndCycles > 100 / damping && maxValue < threshold)\n                return zeroValue;\n        }\n        if (cycvarime < midDuration)\n            fThrough = bezierInterpolation(cycvarime, 0, midDuration, 0, maxValue, [\n                0,\n                0.1,\n                slowIn,\n                1\n            ]);\n        else\n            fThrough = bezierInterpolation(cycvarime, midDuration, cycleDuration, maxValue, 0, [\n                $bm_sub(1, slowIn),\n                0,\n                1,\n                0.9\n            ]);\n    } else {\n        var damp = Math.exp($bm_mul(fThroughTime, damping));\n        var sinus = $bm_mul($bm_mul($bm_mul(elasticity, fThroughTime), 2), Math.PI);\n        sinus = Math.sin(sinus);\n        sinus = $bm_mul($bm_div(0.3, elasticity), sinus);\n        sinus = $bm_div(sinus, damp);\n        if (Math.abs(sinus) < $bm_div(threshold, 100))\n            return 0;\n        fThrough = $bm_mul(fThrough, sinus);\n        if (threshold > 0) {\n            fThrough = $bm_mul(fThrough, $bm_sub(1, $bm_div(propSpeed, threshold)));\n        }\n    }\n    if (bounce) {\n        var prevValue = valueAtTime($bm_sub(fThroughStart, thisComp.frameDuration));\n        var startValue = valueAtTime(fThroughStart);\n        if ($bm_isInstanceOfArray(value)) {\n            for (var i = 0; i < prevValue.length; i++) {\n                if (prevValue[i] > startValue[i])\n                    fThrough[i] = Math.abs(fThrough[i]);\n                if (prevValue[i] < startValue[i])\n                    fThrough[i] = $bm_neg(Math.abs(fThrough[i]));\n            }\n        } else {\n            if (prevValue > startValue)\n                fThrough = Math.abs(fThrough);\n            if (prevValue < startValue)\n                fThrough = $bm_neg(Math.abs(fThrough));\n        }\n    }\n    if (simulate) {\n        if (!isThisPosition) {\n            fThrough = $bm_sum(fThrough, getLayerWorldPos(time, thisLayer));\n            fThrough = $bm_sub(thisLayer.fromWorld(fThrough), thisLayer.anchorPoint);\n        } else if (thisLayer.hasParent) {\n            fThrough = $bm_sum(fThrough, getLayerWorldPos(time, thisLayer.parent));\n            fThrough = $bm_sub(thisLayer.parent.fromWorld(fThrough), thisLayer.parent.anchorPoint);\n        }\n    }\n    return fThrough;\n}\nfunction followThrough() {\n    var propSpeed = length(velocity);\n    if (propSpeed < threshold)\n        return followThroughAtTime($bm_sub(time, overlapDuration));\n    var fThrough = zeroValue;\n    var t = time;\n    while (t > 0) {\n        t = $bm_sub(t, thisComp.frameDuration);\n        if (simulate)\n            propSpeed = getPropWorldSpeed($bm_sub(t, overlapDuration), thisProperty);\n        else\n            propSpeed = length(velocityAtTime(t));\n        if (propSpeed < threshold) {\n            fThrough = followThroughAtTime($bm_sub(t, overlapDuration));\n            break;\n        }\n    }\n    return linear(time, t, $bm_sum(t, $bm_mul(anticipationDuration, 2)), fThrough, zeroValue);\n}\nfunction smartSmooth(axis) {\n    var startKey = nearestKey(time);\n    var endKey = startKey;\n    if (time == startKey.time)\n        return 0;\n    if (time < startKey.time && startKey.index == 1)\n        return 0;\n    if (time > startKey.time && startKey.index == numKeys)\n        return 0;\n    if (time < startKey.time)\n        startKey = key($bm_sub(startKey.index, 1));\n    if (time > startKey.time)\n        endKey = key($bm_sum(startKey.index, 1));\n    var sI = 0.66;\n    var sO = 0.33;\n    var sIV = 1;\n    var sOV = 0;\n    var sVal = startKey.value;\n    var eVal = endKey.value;\n    if ($bm_isInstanceOfArray(value)) {\n        sVal = sVal[axis];\n        eVal = eVal[axis];\n    }\n    var sTime = startKey.time;\n    var eTime = endKey.time;\n    if (isKeyTop(startKey, axis))\n        sO = slowOut;\n    else {\n        var prevKey = key($bm_sub(startKey.index, 1));\n        var pVal = prevKey.value;\n        if ($bm_isInstanceOfArray(value))\n            pVal = pVal[axis];\n        sOV = $bm_div($bm_sub(sVal, pVal), $bm_sub(eVal, pVal));\n    }\n    if (isKeyTop(endKey, axis)) {\n        sI = slowIn;\n        if (endKey.index != numKeys) {\n            var nextKey = key($bm_sum(endKey.index, 1));\n            var nVal = nextKey.value;\n            if ($bm_isInstanceOfArray(value))\n                nVal = nVal[axis];\n            if (Math.abs(nVal - eVal) < 0.01 && doFollowThrough)\n                sI = 1;\n        }\n    } else {\n        var nextKey = key($bm_sum(endKey.index, 1));\n        var nVal = nextKey.value;\n        if ($bm_isInstanceOfArray(value))\n            nVal = nVal[axis];\n        sIV = $bm_div($bm_sub(eVal, sVal), $bm_sub(nVal, sVal));\n    }\n    if (endKey.index == numKeys && doFollowThrough) {\n        sI = 1;\n    }\n    var val = value;\n    if ($bm_isInstanceOfArray(value))\n        val = val[axis];\n    return $bm_sub(bezierInterpolation(time, sTime, eTime, sVal, eVal, [\n        sO,\n        sOV,\n        sI,\n        sIV\n    ]), val);\n}\nfunction overlap() {\n    var ol = zeroValue;\n    if (isThisPosition && !hasParent)\n        return zeroValue;\n    ol = $bm_sub(getPropWorldValue($bm_sub(time, overlapDuration), thisProperty), getPropWorldValue(time, thisProperty));\n    var motionRatio = $bm_div($bm_div(length(zeroValue, ol), thisLayer.width), 2);\n    if (isThisPosition) {\n        var originalDistance = length(valueAtTime(0));\n        motionRatio = $bm_div(length(zeroValue, ol), thisComp.width);\n    }\n    ol = $bm_sum(ol, getPropWorldValue(time, thisProperty));\n    ol = $bm_sum(ol, $bm_mul($bm_mul($bm_sub(getPropWorldValue($bm_sub(time, overlapDuration), thisLayer.anchorPoint), ol), motionRatio), flexibility));\n    ol = thisLayer.fromWorld(ol);\n    if (!isThisPosition)\n        ol = $bm_sub(ol, value);\n    else {\n        ol = linear(flexibility, 0, 100, $bm_div(ol, 2), 0);\n        var prevParentWorldPos = getLayerWorldPos($bm_sub(time, overlapDuration), parent);\n        ol = $bm_sum(ol, $bm_mul($bm_mul($bm_mul(thisLayer.fromWorld(prevParentWorldPos), motionRatio), flexibility), 5));\n    }\n    return ol;\n}\nvar okToGo = false;\nif (simulate && fx.enabled)\n    okToGo = true;\nelse if (numKeys > 1 && fx.enabled)\n    okToGo = true;\nif (okToGo) {\n    var smartSmoothResult = zeroValue;\n    if (doInterpolation) {\n        if ($bm_isInstanceOfArray(value)) {\n            if (value.length == 2)\n                smartSmoothResult = [\n                    smartSmooth(0),\n                    smartSmooth(1)\n                ];\n            else if (value.length == 3)\n                smartSmoothResult = [\n                    smartSmooth(0),\n                    smartSmooth(1),\n                    smartSmooth(2)\n                ];\n            else if (value.length == 4)\n                smartSmoothResult = [\n                    smartSmooth(0),\n                    smartSmooth(1),\n                    smartSmooth(2),\n                    smartSmooth(3)\n                ];\n        } else {\n            smartSmoothResult = smartSmooth(0);\n        }\n    }\n    if (doAnticipation)\n        result = $bm_sum(result, anticipate());\n    result = $bm_sum(result, smartSmoothResult);\n    if (doFollowThrough)\n        result = $bm_sum(result, followThrough());\n    if (doOverlap)\n        result = $bm_sum(result, overlap());\n}\n$bm_rt = result;"
+              },
+              "sk": { "a": 0, "k": 0, "ix": 4 },
+              "p": { "a": 0, "k": [220.068, 205.138], "ix": 2 },
+              "r": { "a": 0, "k": 0, "ix": 6 },
+              "sa": { "a": 0, "k": 0, "ix": 5 },
+              "o": {
+                "a": 1,
+                "k": [
+                  { "o": { "x": 0.333, "y": 0 }, "i": { "x": 0.667, "y": 1 }, "s": [100], "t": 20 },
+                  { "o": { "x": 0.333, "y": 0 }, "i": { "x": 0.667, "y": 1 }, "s": [0], "t": 22.728 },
+                  { "o": { "x": 0.333, "y": 0 }, "i": { "x": 0.667, "y": 1 }, "s": [100], "t": 25.454 },
+                  { "o": { "x": 0.333, "y": 0 }, "i": { "x": 0.667, "y": 1 }, "s": [0], "t": 28.182 },
+                  { "o": { "x": 0.333, "y": 0 }, "i": { "x": 0.667, "y": 1 }, "s": [100], "t": 30.909 },
+                  { "o": { "x": 0.333, "y": 0 }, "i": { "x": 0.667, "y": 1 }, "s": [0], "t": 33.637 },
+                  { "o": { "x": 0.333, "y": 0 }, "i": { "x": 0.667, "y": 1 }, "s": [100], "t": 36.363 },
+                  { "o": { "x": 0.333, "y": 0 }, "i": { "x": 0.667, "y": 1 }, "s": [0], "t": 39.091 },
+                  { "o": { "x": 0.333, "y": 0 }, "i": { "x": 0.667, "y": 1 }, "s": [100], "t": 41.818 },
+                  { "o": { "x": 0.333, "y": 0 }, "i": { "x": 0.667, "y": 1 }, "s": [0], "t": 44.546 },
+                  { "o": { "x": 0.333, "y": 0 }, "i": { "x": 0.667, "y": 1 }, "s": [100], "t": 47.272 },
+                  { "o": { "x": 0.167, "y": 0 }, "i": { "x": 0.667, "y": 1 }, "s": [0], "t": 50 },
+                  { "s": [100], "t": 52 }
+                ],
+                "ix": 7
+              }
+            }
+          ]
+        },
+        {
+          "ty": "gr",
+          "bm": 0,
+          "hd": false,
+          "mn": "ADBE Vector Group",
+          "nm": "Group 2",
+          "ix": 2,
+          "cix": 2,
+          "np": 2,
+          "it": [
+            {
+              "ty": "sh",
+              "bm": 0,
+              "hd": false,
+              "mn": "ADBE Vector Shape - Group",
+              "nm": "Path 1",
+              "ix": 1,
+              "d": 1,
+              "ks": {
+                "a": 0,
+                "k": {
+                  "c": false,
+                  "i": [
+                    [0, 0],
+                    [-1.273, -2.372],
+                    [-4.875, -11.902],
+                    [-0.263, -1.01],
+                    [0, -0.703],
+                    [5.666, -0.439],
+                    [2.196, -0.176],
+                    [4.875, -0.088],
+                    [19.544, -0.22],
+                    [0.176, 0],
+                    [4.041, 1.757],
+                    [0.159, 0.115],
+                    [0.04, 0.047],
+                    [0.581, 0.694],
+                    [-1.733, 4.298],
+                    [-2.991, 5.831],
+                    [-4.173, 7.378],
+                    [-10.058, 13.483],
+                    [-3.074, -3.821],
+                    [-2.987, -4.348],
+                    [-3.47, -5.753]
+                  ],
+                  "o": [
+                    [1.273, 2.372],
+                    [6.061, 11.331],
+                    [0.352, 0.879],
+                    [0.132, 0.659],
+                    [0.22, 7.51],
+                    [-2.196, 0.219],
+                    [-4.875, 0.22],
+                    [-19.544, 0.307],
+                    [-0.176, 0],
+                    [-3.689, 0],
+                    [-0.176, -0.088],
+                    [-0.051, -0.036],
+                    [-0.415, -0.488],
+                    [-2.972, -3.555],
+                    [2.513, -6.231],
+                    [3.953, -7.598],
+                    [8.257, -14.669],
+                    [2.899, -3.953],
+                    [3.338, 4.085],
+                    [3.865, 5.534],
+                    [0, 0]
+                  ],
+                  "v": [
+                    [33.28, -6.075],
+                    [37.145, 1.04],
+                    [54.713, 35.912],
+                    [55.635, 38.723],
+                    [55.943, 40.788],
+                    [42.635, 49.967],
+                    [36.003, 50.538],
+                    [21.378, 50.977],
+                    [-37.211, 51.504],
+                    [-37.782, 51.504],
+                    [-50.65, 49.352],
+                    [-51.221, 49.088],
+                    [-51.353, 49],
+                    [-52.888, 47.194],
+                    [-55.086, 34.402],
+                    [-45.775, 16.281],
+                    [-33.653, -6.163],
+                    [-6.467, -48.589],
+                    [5.523, -48.589],
+                    [15.01, -35.896],
+                    [25.945, -18.899]
+                  ]
+                },
+                "ix": 2
+              }
+            },
+            {
+              "ty": "fl",
+              "bm": 0,
+              "hd": false,
+              "mn": "ADBE Vector Graphic - Fill",
+              "nm": "Fill 1",
+              "c": { "a": 0, "k": [1, 0.6706, 0], "ix": 4 },
+              "r": 1,
+              "o": { "a": 0, "k": 100, "ix": 5 }
+            },
+            {
+              "ty": "tr",
+              "a": { "a": 0, "k": [0, 0], "ix": 1 },
+              "s": { "a": 0, "k": [100, 100], "ix": 3 },
+              "sk": { "a": 0, "k": 0, "ix": 4 },
+              "p": { "a": 0, "k": [219.053, 208.176], "ix": 2 },
+              "r": { "a": 0, "k": 0, "ix": 6 },
+              "sa": { "a": 0, "k": 0, "ix": 5 },
+              "o": { "a": 0, "k": 100, "ix": 7 }
+            }
+          ]
+        }
+      ],
+      "ind": 6,
+      "parent": 1
+    },
+    {
+      "ty": 4,
+      "nm": "Layer 1",
+      "sr": 1,
+      "st": 0,
+      "op": 120,
+      "ip": 0,
+      "hd": false,
+      "ddd": 0,
+      "bm": 0,
+      "hasMask": false,
+      "ao": 0,
+      "ks": {
+        "a": { "a": 0, "k": [171.872, 222.587, 0], "ix": 1 },
+        "s": { "a": 0, "k": [100, 100, 100], "ix": 6 },
+        "sk": { "a": 0, "k": 0 },
+        "p": {
+          "a": 1,
+          "k": [
+            { "o": { "x": 0.333, "y": 0 }, "i": { "x": 0.667, "y": 1 }, "s": [46.872, 97.587, 0], "t": 0, "ti": [0, 0, 0], "to": [0, -3.333, 0] },
+            { "o": { "x": 0.333, "y": 0 }, "i": { "x": 0.667, "y": 1 }, "s": [46.872, 77.587, 0], "t": 10, "ti": [0, -3.333, 0], "to": [0, 0, 0] },
+            { "s": [46.872, 97.587, 0], "t": 20 }
+          ],
+          "ix": 2,
+          "x": "var $bm_rt;\n$bm_rt = loopOut('pingpong');"
+        },
+        "r": { "a": 0, "k": 0, "ix": 10 },
+        "sa": { "a": 0, "k": 0 },
+        "o": { "a": 0, "k": 100, "ix": 11 }
+      },
+      "ef": [],
+      "shapes": [
+        {
+          "ty": "gr",
+          "bm": 0,
+          "hd": false,
+          "mn": "ADBE Vector Group",
+          "nm": "Group 1",
+          "ix": 1,
+          "cix": 2,
+          "np": 2,
+          "it": [
+            {
+              "ty": "sh",
+              "bm": 0,
+              "hd": false,
+              "mn": "ADBE Vector Shape - Group",
+              "nm": "Path 1",
+              "ix": 1,
+              "d": 1,
+              "ks": {
+                "a": 0,
+                "k": {
+                  "c": false,
+                  "i": [
+                    [0, 0],
+                    [-1.003, -0.021]
+                  ],
+                  "o": [
+                    [1.003, 0.021],
+                    [0, 0]
+                  ],
+                  "v": [
+                    [-1.505, -0.032],
+                    [1.505, 0.032]
+                  ]
+                },
+                "ix": 2
+              }
+            },
+            {
+              "ty": "st",
+              "bm": 0,
+              "hd": false,
+              "mn": "ADBE Vector Graphic - Stroke",
+              "nm": "Stroke 1",
+              "lc": 2,
+              "lj": 2,
+              "ml": 1,
+              "o": { "a": 0, "k": 100, "ix": 4 },
+              "w": { "a": 0, "k": 4.595, "ix": 5 },
+              "c": { "a": 0, "k": [0.5569, 0.2, 1], "ix": 3 }
+            },
+            {
+              "ty": "tr",
+              "a": { "a": 0, "k": [0, 0], "ix": 1 },
+              "s": { "a": 0, "k": [100, 100], "ix": 3 },
+              "sk": { "a": 0, "k": 0, "ix": 4 },
+              "p": { "a": 0, "k": [120.034, 96.528], "ix": 2 },
+              "r": { "a": 0, "k": 0, "ix": 6 },
+              "sa": { "a": 0, "k": 0, "ix": 5 },
+              "o": { "a": 0, "k": 100, "ix": 7 }
+            }
+          ]
+        },
+        {
+          "ty": "gr",
+          "bm": 0,
+          "hd": false,
+          "mn": "ADBE Vector Group",
+          "nm": "Group 2",
+          "ix": 2,
+          "cix": 2,
+          "np": 2,
+          "it": [
+            {
+              "ty": "sh",
+              "bm": 0,
+              "hd": false,
+              "mn": "ADBE Vector Shape - Group",
+              "nm": "Path 1",
+              "ix": 1,
+              "d": 1,
+              "ks": {
+                "a": 0,
+                "k": {
+                  "c": false,
+                  "i": [
+                    [0, 0],
+                    [-1.003, -0.021]
+                  ],
+                  "o": [
+                    [1.003, 0.021],
+                    [0, 0]
+                  ],
+                  "v": [
+                    [-1.505, -0.032],
+                    [1.505, 0.032]
+                  ]
+                },
+                "ix": 2
+              }
+            },
+            {
+              "ty": "st",
+              "bm": 0,
+              "hd": false,
+              "mn": "ADBE Vector Graphic - Stroke",
+              "nm": "Stroke 1",
+              "lc": 2,
+              "lj": 2,
+              "ml": 1,
+              "o": { "a": 0, "k": 100, "ix": 4 },
+              "w": { "a": 0, "k": 4.595, "ix": 5 },
+              "c": { "a": 0, "k": [0.5569, 0.2, 1], "ix": 3 }
+            },
+            {
+              "ty": "tr",
+              "a": { "a": 0, "k": [0, 0], "ix": 1 },
+              "s": { "a": 0, "k": [100, 100], "ix": 3 },
+              "sk": { "a": 0, "k": 0, "ix": 4 },
+              "p": { "a": 0, "k": [106.668, 96.528], "ix": 2 },
+              "r": { "a": 0, "k": 0, "ix": 6 },
+              "sa": { "a": 0, "k": 0, "ix": 5 },
+              "o": { "a": 0, "k": 100, "ix": 7 }
+            }
+          ]
+        },
+        {
+          "ty": "gr",
+          "bm": 0,
+          "hd": false,
+          "mn": "ADBE Vector Group",
+          "nm": "Group 3",
+          "ix": 3,
+          "cix": 2,
+          "np": 2,
+          "it": [
+            {
+              "ty": "sh",
+              "bm": 0,
+              "hd": false,
+              "mn": "ADBE Vector Shape - Group",
+              "nm": "Path 1",
+              "ix": 1,
+              "d": 1,
+              "ks": {
+                "a": 0,
+                "k": {
+                  "c": false,
+                  "i": [
+                    [0, 0],
+                    [-1.003, -0.021]
+                  ],
+                  "o": [
+                    [1.003, 0.021],
+                    [0, 0]
+                  ],
+                  "v": [
+                    [-1.505, -0.032],
+                    [1.505, 0.032]
+                  ]
+                },
+                "ix": 2
+              }
+            },
+            {
+              "ty": "st",
+              "bm": 0,
+              "hd": false,
+              "mn": "ADBE Vector Graphic - Stroke",
+              "nm": "Stroke 1",
+              "lc": 2,
+              "lj": 2,
+              "ml": 1,
+              "o": { "a": 0, "k": 100, "ix": 4 },
+              "w": { "a": 0, "k": 4.595, "ix": 5 },
+              "c": { "a": 0, "k": [0.5569, 0.2, 1], "ix": 3 }
+            },
+            {
+              "ty": "tr",
+              "a": { "a": 0, "k": [0, 0], "ix": 1 },
+              "s": { "a": 0, "k": [100, 100], "ix": 3 },
+              "sk": { "a": 0, "k": 0, "ix": 4 },
+              "p": { "a": 0, "k": [93.303, 96.528], "ix": 2 },
+              "r": { "a": 0, "k": 0, "ix": 6 },
+              "sa": { "a": 0, "k": 0, "ix": 5 },
+              "o": { "a": 0, "k": 100, "ix": 7 }
+            }
+          ]
+        },
+        {
+          "ty": "gr",
+          "bm": 0,
+          "hd": false,
+          "mn": "ADBE Vector Group",
+          "nm": "Group 4",
+          "ix": 4,
+          "cix": 2,
+          "np": 2,
+          "it": [
+            {
+              "ty": "sh",
+              "bm": 0,
+              "hd": false,
+              "mn": "ADBE Vector Shape - Group",
+              "nm": "Path 1",
+              "ix": 1,
+              "d": 1,
+              "ks": {
+                "a": 0,
+                "k": {
+                  "c": false,
+                  "i": [
+                    [0, 0],
+                    [0, 0]
+                  ],
+                  "o": [
+                    [0, 0],
+                    [0, 0]
+                  ],
+                  "v": [
+                    [-96.552, 0],
+                    [96.552, 0]
+                  ]
+                },
+                "ix": 2
+              }
+            },
+            {
+              "ty": "st",
+              "bm": 0,
+              "hd": false,
+              "mn": "ADBE Vector Graphic - Stroke",
+              "nm": "Stroke 1",
+              "lc": 2,
+              "lj": 2,
+              "ml": 1,
+              "o": { "a": 0, "k": 100, "ix": 4 },
+              "w": { "a": 0, "k": 4.595, "ix": 5 },
+              "c": { "a": 0, "k": [0.5569, 0.2, 1], "ix": 3 }
+            },
+            {
+              "ty": "tr",
+              "a": { "a": 0, "k": [0, 0], "ix": 1 },
+              "s": { "a": 0, "k": [100, 100], "ix": 3 },
+              "sk": { "a": 0, "k": 0, "ix": 4 },
+              "p": { "a": 0, "k": [171.87, 111.307], "ix": 2 },
+              "r": { "a": 0, "k": 0, "ix": 6 },
+              "sa": { "a": 0, "k": 0, "ix": 5 },
+              "o": { "a": 0, "k": 100, "ix": 7 }
+            }
+          ]
+        },
+        {
+          "ty": "gr",
+          "bm": 0,
+          "hd": false,
+          "mn": "ADBE Vector Group",
+          "nm": "Group 5",
+          "ix": 5,
+          "cix": 2,
+          "np": 2,
+          "it": [
+            {
+              "ty": "sh",
+              "bm": 0,
+              "hd": false,
+              "mn": "ADBE Vector Shape - Group",
+              "nm": "Path 1",
+              "ix": 1,
+              "d": 1,
+              "ks": {
+                "a": 0,
+                "k": {
+                  "c": true,
+                  "i": [
+                    [0, 0],
+                    [9.421, 0],
+                    [16.635, -0.184],
+                    [17.646, 0],
+                    [16.773, 2.206],
+                    [2.068, 10.156],
+                    [0.046, 0.138],
+                    [0.138, 6.847],
+                    [-0.505, 15.165],
+                    [-2.16, 23.023],
+                    [-8.961, 0.505],
+                    [-49.493, -1.103],
+                    [-0.505, -12.775]
+                  ],
+                  "o": [
+                    [0, 10.018],
+                    [-16.635, 0.322],
+                    [-17.6, 0.184],
+                    [-16.865, -0.046],
+                    [-9.421, -1.241],
+                    [-0.046, -0.138],
+                    [-1.241, -6.709],
+                    [-0.276, -15.211],
+                    [0.46, -14.522],
+                    [0.873, -9.467],
+                    [38.464, -2.252],
+                    [11.994, 0.23],
+                    [1.608, 38.877]
+                  ],
+                  "v": [
+                    [95.672, 52.617],
+                    [78.623, 70.769],
+                    [28.763, 71.505],
+                    [-24.085, 71.826],
+                    [-75.6, 70.999],
+                    [-95.452, 52.617],
+                    [-95.544, 52.204],
+                    [-96.187, 30.743],
+                    [-96.141, -14.844],
+                    [-95.544, -52.71],
+                    [-77.714, -70.908],
+                    [73.2, -71],
+                    [95.902, -47.287]
+                  ]
+                },
+                "ix": 2
+              }
+            },
+            {
+              "ty": "st",
+              "bm": 0,
+              "hd": false,
+              "mn": "ADBE Vector Graphic - Stroke",
+              "nm": "Stroke 1",
+              "lc": 2,
+              "lj": 2,
+              "ml": 1,
+              "o": { "a": 0, "k": 100, "ix": 4 },
+              "w": { "a": 0, "k": 4.595, "ix": 5 },
+              "c": { "a": 0, "k": [0.5569, 0.2, 1], "ix": 3 }
+            },
+            {
+              "ty": "tr",
+              "a": { "a": 0, "k": [0, 0], "ix": 1 },
+              "s": { "a": 0, "k": [100, 100], "ix": 3 },
+              "sk": { "a": 0, "k": 0, "ix": 4 },
+              "p": { "a": 0, "k": [171.852, 150.35], "ix": 2 },
+              "r": { "a": 0, "k": 0, "ix": 6 },
+              "sa": { "a": 0, "k": 0, "ix": 5 },
+              "o": { "a": 0, "k": 100, "ix": 7 }
+            }
+          ]
+        },
+        {
+          "ty": "gr",
+          "bm": 0,
+          "hd": false,
+          "mn": "ADBE Vector Group",
+          "nm": "Group 6",
+          "ix": 6,
+          "cix": 2,
+          "np": 2,
+          "it": [
+            {
+              "ty": "sh",
+              "bm": 0,
+              "hd": false,
+              "mn": "ADBE Vector Shape - Group",
+              "nm": "Path 1",
+              "ix": 1,
+              "d": 1,
+              "ks": {
+                "a": 0,
+                "k": {
+                  "c": true,
+                  "i": [
+                    [-3.509, -35.218],
+                    [0, 0],
+                    [39.791, -5.911],
+                    [0, 0]
+                  ],
+                  "o": [
+                    [0, 0],
+                    [0, 0],
+                    [0, 0],
+                    [0, 0]
+                  ],
+                  "v": [
+                    [-96.554, 16.443],
+                    [96.549, 16.443],
+                    [62.764, -15.821],
+                    [-73.36, -15.821]
+                  ]
+                },
+                "ix": 2
+              }
+            },
+            {
+              "ty": "fl",
+              "bm": 0,
+              "hd": false,
+              "mn": "ADBE Vector Graphic - Fill",
+              "nm": "Fill 1",
+              "c": { "a": 0, "k": [0.7765, 0.5176, 1], "ix": 4 },
+              "r": 1,
+              "o": { "a": 0, "k": 100, "ix": 5 }
+            },
+            {
+              "ty": "tr",
+              "a": { "a": 0, "k": [0, 0], "ix": 1 },
+              "s": { "a": 0, "k": [100, 100], "ix": 3 },
+              "sk": { "a": 0, "k": 0, "ix": 4 },
+              "p": { "a": 0, "k": [171.872, 94.864], "ix": 2 },
+              "r": { "a": 0, "k": 0, "ix": 6 },
+              "sa": { "a": 0, "k": 0, "ix": 5 },
+              "o": { "a": 0, "k": 100, "ix": 7 }
+            }
+          ]
+        }
+      ],
+      "ind": 7,
+      "parent": 1
+    },
+    {
+      "ty": 4,
+      "nm": "Layer 9",
+      "sr": 1,
+      "st": 36,
+      "op": 66,
+      "ip": 46,
+      "hd": false,
+      "ddd": 0,
+      "bm": 0,
+      "hasMask": false,
+      "ao": 0,
+      "ks": {
+        "a": { "a": 0, "k": [0, 0, 0], "ix": 1 },
+        "s": { "a": 0, "k": [100, 100, 100], "ix": 6 },
+        "sk": { "a": 0, "k": 0 },
+        "p": { "a": 0, "k": [125.269, 246.816, 0], "ix": 2 },
+        "r": { "a": 0, "k": 0, "ix": 10 },
+        "sa": { "a": 0, "k": 0 },
+        "o": { "a": 0, "k": 100, "ix": 11 }
+      },
+      "ef": [],
+      "shapes": [
+        {
+          "ty": "gr",
+          "bm": 0,
+          "hd": false,
+          "mn": "ADBE Vector Group",
+          "nm": "Group 1",
+          "ix": 1,
+          "cix": 2,
+          "np": 2,
+          "it": [
+            {
+              "ty": "sh",
+              "bm": 0,
+              "hd": false,
+              "mn": "ADBE Vector Shape - Group",
+              "nm": "Path 1",
+              "ix": 1,
+              "d": 1,
+              "ks": {
+                "a": 0,
+                "k": {
+                  "c": false,
+                  "i": [
+                    [0, 0],
+                    [-10.234, -6.95],
+                    [-5.988, 10.825],
+                    [0.362, 2.839],
+                    [2.719, 0.894],
+                    [2.002, -1.973],
+                    [0.571, -2.752],
+                    [-12.17, -3.396],
+                    [-4.211, 11.913]
+                  ],
+                  "o": [
+                    [-7.855, 9.557],
+                    [10.234, 6.951],
+                    [1.385, -2.505],
+                    [-0.361, -2.839],
+                    [-2.67, -0.877],
+                    [-2.002, 1.973],
+                    [-2.565, 12.372],
+                    [12.17, 3.396],
+                    [0, 0]
+                  ],
+                  "v": [
+                    [-33.107, -25.071],
+                    [-28.402, 7.577],
+                    [3.681, -0.086],
+                    [5.612, -8.305],
+                    [0.701, -14.794],
+                    [-7.017, -12.629],
+                    [-10.676, -5.168],
+                    [7.239, 24.241],
+                    [37.792, 8.355]
+                  ]
+                },
+                "ix": 2
+              }
+            },
+            {
+              "ty": "st",
+              "bm": 0,
+              "hd": false,
+              "mn": "ADBE Vector Graphic - Stroke",
+              "nm": "Stroke 1",
+              "lc": 2,
+              "lj": 2,
+              "ml": 1,
+              "o": { "a": 0, "k": 100, "ix": 4 },
+              "w": { "a": 0, "k": 4.595, "ix": 5 },
+              "c": { "a": 0, "k": [0.5686, 0.6196, 0.6706], "ix": 3 }
+            },
+            {
+              "ty": "tr",
+              "a": { "a": 0, "k": [0, 0], "ix": 1 },
+              "s": { "a": 0, "k": [100, 100], "ix": 3 },
+              "sk": { "a": 0, "k": 0, "ix": 4 },
+              "p": { "a": 0, "k": [0, 0], "ix": 2 },
+              "r": { "a": 0, "k": 0, "ix": 6 },
+              "sa": { "a": 0, "k": 0, "ix": 5 },
+              "o": { "a": 0, "k": 100, "ix": 7 }
+            }
+          ]
+        },
+        {
+          "ty": "tm",
+          "bm": 0,
+          "hd": false,
+          "mn": "ADBE Vector Filter - Trim",
+          "nm": "Trim Paths 1",
+          "ix": 2,
+          "e": {
+            "a": 1,
+            "k": [
+              { "o": { "x": 0.333, "y": 0 }, "i": { "x": 0.667, "y": 1 }, "s": [0], "t": 56 },
+              { "s": [100], "t": 66 }
+            ],
+            "ix": 2
+          },
+          "o": { "a": 0, "k": 0, "ix": 3 },
+          "s": {
+            "a": 1,
+            "k": [
+              { "o": { "x": 0.333, "y": 0 }, "i": { "x": 0.667, "y": 1 }, "s": [0], "t": 46 },
+              { "s": [100], "t": 56 }
+            ],
+            "ix": 1
+          },
+          "m": 1
+        }
+      ],
+      "ind": 8,
+      "parent": 7
+    },
+    {
+      "ty": 4,
+      "nm": "Layer 8",
+      "sr": 1,
+      "st": 0,
+      "op": 30,
+      "ip": 10,
+      "hd": false,
+      "ddd": 0,
+      "bm": 0,
+      "hasMask": false,
+      "ao": 0,
+      "ks": {
+        "a": { "a": 0, "k": [0, 0, 0], "ix": 1 },
+        "s": { "a": 0, "k": [100, 100, 100], "ix": 6 },
+        "sk": { "a": 0, "k": 0 },
+        "p": { "a": 0, "k": [125.269, 246.816, 0], "ix": 2 },
+        "r": { "a": 0, "k": 0, "ix": 10 },
+        "sa": { "a": 0, "k": 0 },
+        "o": { "a": 0, "k": 100, "ix": 11 }
+      },
+      "ef": [],
+      "shapes": [
+        {
+          "ty": "gr",
+          "bm": 0,
+          "hd": false,
+          "mn": "ADBE Vector Group",
+          "nm": "Group 1",
+          "ix": 1,
+          "cix": 2,
+          "np": 2,
+          "it": [
+            {
+              "ty": "sh",
+              "bm": 0,
+              "hd": false,
+              "mn": "ADBE Vector Shape - Group",
+              "nm": "Path 1",
+              "ix": 1,
+              "d": 1,
+              "ks": {
+                "a": 0,
+                "k": {
+                  "c": false,
+                  "i": [
+                    [0, 0],
+                    [-10.234, -6.95],
+                    [-5.988, 10.825],
+                    [0.362, 2.839],
+                    [2.719, 0.894],
+                    [2.002, -1.973],
+                    [0.571, -2.752],
+                    [-12.17, -3.396],
+                    [-4.211, 11.913]
+                  ],
+                  "o": [
+                    [-7.855, 9.557],
+                    [10.234, 6.951],
+                    [1.385, -2.505],
+                    [-0.361, -2.839],
+                    [-2.67, -0.877],
+                    [-2.002, 1.973],
+                    [-2.565, 12.372],
+                    [12.17, 3.396],
+                    [0, 0]
+                  ],
+                  "v": [
+                    [-33.107, -25.071],
+                    [-28.402, 7.577],
+                    [3.681, -0.086],
+                    [5.612, -8.305],
+                    [0.701, -14.794],
+                    [-7.017, -12.629],
+                    [-10.676, -5.168],
+                    [7.239, 24.241],
+                    [37.792, 8.355]
+                  ]
+                },
+                "ix": 2
+              }
+            },
+            {
+              "ty": "st",
+              "bm": 0,
+              "hd": false,
+              "mn": "ADBE Vector Graphic - Stroke",
+              "nm": "Stroke 1",
+              "lc": 2,
+              "lj": 2,
+              "ml": 1,
+              "o": { "a": 0, "k": 100, "ix": 4 },
+              "w": { "a": 0, "k": 4.595, "ix": 5 },
+              "c": { "a": 0, "k": [0.5686, 0.6196, 0.6706], "ix": 3 }
+            },
+            {
+              "ty": "tr",
+              "a": { "a": 0, "k": [0, 0], "ix": 1 },
+              "s": { "a": 0, "k": [100, 100], "ix": 3 },
+              "sk": { "a": 0, "k": 0, "ix": 4 },
+              "p": { "a": 0, "k": [0, 0], "ix": 2 },
+              "r": { "a": 0, "k": 0, "ix": 6 },
+              "sa": { "a": 0, "k": 0, "ix": 5 },
+              "o": { "a": 0, "k": 100, "ix": 7 }
+            }
+          ]
+        },
+        {
+          "ty": "tm",
+          "bm": 0,
+          "hd": false,
+          "mn": "ADBE Vector Filter - Trim",
+          "nm": "Trim Paths 1",
+          "ix": 2,
+          "e": {
+            "a": 1,
+            "k": [
+              { "o": { "x": 0.333, "y": 0 }, "i": { "x": 0.667, "y": 1 }, "s": [0], "t": 20 },
+              { "s": [100], "t": 30 }
+            ],
+            "ix": 2
+          },
+          "o": { "a": 0, "k": 0, "ix": 3 },
+          "s": {
+            "a": 1,
+            "k": [
+              { "o": { "x": 0.333, "y": 0 }, "i": { "x": 0.667, "y": 1 }, "s": [0], "t": 10 },
+              { "s": [100], "t": 20 }
+            ],
+            "ix": 1
+          },
+          "m": 1
+        }
+      ],
+      "ind": 9,
+      "parent": 7
+    }
+  ],
+  "v": "5.7.11",
+  "fr": 25,
+  "op": 81,
+  "ip": 0,
+  "assets": []
+}
