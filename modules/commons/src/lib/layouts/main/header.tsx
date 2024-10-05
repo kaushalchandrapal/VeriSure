@@ -9,6 +9,7 @@ import { HEADER } from '../config-layout';
 import HeaderShadow from '../common/header-shadow';
 import SettingsButton from '../common/settings-button';
 import { bgBlur, useOffSetTop, useResponsive } from '@verisure-core';
+import { DASHBOARD_CONFIG } from '../common/constants';
 
 // ----------------------------------------------------------------------
 
@@ -18,9 +19,18 @@ export default function Header() {
   const mdUp = useResponsive('up', 'md');
 
   const offsetTop = useOffSetTop(HEADER.H_DESKTOP);
+  
+  const offset = useOffSetTop(DASHBOARD_CONFIG.HEADER.DESKTOP_HEIGHT);
 
   return (
-    <AppBar>
+    <AppBar
+      sx={{
+        height: DASHBOARD_CONFIG.HEADER.DESKTOP_HEIGHT,
+        zIndex: theme.zIndex.appBar + 1,
+        bgcolor: theme.palette.mode === 'dark' ? theme.palette.background.default : theme.palette.text.primary,
+        boxShadow: offset ? theme.shadows[19] : 'none',
+      }}
+    >
       <Toolbar
         disableGutters
         sx={{

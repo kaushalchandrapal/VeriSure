@@ -4,8 +4,8 @@
   "license": "MIT",
   "scripts": {
     "dev:individual": "bun run nx serve individual-portal",
-    "build": "bun run nx build individual-portal",
-    "test": "bun run nx test individual-portal"
+    "build:individual": "bun run nx build individual-portal",
+    "test:individual": "bun run nx test individual-portal"
   },
   "private": true,
   "dependencies": {

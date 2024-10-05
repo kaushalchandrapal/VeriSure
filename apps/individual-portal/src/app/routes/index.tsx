@@ -4,7 +4,7 @@ import { createBrowserRouter, createRoutesFromElements, Navigate, Route, RouteOb
 
 import { axiosInstance, enqueueSnackbar, LoadingScreen } from '@verisure-core';
 import { ErrorStatusCodes, ServerErrorMessage } from '@verisure-services';
-import { CompactErrorPage, CompactLayout, Page404 } from '@verisure-commons';
+import { CompactErrorPage, CompactLayout, MainLayout, Page404 } from '@verisure-commons';
 import AuthRoutes from './auth-routes';
 import { AuthGuard } from '../auth/auth-guard';
 
@@ -63,7 +63,9 @@ export default function Router() {
               <ErrorBoundary FallbackComponent={CompactErrorPage}>
                 <Suspense fallback={<LoadingScreen />}>
                   <AuthGuard>
-                    <HomePage />
+                    <MainLayout>
+                      <HomePage />
+                    </MainLayout>
                   </AuthGuard>
                 </Suspense>
               </ErrorBoundary>
