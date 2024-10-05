@@ -22,7 +22,14 @@ export default function Header() {
   const offset = useOffSetTop(DASHBOARD_CONFIG.HEADER.DESKTOP_HEIGHT);
 
   return (
-    <AppBar>
+    <AppBar
+      sx={{
+        height: DASHBOARD_CONFIG.HEADER.DESKTOP_HEIGHT,
+        zIndex: theme.zIndex.appBar + 1,
+        bgcolor: theme.palette.mode === 'dark' ? theme.palette.background.default : theme.palette.text.primary,
+        boxShadow: offset ? theme.shadows[19] : 'none',
+      }}
+    >
       <Toolbar
         disableGutters
         sx={{

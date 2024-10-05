@@ -4,11 +4,11 @@ import { createBrowserRouter, createRoutesFromElements, Navigate, Route, RouteOb
 
 import { axiosInstance, enqueueSnackbar, LoadingScreen } from '@verisure-core';
 import { ErrorStatusCodes, ServerErrorMessage } from '@verisure-services';
-import { CompactErrorPage, CompactLayout, Page404 } from '@verisure-commons';
+import { CompactErrorPage, CompactLayout, Page404, MainLayout } from '@verisure-commons';
 import AuthRoutes from './auth-routes';
 import { AuthGuard } from '../auth/auth-guard';
 
-const HomePage = lazy(() => import('../pages/home'));
+const EntryProcessPage = lazy(() => import('../pages/entry-process'));
 
 // ----------------------------------------------------------------------
 
@@ -63,7 +63,9 @@ export default function Router() {
               <ErrorBoundary FallbackComponent={CompactErrorPage}>
                 <Suspense fallback={<LoadingScreen />}>
                   <AuthGuard>
-                    <HomePage />
+                    <MainLayout>
+                      <EntryProcessPage />
+                    </MainLayout>
                   </AuthGuard>
                 </Suspense>
               </ErrorBoundary>
