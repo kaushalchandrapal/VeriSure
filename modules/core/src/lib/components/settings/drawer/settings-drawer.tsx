@@ -101,20 +101,6 @@ export default function SettingsDrawer() {
     </div>
   );
 
-  const renderLayout = (
-    <div>
-      <Typography variant="caption" component="div" sx={{ ...labelStyles }}>
-        Layout
-      </Typography>
-
-      <LayoutOptions
-        value={settings.themeLayout}
-        onChange={(newValue: string) => settings.onUpdate('themeLayout', newValue)}
-        options={['vertical', 'horizontal', 'mini']}
-      />
-    </div>
-  );
-
   const renderStretch = (
     <div>
       <Typography
@@ -135,19 +121,6 @@ export default function SettingsDrawer() {
       <StretchOptions
         value={settings.themeStretch}
         onChange={() => settings.onUpdate('themeStretch', !settings.themeStretch)}
-      />
-    </div>
-  );
-
-  const renderPresets = (
-    <div>
-      <Typography variant="caption" component="div" sx={{ ...labelStyles }}>
-        Presets
-      </Typography>
-
-      <PresetsOptions
-        value={settings.themeColorPresets}
-        onChange={(newValue: string) => settings.onUpdate('themeColorPresets', newValue)}
       />
     </div>
   );
@@ -179,11 +152,7 @@ export default function SettingsDrawer() {
 
           {renderDirection}
 
-          {renderLayout}
-
           {renderStretch}
-
-          {renderPresets}
         </Stack>
       </Scrollbar>
 

@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom';
 import { LoadingScreen, enqueueSnackbar } from '@verisure-core';
 import { RouterLinks } from '../../app-route-paths';
 
-const HomePage = () => {
+const EntryProcessPage = () => {
   const navigate = useNavigate();
   const hasEffectRun = useRef(false);
 
@@ -19,4 +19,4 @@ const HomePage = () => {
   return <LoadingScreen />;
 };
 
-export default HomePage;
+export default EntryProcessPage;

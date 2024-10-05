@@ -1,0 +1,5 @@
+
+export const DASHBOARD_CONFIG = {
+  HEADER: { DESKTOP_HEIGHT: 64 },
+  NAVIGATION: { DESKTOP_WIDTH: 312 },
+};

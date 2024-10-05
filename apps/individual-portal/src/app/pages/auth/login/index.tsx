@@ -19,7 +19,7 @@ const LoginPage = () => {
     resolver: yupResolver(loginSchema),
   });
 
-  const onSubmit = (data) => {
+  const onSubmit = (data: any) => {
     console.log(data);
   }
 
@@ -46,7 +46,7 @@ const LoginPage = () => {
         />
 
         <Button variant="text" color="primary" sx={{ alignSelf: 'flex-end' }} onClick={() => navigate('/auth/forgot-password')}>
-          Forgot password?
+          Forgot Password?
         </Button>
 
         <Button fullWidth color="primary" size="large" type="submit" variant="contained">
@@ -55,7 +55,7 @@ const LoginPage = () => {
         <Box display="flex" alignItems="center">
           <Typography variant="body1">Don’t have an account?</Typography>
           <Button variant="text" color="primary" onClick={() => navigate('/signup')}>
-            Register account
+            Register Account
           </Button>
         </Box>
       </Stack>
