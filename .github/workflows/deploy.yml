@@ -1,4 +1,4 @@
-name: Deploy Nx Monorepo Apps
+name: Deploy Nx Apps
 
 on:
   push:
@@ -21,10 +21,19 @@ jobs:
       - name: Install dependencies
         run: bun install
 
+      - name: Check Hostname Availability
+        run: |
+          if ! command -v hostname &> /dev/null; then
+            echo "hostname could not be found"
+            sudo apt-get update && sudo apt-get install -y hostname
+          else
+            hostname
+          fi
+
       - name: Build and deploy both apps concurrently
         env:
-          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }} 
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
         run: |
           bun add concurrently
-          concurrently "bun run nx build individual-portal && vercel --token=$VERCEL_TOKEN --prod ./dist/apps/individual-portal" \
-                      "bun run nx build admin-portal && vercel --token=$VERCEL_TOKEN --prod ./dist/apps/admin-portal"
+          concurrently "bun run npx nx build individual-portal && vercel --token=$VERCEL_TOKEN --prod ./dist/apps/individual-portal" \
+                      "bun run npx nx build admin-portal && vercel --token=$VERCEL_TOKEN --prod ./dist/apps/admin-portal"
