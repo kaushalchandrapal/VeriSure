@@ -20,7 +20,7 @@ export function AuthGuard({ children }: Props) {
         setSession(accessToken);
         const decodedToken = jwtDecode(accessToken);
 
-        if (decodedToken.exp) {
+        if (decodedToken?.exp) {
           const expiryDateTime = new Date(decodedToken.exp * 1000);
           const isExpired = dayjs().isAfter(dayjs(expiryDateTime));
 
