@@ -1,4 +1,48 @@
-import { IAddress, IBusinessAddress, IJwtPayload, IPhoneNumberParts } from '@zeta-types';
+export interface IAddress {
+  addressLine1: string;
+  addressLine2: string;
+  addressLine3?: string;
+  addressLine4?: string;
+  city: string;
+  county?: string;
+  country: string;
+  postcode: string;
+}
+
+export interface IBusinessAddress {
+  addressLine1: string;
+  addressLine2?: string | null;
+  addressLine3?: string | null;
+  addressLine4?: string | null;
+  city: string;
+  county?: string;
+  country: string;
+  postcode: string | undefined;
+  postalCode: string | undefined;
+}
+
+export interface IJwtPayload {
+  sub: string;
+  iss: string;
+  client_id: string;
+  origin_jti: string;
+  event_id: string;
+  token_use: string;
+  scope: string;
+  auth_time: number;
+  exp: number;
+  iat: number;
+  jti: string;
+  username: string;
+  sessionTokenID: string;
+  userID: string;
+}
+
+export interface IPhoneNumberParts {
+  countryCode: string;
+  phoneNumber: string;
+}
+
 
 export function separatePhoneNumber(phone: string): IPhoneNumberParts {
   const cleanedPhone = phone.replace(/\D/g, '');
