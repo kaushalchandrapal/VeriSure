@@ -1,6 +1,7 @@
 /// <reference types='vitest' />
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
+import { resolve } from 'path';
 import { nxViteTsPaths } from '@nx/vite/plugins/nx-tsconfig-paths.plugin';
 import { nxCopyAssetsPlugin } from '@nx/vite/plugins/nx-copy-assets.plugin';
 
@@ -36,7 +37,7 @@ export default defineConfig({
   // },
 
   build: {
-    outDir: '../../dist/apps/admin-portal',
+    outDir: resolve(__dirname, 'dist'),
     emptyOutDir: true,
     reportCompressedSize: true,
     commonjsOptions: {
