@@ -3,9 +3,9 @@ import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 
 import { SettingsProvider, useScrollToTop, ThemeProvider, MotionLazy, SnackbarProvider, ProgressBar, SettingsDrawer, useLocales } from "@verisure-core";
 import { AuthProvider } from "./auth/jwt";
-import Router from "./routes";
 import dayjs from 'dayjs';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import Router from './routes';
 
 
 const queryClient = new QueryClient();

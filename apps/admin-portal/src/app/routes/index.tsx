@@ -7,8 +7,8 @@ import { ErrorStatusCodes, ServerErrorMessage } from '@verisure-services';
 import { CompactErrorPage, CompactLayout, Page404, MainLayout } from '@verisure-commons';
 import AuthRoutes from './auth-routes';
 import { AuthGuard } from '../auth/auth-guard';
-import DashboardRoutes from './dashboard-routes';
 import LoggedOutErrorBoundary from './error-boundries/logged-out';
+import DashboardRoutes from './dashboard-routes';
 
 const EntryProcessPage = lazy(() => import('../pages/entry-process'));
 
