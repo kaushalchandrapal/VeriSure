@@ -6,7 +6,6 @@ import { LoginLayout, CompactErrorPage } from '@verisure-commons';
 import { LoadingScreen } from '@verisure-core';
 
 const LoginPage = lazy(() => import('../pages/auth/login'));
-const RegisterPage = lazy(() => import('../pages/auth/register'));
 
 const AuthRoutes = [
   {
@@ -28,10 +27,6 @@ const AuthRoutes = [
           {
             path: 'login',
             element: <LoginPage />,
-          },
-          {
-            path: 'register',
-            element: <RegisterPage />,
           },
           {
             path: '',

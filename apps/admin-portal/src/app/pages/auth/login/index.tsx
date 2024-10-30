@@ -73,12 +73,6 @@ const LoginPage = () => {
         <LoadingButton loading={accountLoginApiCall.isPending} fullWidth color="primary" size="large" type="submit" variant="contained">
           {'Login'}
         </LoadingButton>
-        <Box display="flex" alignItems="center">
-          <Typography variant="body1">Don’t have an account?</Typography>
-          <Button variant="text" color="primary" onClick={() => navigate('/auth/register')}>
-            Register Account
-          </Button>
-        </Box>
       </Stack>
     </FormProvider>
       
