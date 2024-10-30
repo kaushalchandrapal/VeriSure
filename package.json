@@ -9,8 +9,8 @@
     "dev:individual": "bun run nx serve individual-portal",
     "dev:admin": "bun run nx serve admin-portal",
     "build": "bun run nx build individual-portal",
-    "build:individual": "bun run nx build individual-portal",
-    "build:admin": "bun run nx build admin-portal",
+    "build:individual": "vite build --config apps/individual-portal/vite.config.ts",
+    "build:admin": "vite build --config apps/admin-portal/vite.config.ts",
     "deploy:individual": "bun run nx build individual-portal && vercel --prod ./dist/apps/individual-portal",
     "deploy:admin": "bun run nx build admin-portal && vercel --prod ./dist/apps/admin-portal",
     "test": "bun run nx test individual-portal"
@@ -65,6 +65,7 @@
     "@babel/core": "^7.25.7",
     "@babel/preset-react": "^7.25.7",
     "@eslint/js": "^9.8.0",
+    "@nrwl/web": "^19.8.4",
     "@nx/cypress": "19.8.3",
     "@nx/devkit": "^19.8.3",
     "@nx/eslint": "^19.8.3",
