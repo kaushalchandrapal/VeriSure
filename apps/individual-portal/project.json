@@ -5,5 +5,19 @@
   "projectType": "application",
   "tags": [],
   "// targets": "to see all targets run: nx show project individual-portal --web",
-  "targets": {}
+  "targets": {
+    "build": {
+      "executor": "@nx/web:build",
+      "options": {
+        "outputPath": "dist/apps/individual-portal",
+        "index": "apps/individual-portal/src/index.html",
+        "main": "apps/individual-portal/src/main.tsx",
+        "polyfills": "apps/individual-portal/src/polyfills.ts",
+        "tsConfig": "apps/individual-portal/tsconfig.app.json",
+        "assets": ["apps/individual-portal/src/assets"],
+        "styles": ["apps/individual-portal/src/styles.css"],
+        "scripts": []
+      }
+    }
+  }
 }
