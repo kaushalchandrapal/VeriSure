@@ -4,7 +4,6 @@ import { Navigate, Outlet } from 'react-router-dom';
 
 import { CompactErrorPage, MainLayout } from '@verisure-commons';
 import { LoadingScreen } from '@verisure-core';
-import TokenErrorBoundary from './error-boundries/token-error';
 import { AuthGuard } from '../auth/auth-guard';
 
 const UserDashboardPage = lazy(() => import('../pages/dashboard/user-dashboard'));
