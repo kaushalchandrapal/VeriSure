@@ -74,7 +74,7 @@
     "@nx/playwright": "^19.8.3",
     "@nx/react": "^19.8.3",
     "@nx/vite": "^19.8.3",
-    "@nx/web": "^19.8.3",
+    "@nx/web": "^20.0.6",
     "@nx/workspace": "^19.8.3",
     "@playwright/test": "^1.47.2",
     "@swc-node/register": "~1.9.1",
