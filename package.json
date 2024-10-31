@@ -12,11 +12,7 @@
     "build": "bun run nx build individual-portal",
     "build:individual": "vite build --config apps/individual-portal/vite.config.ts",
     "build:admin": "vite build --config apps/admin-portal/vite.config.ts",
-<<<<<<< HEAD
     "build:server": "npx vite build --config apps/verisure-server/vite.config.ts",
-=======
-    "build:server": "vite build --config apps/verisure-server/vite.config.ts",
->>>>>>> a83df3d40346ca8b362a0b253f9c1cd1510ec06b
     "deploy:individual": "bun run nx build individual-portal && vercel --prod ./dist/apps/individual-portal",
     "deploy:admin": "bun run nx build admin-portal && vercel --prod ./dist/apps/admin-portal",
     "test": "bun run nx test individual-portal"
