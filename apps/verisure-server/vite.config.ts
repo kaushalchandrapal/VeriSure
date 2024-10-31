@@ -4,7 +4,6 @@ import { VitePluginNode } from 'vite-plugin-node';
 import path from 'path';
 import dotenv from 'dotenv';
 
-// Load environment variables
 dotenv.config();
 
 export default defineConfig({
@@ -32,6 +31,6 @@ export default defineConfig({
     },
   },
   define: {
-    'process.env': process.env, // Make environment variables accessible
+    'process.env': process.env,
   },
 });
