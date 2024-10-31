@@ -11,7 +11,7 @@ export default defineConfig({
   plugins: [
     VitePluginNode({
       adapter: 'express',
-      appPath: './src/main.ts', // Simplify path for Vite
+      appPath: path.resolve(__dirname, 'src/main.ts'), // Simplify path for Vite
       exportName: 'default',
       tsCompiler: 'esbuild', // Faster TypeScript compilation
     }),
