@@ -1,17 +1,13 @@
+// apps/verisure-server/src/main.ts
 import express from 'express';
 import dotenv from 'dotenv';
 
 dotenv.config();
-
-const host = process.env.HOST ?? 'localhost';
-const port = process.env.PORT ? Number(process.env.PORT) : 3000;
-
 const app = express();
 
 app.get('/', (req, res) => {
   res.send({ message: 'Hello API' });
 });
 
-app.listen(port, host, () => {
-  console.log(`[ ready ] http://${host}:${port}`);
-});
+// Export the app for Vercel serverless deployment
+export default app;

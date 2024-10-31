@@ -1,4 +1,4 @@
-// vite.config.ts
+// apps/verisure-server/vite.config.ts
 import { defineConfig } from 'vite';
 import { VitePluginNode } from 'vite-plugin-node';
 import path from 'path';
@@ -10,33 +10,21 @@ dotenv.config();
 export default defineConfig({
   plugins: [
     VitePluginNode({
-      // Use the Express adapter
       adapter: 'express',
-      appPath: path.resolve(__dirname, './src/main.ts'),
+      appPath: './src/main.ts', // Simplify path for Vite
       exportName: 'default',
-      tsCompiler: 'esbuild', // Using esbuild for faster TypeScript compilation
+      tsCompiler: 'esbuild', // Faster TypeScript compilation
     }),
   ],
   build: {
     outDir: path.resolve(__dirname, 'dist'),
     rollupOptions: {
-      // Set the entry point for the Node server
       input: path.resolve(__dirname, 'src/main.ts'),
       output: {
         format: 'cjs', // CommonJS format for Node.js compatibility
       },
-      external: [
-        'express', // Keep express as an external dependency for backend builds
-        'fs', // Exclude native Node.js modules from bundling
-        'path',
-        'http',
-        'https',
-        // Add any additional dependencies as needed
-      ],
+      external: ['express', 'fs', 'path', 'http', 'https'], // Exclude Node.js modules
     },
-  },
-  server: {
-    port: 3000, // Use a specific port
   },
   resolve: {
     alias: {
@@ -44,6 +32,6 @@ export default defineConfig({
     },
   },
   define: {
-    'process.env': process.env, // Make environment variables accessible in Vite
+    'process.env': process.env, // Make environment variables accessible
   },
 });
