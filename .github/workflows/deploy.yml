@@ -36,4 +36,5 @@ jobs:
         run: |
           bun add concurrently
           concurrently "bun run npx nx build individual-portal && vercel --token=$VERCEL_TOKEN --prod ./dist/apps/individual-portal" \
-                      "bun run npx nx build admin-portal && vercel --token=$VERCEL_TOKEN --prod ./dist/apps/admin-portal"
+                      "bun run npx nx build admin-portal && vercel --token=$VERCEL_TOKEN --prod ./dist/apps/admin-portal \
+                      "bun run npx nx build verisure-server && vercel --token=$VERCEL_TOKEN --prod ./dist/apps/verisure-server \"
