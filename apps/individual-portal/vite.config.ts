@@ -1,46 +1,47 @@
-// vite.config.ts
+/// <reference types='vitest' />
 import { defineConfig } from 'vite';
-import { VitePluginNode } from 'vite-plugin-node';
-import path from 'path';
-import dotenv from 'dotenv';
-
-// Load environment variables
-dotenv.config();
+import { resolve } from 'path';
+import react from '@vitejs/plugin-react';
+import { nxViteTsPaths } from '@nx/vite/plugins/nx-tsconfig-paths.plugin';
+import { nxCopyAssetsPlugin } from '@nx/vite/plugins/nx-copy-assets.plugin';
 
 export default defineConfig({
-  plugins: [
-    VitePluginNode({
-      adapter: 'express',
-      appPath: path.resolve(__dirname, './src/main.ts'),
-      exportName: 'default',
-      tsCompiler: 'esbuild',
-    }),
-  ],
-  build: {
-    outDir: path.resolve(__dirname, 'dist'),
-    rollupOptions: {
-      input: path.resolve(__dirname, 'src/main.ts'),
-      output: {
-        format: 'cjs',
-      },
-      external: [
-        'express',
-        'fs',
-        'path',
-        'http',
-        'https',
-      ],
-    },
-  },
+  root: __dirname,
+  cacheDir: '../../node_modules/.vite/apps/individual-portal',
+
   server: {
-    port: 3000,
-  },
-  resolve: {
-    alias: {
-      '@': path.resolve(__dirname, './src'),
+    proxy: {
+      '/api/auth': {
+        target: 'http://localhost:3000',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api\/auth/, '/api/auth'),
+      },
+      '/api/user': {
+        target: 'http://localhost:3000',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api\/user/, '/api/user'),
+      },
     },
   },
-  define: {
-    'process.env': process.env,
+
+  preview: {
+    port: 4300,
+    host: 'localhost',
+  },
+
+  plugins: [react(), nxViteTsPaths(), nxCopyAssetsPlugin(['*.md'])],
+
+  // Uncomment this if you are using workers.
+  // worker: {
+  //  plugins: [ nxViteTsPaths() ],
+  // },
+
+  build: {
+    outDir: resolve(__dirname, 'dist'),
+    emptyOutDir: true,
+    reportCompressedSize: true,
+    commonjsOptions: {
+      transformMixedEsModules: true,
+    },
   },
 });
