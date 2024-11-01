@@ -72,7 +72,7 @@ const AdminDashboard = () => {
               startIcon={<Iconify icon="mingcute:add-fill" />}
               onClick={() => navigate('/dashboard/create-new-user')}
             >
-              Create new user
+              Add New User
             </Button>
           </Stack>
           <Card>

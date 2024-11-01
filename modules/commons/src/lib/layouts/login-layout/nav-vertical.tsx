@@ -19,12 +19,12 @@ export default function NavVertical({ openNav }: Props) {
 
   const lgUp = useResponsive('up', 'lg');
   const strings = [
-    `<h1 class="animated-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit <span >Lorem ipsum</span> ?</h1>`,
-    `<h1  class="animated-text">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua <span >dolor sit</span> ?</h1>`,
-    `<h1  class="animated-text">Ut enim ad minim veniam, quis nostrud exercitation <span >ullamco laboris</span> nisi ut aliquip ex ea commodo consequat.</h1>`,
-    `<h1  class="animated-text">Duis aute irure dolor in reprehenderit in voluptate velit esse <span >cillum dolore</span>.</h1>`,
-    `<h1  class="animated-text">Excepteur sint occaecat cupidatat non proident <span >sunt in culpa</span>.</h1>`,
-  ];
+    `<h1 class="animated-text">Empowering Businesses with <span>Secure</span> and <span>Seamless KYC Solutions</span> – VeriSure is your partner in <span>digital identity verification</span>.</h1>`,
+    `<h1 class="animated-text">Experience the <span>Future of KYC</span> with VeriSure – <span>Security</span>, <span>Compliance</span>, and <span>Simplicity</span> in One Powerful Platform.</h1>`,
+    `<h1 class="animated-text">VeriSure: <span>Redefining KYC</span> with <span>AI-Driven Technology</span> for <span>Fast</span>, <span>Reliable</span>, and <span>Trusted Identity Verification</span>.</h1>`,
+    `<h1 class="animated-text"><span>Secure</span>. <span>Compliant</span>. <span>Effortless</span>. VeriSure is the <span>KYC Solution</span> Built for Today’s Digital Challenges.</h1>`,
+    `<h1 class="animated-text">Transforming KYC for a <span>Safer Digital World</span> – VeriSure Ensures <span>Peace of Mind</span> in Every <span>Identity Check</span>.</h1>`,
+];
 
   const renderContent = (
     <Scrollbar

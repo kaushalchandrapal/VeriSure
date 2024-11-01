@@ -108,11 +108,12 @@ const MyKycPage = () => {
           <Stack flexDirection="row" justifyContent="end">
             <LoadingButton
               variant="contained"
+              color="primary"
               loading={createKycApiCall.isPending}
-              startIcon={<Iconify icon="mingcute:add-fill" />}
+              startIcon={<Iconify icon="carbon:request-quote" />}
               onClick={() => createKycApiCall.mutateAsync({})}
             >
-              Create new user
+              Request New KYC 
             </LoadingButton>
           </Stack>
           <Card>
