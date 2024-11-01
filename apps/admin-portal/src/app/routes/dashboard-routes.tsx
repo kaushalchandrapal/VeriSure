@@ -7,6 +7,7 @@ import { LoadingScreen } from '@verisure-core';
 import { AuthGuard } from '../auth/auth-guard';
 
 const AdminDashboardPage = lazy(() => import('../pages/dashboard/admin'));
+const CreateNewUserPage = lazy(() => import('../pages/dashboard/create-new-user'));
 
 const DashboardRoutes = [
   {
@@ -29,6 +30,10 @@ const DashboardRoutes = [
           {
             path: 'admin-dashboard',
             element: <AdminDashboardPage />,
+          },
+          {
+            path: 'create-new-user',
+            element: <CreateNewUserPage />,
           },
           {
             path: '',

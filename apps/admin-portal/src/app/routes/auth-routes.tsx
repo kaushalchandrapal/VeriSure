@@ -4,13 +4,14 @@ import { Navigate, Outlet } from 'react-router-dom';
 
 import { LoginLayout, CompactErrorPage } from '@verisure-commons';
 import { LoadingScreen } from '@verisure-core';
+import LoggedInErrorBoundary from '../../../../individual-portal/src/app/routes/error-boundries/logged-in';
 
 const LoginPage = lazy(() => import('../pages/auth/login'));
 
 const AuthRoutes = [
   {
     path: 'auth',
-    // element: <LoggedInErrorBoundary />,
+    element: <LoggedInErrorBoundary />,
     children: [
       {
         path: '',
