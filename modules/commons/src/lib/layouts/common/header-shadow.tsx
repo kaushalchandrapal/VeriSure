@@ -2,7 +2,7 @@ import Box, { BoxProps } from '@mui/material/Box';
 
 // ----------------------------------------------------------------------
 
-export default function HeaderShadow({ sx, ...other }: BoxProps) {
+export function HeaderShadow({ sx, ...other }: BoxProps) {
   return (
     <Box
       sx={{
@@ -23,3 +23,5 @@ export default function HeaderShadow({ sx, ...other }: BoxProps) {
     />
   );
 }
+
+export default HeaderShadow;

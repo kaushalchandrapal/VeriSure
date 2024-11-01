@@ -36,6 +36,8 @@ export interface IJwtPayload {
   username: string;
   sessionTokenID: string;
   userID: string;
+
+  role: string;
 }
 
 export interface IPhoneNumberParts {

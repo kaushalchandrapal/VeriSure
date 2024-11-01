@@ -10,9 +10,9 @@ type Props = {
   children: React.ReactNode;
 };
 
-export function MainLayout({ children }: Props) {
-  const theme = useTheme();
+export function DashboardLayout({ children }: Props) {
   const settings = useSettingsContext();
+  const theme = useTheme();
 
   return (
     <Box sx={{ display: 'flex', flexDirection: 'column', height: 1 }}>
@@ -36,4 +36,4 @@ export function MainLayout({ children }: Props) {
   );
 };
 
-export default MainLayout;
+export default DashboardLayout;

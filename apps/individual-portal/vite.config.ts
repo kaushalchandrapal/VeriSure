@@ -21,6 +21,16 @@ export default defineConfig({
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api\/user/, '/api/user'),
       },
+      '/api/role': {
+        target: 'https://verisure-server.vercel.app/',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api\/user/, '/api/role'),
+      },
+      '/api/kyc': {
+        target: 'https://verisure-server.vercel.app/',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api\/user/, '/api/kyc'),
+      },
     },
   },
 
