@@ -129,7 +129,7 @@ const CreateNewUserPage = () => {
                     color='primary'
                     type='submit'
                   >
-                    Create New User
+                    Create User
                   </LoadingButton>
                 </Stack>
               </Stack>
