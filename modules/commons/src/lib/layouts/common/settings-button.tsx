@@ -12,7 +12,7 @@ type Props = {
   sx?: SxProps<Theme>;
 };
 
-export default function SettingsButton({ sx }: Props) {
+export function SettingsButton({ sx }: Props) {
   const settings = useSettingsContext();
 
   return (
@@ -57,3 +57,5 @@ export default function SettingsButton({ sx }: Props) {
     </Badge>
   );
 }
+
+export default SettingsButton;

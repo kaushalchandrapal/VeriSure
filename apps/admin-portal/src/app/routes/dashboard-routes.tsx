@@ -5,6 +5,7 @@ import { Navigate, Outlet } from 'react-router-dom';
 import { CompactErrorPage, MainLayout } from '@verisure-commons';
 import { LoadingScreen } from '@verisure-core';
 import { AuthGuard } from '../auth/auth-guard';
+import DashboardLayout from '../layouts/dashboard';
 
 const AdminDashboardPage = lazy(() => import('../pages/dashboard/admin'));
 const CreateNewUserPage = lazy(() => import('../pages/dashboard/create-new-user'));
@@ -17,13 +18,13 @@ const DashboardRoutes = [
         path: '',
         element: (
           <ErrorBoundary FallbackComponent={CompactErrorPage}>
-            <MainLayout>
+            <DashboardLayout>
               <Suspense fallback={<LoadingScreen />}>
                 <AuthGuard>
                   <Outlet />
                 </AuthGuard>
               </Suspense>
-            </MainLayout>
+            </DashboardLayout>
           </ErrorBoundary>
         ),
         children: [
