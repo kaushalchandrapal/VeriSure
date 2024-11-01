@@ -2,6 +2,7 @@ import Box from '@mui/material/Box';
 
 import Header from './header';
 import { usePathname } from '@verisure-core';
+import { Container, useTheme } from '@mui/material';
 
 // ----------------------------------------------------------------------
 
@@ -10,6 +11,7 @@ type Props = {
 };
 
 export function MainLayout({ children }: Props) {
+  const theme = useTheme();
 
   return (
     <Box sx={{ display: 'flex', flexDirection: 'column', height: 1 }}>
@@ -21,10 +23,13 @@ export function MainLayout({ children }: Props) {
           flexGrow: 1,
           ...({
             pt: { xs: 8, md: 10 },
+            bgcolor: theme.palette.background.neutral,
           }),
         }}
       >
-        {children}
+        <Container>
+          {children}
+        </Container>
       </Box>
     </Box>
   );

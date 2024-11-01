@@ -8,6 +8,7 @@ export * from './use-local-storage';
 export * from './use-off-set-top';
 export * from './use-responsive';
 export * from './use-scroll-to-top';
+export * from './use-effect-once';
 export * from './use-set-state';
 
 // Router hooks

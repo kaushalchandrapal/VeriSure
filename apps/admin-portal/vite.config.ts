@@ -12,14 +12,19 @@ export default defineConfig({
   server: {
     proxy: {
       '/api/auth': {
-        target: 'https://verisure-server.vercel.app/',
+        target: 'http://localhost:3000/',
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api\/auth/, '/api/auth'),
       },
       '/api/user': {
-        target: 'https://verisure-server.vercel.app/',
+        target: 'http://localhost:3000/',
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api\/user/, '/api/user'),
+      },
+      '/api/role': {
+        target: 'http://localhost:3000/',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api\/user/, '/api/role'),
       },
     },
   },
