@@ -116,7 +116,7 @@ const CreateNewUserPage = () => {
 
                 <RHFAutocomplete
                   name='role'
-                  options={roles.map(x => x.name) || []}
+                  options={roles?.length > 0 ? roles?.map(x => x.name) : []}
                   label="Role"
                   placeholder="Role"
                 />
