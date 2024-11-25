@@ -3,6 +3,7 @@ import Box from '@mui/material/Box';
 import Header from './header';
 import { usePathname, useSettingsContext } from '@verisure-core';
 import { Container, useTheme } from '@mui/material';
+import Footer from './footer';
 
 // ----------------------------------------------------------------------
 
@@ -24,7 +25,9 @@ export function DashboardLayout({ children }: Props) {
           flexGrow: 1,
           ...({
             pt: { xs: 8, md: 10 },
-            bgcolor: theme.palette.background.neutral,
+            ...(theme.palette.mode === 'light' && {
+              bgcolor: theme.palette.grey[300],
+            }),
           }),
         }}
       >
@@ -32,6 +35,8 @@ export function DashboardLayout({ children }: Props) {
           {children}
         </Container>
       </Box>
+
+      <Footer />
     </Box>
   );
 };

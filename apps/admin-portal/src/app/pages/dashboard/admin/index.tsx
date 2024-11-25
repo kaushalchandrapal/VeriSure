@@ -61,8 +61,8 @@ const AdminDashboard = () => {
             heading="User Management"
             links={[
               {
-                name: 'Home',
-                icon: <Iconify icon="eva:home-fill" />,
+                name: 'User Management',
+                icon: <Iconify icon="fluent-mdl2:workforce-management" />,
               },
             ]}
           />

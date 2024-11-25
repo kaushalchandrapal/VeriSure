@@ -10,7 +10,7 @@ export function card(theme: Theme) {
           position: 'relative',
           boxShadow: theme.customShadows.card,
           borderRadius: theme.shape.borderRadius * 2,
-          zIndex: 0, // Fix Safari overflow: hidden with border radius
+          zIndex: 0,
         },
       },
     },

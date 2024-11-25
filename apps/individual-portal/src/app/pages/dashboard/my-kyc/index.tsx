@@ -7,7 +7,6 @@ import {
   TableCell,
   TableContainer,
   TableRow,
-  Typography,
   TablePagination,
   Card,
   Stack,
@@ -19,15 +18,20 @@ import { ICreateKycRequest, IGetKYCRequestsResponse, IGetUserKycRequestsPayload,
 import dayjs from 'dayjs';
 import { AxiosError, AxiosResponse } from 'axios';
 import { LoadingButton } from '@mui/lab';
+import { useNavigate } from 'react-router-dom';
+import { RouterLinks } from '../../../app-route-paths';
 
 const KycRequestHead = [
   { label: 'Status', minWidth: 100 },
-  { label: 'Expires At', minWidth: 250 },
-  { label: 'Created At', minWidth: 250 },
-  { label: 'Updated At', minWidth: 250 },
+  { label: 'Expires On', minWidth: 250 },
+  { label: 'Requested Date', minWidth: 250 },
+  { label: 'Date Updated', minWidth: 250 },
 ];
 
 const MyKycPage = () => {
+
+  const navigate = useNavigate();
+
   const [page, setPage] = useState(0);
   const [rowsPerPage, setRowsPerPage] = useState(5);
   const [data, setData] = useState<IGetKYCRequestsResponse | null>(null);
@@ -58,31 +62,13 @@ const MyKycPage = () => {
   };
 
   const handleChangeRowsPerPage = (event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setRowsPerPage(parseInt(event.target.value, 10));
+    setRowsPerPage(parseInt(event.target.value, 5));
     setPage(0);
   };
 
-  const createKycApiCall = useMutation({
-    mutationFn: (payload: ICreateKycRequest) => KYCService().createKyc(payload),
-    
-    onSuccess: (response: AxiosResponse<IKYCRequestCreationResponse>) => {
-      enqueueSnackbar(response.data.message, { variant: 'success' });
-
-      const payload: IGetUserKycRequestsPayload = {
-        page: page + 1,
-        limit: rowsPerPage,
-        sortBy: 'created_at',
-        order: 'asc',
-      };
-      getUserKycRequestsApiCall.mutateAsync(payload);
-    },
-
-    onError: (error: AxiosError<any>) => {
-      if (error.status === 400) {
-        enqueueSnackbar(error.response?.data?.message, { variant: 'error' });
-      }
-    }
-  });
+  const handleNewKycRequest = () => {
+    navigate(RouterLinks.requestNewKyc);
+  };
 
   return (
     <>
@@ -94,7 +80,7 @@ const MyKycPage = () => {
         <Stack spacing={2} marginTop={2} marginBottom={20}>
           <CustomBreadcrumbs
             sx={{ width: 1 }}
-            heading="My KYC"
+            heading="Request Overview"
             links={[
               {
                 name: 'My Kyc',
@@ -109,9 +95,9 @@ const MyKycPage = () => {
             <LoadingButton
               variant="contained"
               color="primary"
-              loading={createKycApiCall.isPending}
               startIcon={<Iconify icon="carbon:request-quote" />}
-              onClick={() => createKycApiCall.mutateAsync({})}
+              disabled={getUserKycRequestsApiCall.isPending}
+              onClick={() => handleNewKycRequest()}
             >
               Request New KYC 
             </LoadingButton>
@@ -139,7 +125,7 @@ const MyKycPage = () => {
                         />
                       </TableCell>
                       <TableCell>
-                        {dayjs(request.expires_at).format('DD MMMM YYYY, hh:mm A')}
+                        {dayjs(request?.expires_at ?? null).isValid() ? dayjs(request.expires_at).format('DD MMMM YYYY, hh:mm A') : '--'}
                       </TableCell>
                       <TableCell>
                         {dayjs(request.created_at).format('DD MMMM YYYY, hh:mm A')}

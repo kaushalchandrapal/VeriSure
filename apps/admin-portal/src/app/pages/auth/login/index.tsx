@@ -24,7 +24,7 @@ const LoginPage = () => {
   });
 
   const accountLoginApiCall = useMutation({
-    mutationFn: (payload: LoginPayload) => AuthService().accountLogin(payload),
+    mutationFn: (payload: LoginPayload) => AuthService().adminAccountLogin(payload),
 
     onSuccess: (data: AxiosResponse<ILoginResponse>) => {
       if (data.data.token) {

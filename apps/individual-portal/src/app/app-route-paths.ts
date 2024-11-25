@@ -5,5 +5,7 @@ export const RouterLinks = {
   login: '/auth/login',
 
   userDashboard: '/dashboard/user-dashboard',
-  myKyc: '/dashboard/my-kyc',
+  kyc: '/dashboard/kyc',
+  myKyc: '/dashboard/kyc/my-kyc',
+  requestNewKyc: '/dashboard/kyc/request-new-kyc',
 };

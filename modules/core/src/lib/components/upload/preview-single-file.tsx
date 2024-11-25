@@ -20,13 +20,14 @@ export default function SingleFilePreview({ imgUrl = '' }: Props) {
         position: 'absolute',
       }}
     >
-      <Image
+      <img
         alt="file preview"
         src={imgUrl}
-        sx={{
-          width: 1,
-          height: 1,
-          borderRadius: 1,
+        style={{
+          width: '100%',
+          height: '100%',
+          objectFit: 'contain', // Prevent distortion
+          borderRadius: '8px',
         }}
       />
     </Box>

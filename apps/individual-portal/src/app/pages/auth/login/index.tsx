@@ -24,7 +24,7 @@ const LoginPage = () => {
   });
 
   const accountLoginApiCall = useMutation({
-    mutationFn: (payload: LoginPayload) => AuthService().accountLogin(payload),
+    mutationFn: (payload: LoginPayload) => AuthService().applicantAccountLogin(payload),
 
     onSuccess: (data: AxiosResponse<ILoginResponse>) => {
       if (data.data.token) {
@@ -46,7 +46,7 @@ const LoginPage = () => {
 
   return (
     <FormProvider methods={methods} onSubmit={methods.handleSubmit(onSubmit)}>
-      <Stack spacing={5} marginTop={2}>
+      <Stack spacing={{ xs: 2, sm: 5 }} marginTop={2}>
         <Typography variant="h4">Login to your account</Typography>
         <RHFTextField name="usernameOrEmail" label="Username / Email" placeholder="Username / Email" />
 
@@ -73,7 +73,7 @@ const LoginPage = () => {
         <LoadingButton loading={accountLoginApiCall.isPending} fullWidth color="primary" size="large" type="submit" variant="contained">
           {'Login'}
         </LoadingButton>
-        <Box display="flex" alignItems="center">
+        <Box display="flex" alignItems="center" sx={{ flexDirection: { xs: 'column', sm: 'row' } }}>
           <Typography variant="body1">Don’t have an account?</Typography>
           <Button variant="text" color="primary" onClick={() => navigate('/auth/register')}>
             Register Account

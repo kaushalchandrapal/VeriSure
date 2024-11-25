@@ -1,19 +1,25 @@
 import { yupResolver } from '@hookform/resolvers/yup';
-import { enqueueSnackbar, FormProvider, Iconify, RHFTextField, useBoolean } from '@verisure-core'
-import React from 'react'
+import { enqueueSnackbar, FormProvider, Iconify, RHFDatePicker, RHFTextField, useBoolean, useResponsive } from '@verisure-core';
 import { useForm } from 'react-hook-form';
 import { registerDefaultValues, registerSchema } from './form-helper';
 import { InferType } from 'yup';
-import { Box, Button, IconButton, InputAdornment, Stack, Typography } from '@mui/material';
+import { Accordion, AccordionDetails, AccordionSummary, alpha, Box, Button, IconButton, InputAdornment, Stack, Typography, useTheme } from '@mui/material';
+import Grid from '@mui/material/Grid2';
 import { useNavigate } from 'react-router-dom';
 import { useMutation } from '@tanstack/react-query';
 import { AuthService, SignupPayload } from '@verisure-services';
 import { LoadingButton } from '@mui/lab';
+import { useState } from 'react';
+import dayjs from 'dayjs';
 
 const RegisterPage = () => {
+  const theme = useTheme();
   const navigate = useNavigate();
   const password = useBoolean();
   const verifyPassword = useBoolean();
+  const lgUp = useResponsive('up', 'lg');
+
+  const [expanded, setExpanded] = useState<string>('personalInfo');
 
   type registerSchemaType = InferType<typeof registerSchema>;
 
@@ -33,49 +39,136 @@ const RegisterPage = () => {
   });
 
   const onSubmit = (formData: registerSchemaType) => {
-    registerApiCall.mutateAsync(formData);
+    const payload: SignupPayload = {
+      ...formData,
+      birthdate: dayjs(formData.birthdate).format('YYYY-MM-DD'),
+    };
+    registerApiCall.mutateAsync(payload);
   }
+
+  const handleChange =
+    (panel: string) =>
+    (_: React.SyntheticEvent, isExpanded: boolean) => {
+      setExpanded(isExpanded ? panel : panel);
+    };
 
   return (
     <FormProvider methods={methods} onSubmit={methods.handleSubmit(onSubmit)}>
-      <Stack spacing={5} marginTop={2}>
-        <Typography variant="h4">Login to your account</Typography>
-        <RHFTextField name="username" label="Username" placeholder="Username" />
-        <RHFTextField name="email" label="Email" placeholder="Email" />
+      <Stack spacing={{ xs: 2, sm: 2 }} marginTop={2}>
+        <Typography variant="h4">Create New Account</Typography>
 
-        <RHFTextField
-          name="password"
-          label="Password"
-          placeholder="Password"
-          type={password.value ? 'text' : 'password'}
-          InputProps={{
-            endAdornment: (
-              <InputAdornment position="end">
-                <IconButton onClick={password.onToggle} edge="end">
-                  <Iconify icon={password.value ? 'solar:eye-bold' : 'solar:eye-closed-bold'} />
-                </IconButton>
-              </InputAdornment>
-            ),
+        <Accordion
+          expanded={expanded === "personalInfo"}
+          onChange={handleChange("personalInfo")}
+          sx={{
+            '&.MuiAccordion-root': {
+              border: `1px solid ${alpha(theme.palette.primary.main, 1)}`,
+              mb: 1,
+              borderRadius: 1.5,
+            },
+            '&.MuiAccordion-root::before': {
+              display: 'none',
+            },
+            '&.Mui-expanded': {
+              mb: 1,
+              mt: 0,
+            },
           }}
-        />
+        >
+          <AccordionSummary expandIcon={<Iconify icon="si:expand-more-fill" />}>
+            <Typography variant="h6">Personal Information</Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <Grid container spacing={2}>
+              <Grid size={{ xs: 12, md: 6 }}>
+                <RHFTextField size={lgUp ? 'medium' : 'small'} name="firstName" label="First Name" placeholder="First Name" />
+              </Grid>
+              <Grid size={{ xs: 12, md: 6 }}>
+                <RHFTextField size={lgUp ? 'medium' : 'small'} name="lastName" label="Last Name" placeholder="Last Name" />
+              </Grid>
+            </Grid>
+            <Stack width='100%' marginTop={{ xs: 2, sm: '16px' }} >
+              <RHFDatePicker size={lgUp ? 'medium' : 'small'} name="birthdate" label="Date of Birth" />
+            </Stack>
+            <Stack width='100%' marginTop={{ xs: 2, sm: '16px' }} >
+              <RHFTextField size={lgUp ? 'medium' : 'small'} name="address" label="Address" />
+            </Stack>
 
-        <RHFTextField
-          name="verifyPassword"
-          label="Verify Password"
-          placeholder="Verify Password"
-          type={verifyPassword.value ? 'text' : 'password'}
-          InputProps={{
-            endAdornment: (
-              <InputAdornment position="end">
-                <IconButton onClick={verifyPassword.onToggle} edge="end">
-                  <Iconify icon={verifyPassword.value ? 'solar:eye-bold' : 'solar:eye-closed-bold'} />
-                </IconButton>
-              </InputAdornment>
-            ),
+          </AccordionDetails>
+        </Accordion>
+        
+        <Accordion
+          expanded={expanded === "accountInfo"}
+          onChange={handleChange("accountInfo")}
+          sx={{
+            '&.MuiAccordion-root': {
+              border: `1px solid ${alpha(theme.palette.primary.main, 1)}`,
+              mb: 1,
+              borderRadius: 1.5,
+            },
+            '&.MuiAccordion-root::before': {
+              display: 'none',
+            },
+            '&.Mui-expanded': {
+              mb: 1,
+              mt: 0,
+            },
           }}
-        />
+        >
+          <AccordionSummary expandIcon={<Iconify icon="si:expand-more-fill" />}>
+            <Typography variant="h6">Account Information</Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <Stack spacing={2}>
+              <RHFTextField
+                size={lgUp ? "medium" : "small"}
+                name="username"
+                label="Username"
+                placeholder="Username"
+              />
+              <RHFTextField
+                size={lgUp ? "medium" : "small"}
+                name="email"
+                label="Email"
+                placeholder="Email"
+              />
+              <RHFTextField
+                name="password"
+                label="Password"
+                placeholder="Password"
+                size={lgUp ? "medium" : "small"}
+                type={password.value ? "text" : "password"}
+                InputProps={{
+                  endAdornment: (
+                    <InputAdornment position="end">
+                      <IconButton onClick={password.onToggle} edge="end">
+                        <Iconify icon={password.value ? 'solar:eye-bold' : 'solar:eye-closed-bold'} />
+                      </IconButton>
+                    </InputAdornment>
+                  ),
+                }}
+              />
+              <RHFTextField
+                name="verifyPassword"
+                label="Verify Password"
+                placeholder="Verify Password"
+                size={lgUp ? "medium" : "small"}
+                type={verifyPassword.value ? "text" : "password"}
+                InputProps={{
+                  endAdornment: (
+                    <InputAdornment position="end">
+                      <IconButton onClick={verifyPassword.onToggle} edge="end">
+                        <Iconify icon={verifyPassword.value ? 'solar:eye-bold' : 'solar:eye-closed-bold'} />
+                      </IconButton>
+                    </InputAdornment>
+                  ),
+                }}
+              />
+            </Stack>
+          </AccordionDetails>
+        </Accordion>
 
-        <LoadingButton loading={registerApiCall.isPending} fullWidth color="primary" size="large" type="submit" variant="contained">
+        <LoadingButton size={lgUp ? 'medium' : 'small'} loading={registerApiCall.isPending} fullWidth color="primary" type="submit" variant="contained">
           Register
         </LoadingButton>
         <Box display="flex" alignItems="center">

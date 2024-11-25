@@ -4,6 +4,7 @@ import { HttpClient } from '@verisure-core';
 import { USER_SERVICE } from '../services-path';
 import { APIResponse } from '../auth-services';
 import { IPagination } from '../common';
+import { IUserDetailsResponse, IWorkerResponse } from './types';
 
 export interface IUser {
 	_id: string;
@@ -31,6 +32,12 @@ export interface IWorkersAndSupervisorsResponse {
 export const UserService = () => {
   return {
     getWorkersAndSupervisors: (payload: IPagination): APIResponse<IWorkersAndSupervisorsResponse> => HttpClient.post(`${USER_SERVICE}/workers-supervisors`, payload),
+
+		getUserDetails: (): APIResponse<IUserDetailsResponse> => HttpClient.get(`${USER_SERVICE}`), 
+
+		getUserDetailsById: (payload: string): APIResponse<IUserDetailsResponse> => HttpClient.get(`${USER_SERVICE}/${payload}`), 
+
+		getAllWorkers: (): APIResponse<IWorkerResponse> => HttpClient.get(`${USER_SERVICE}/workers`), 
   };
 };
   

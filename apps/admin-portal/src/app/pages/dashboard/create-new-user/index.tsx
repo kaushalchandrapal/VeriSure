@@ -1,8 +1,9 @@
 import { yupResolver } from '@hookform/resolvers/yup';
 import { LoadingButton } from '@mui/lab';
-import { Button, Card, CardActions, CardContent, IconButton, InputAdornment, Stack, Typography } from '@mui/material';
+import { Card, CardContent, IconButton, InputAdornment, Stack, Typography } from '@mui/material';
+import Grid from '@mui/material/Grid2';
 import { useMutation } from '@tanstack/react-query'
-import { CustomBreadcrumbs, enqueueSnackbar, FormProvider, Iconify, LoadingScreen, RHFAutocomplete, RHFTextField, useBoolean } from '@verisure-core';
+import { CustomBreadcrumbs, enqueueSnackbar, FormProvider, Iconify, LoadingScreen, RHFAutocomplete, RHFDatePicker, RHFTextField, useBoolean } from '@verisure-core';
 import { AuthService, ICreateUserFromAdminPayload, IRole, IUserCreationResponse, RolesService } from '@verisure-services';
 import { AxiosResponse } from 'axios';
 import { useEffect, useState } from 'react'
@@ -71,55 +72,76 @@ const CreateNewUserPage = () => {
               {
                 name: 'User Management',
                 href: '/dashboard',
-                icon: <Iconify icon="eva:home-fill" />,
+                icon: <Iconify icon="fluent-mdl2:workforce-management" />,
               },
               { name: 'Create User', icon: <Iconify icon="eva:cube-outline" /> },
             ]}
           />
           <Card>
             <CardContent>
-              <Stack spacing={2}>
-                <RHFTextField name="username" label="Username" placeholder="Username" />
-                <RHFTextField name="email" label="Email" placeholder="Email" />
-
-                <RHFTextField
-                  name="password"
-                  label="Password"
-                  placeholder="Password"
-                  type={password.value ? 'text' : 'password'}
-                  InputProps={{
-                    endAdornment: (
-                      <InputAdornment position="end">
-                        <IconButton onClick={password.onToggle} edge="end">
-                          <Iconify icon={password.value ? 'solar:eye-bold' : 'solar:eye-closed-bold'} />
-                        </IconButton>
-                      </InputAdornment>
-                    ),
-                  }}
-                />
-
-                <RHFTextField
-                  name="verifyPassword"
-                  label="Verify Password"
-                  placeholder="Verify Password"
-                  type={verifyPassword.value ? 'text' : 'password'}
-                  InputProps={{
-                    endAdornment: (
-                      <InputAdornment position="end">
-                        <IconButton onClick={verifyPassword.onToggle} edge="end">
-                          <Iconify icon={verifyPassword.value ? 'solar:eye-bold' : 'solar:eye-closed-bold'} />
-                        </IconButton>
-                      </InputAdornment>
-                    ),
-                  }}
-                />
-
-                <RHFAutocomplete
-                  name='role'
-                  options={roles?.length > 0 ? roles?.map(x => x.name) : []}
-                  label="Role"
-                  placeholder="Role"
-                />
+              <Grid container spacing={2}>
+                <Grid size={{ xs: 12, md: 6 }}>
+                  <RHFTextField name="firstName" label="First Name" placeholder="First Name" />
+                </Grid>
+                <Grid size={{ xs: 12, md: 6 }}>
+                  <RHFTextField name="lastName" label="Last Name" placeholder="Last Name" />
+                </Grid>
+                <Grid size={{ xs: 12, md: 6 }}>
+                  <RHFTextField name="address" label="Address" placeholder="Address" />
+                </Grid>
+                <Grid size={{ xs: 12, md: 6 }}>
+                  <RHFDatePicker fullWidth size='medium' name="birthdate" label="Date of Birth" />
+                </Grid>
+                <Grid size={{ xs: 12, md: 12 }}>
+                  <RHFTextField name="username" label="Username" placeholder="Username" />
+                </Grid>
+                <Grid size={{ xs: 12, md: 12 }}>
+                  <RHFTextField name="email" label="Email" placeholder="Email" />
+                </Grid>
+                <Grid size={{ xs: 12, md: 12 }}>
+                  <RHFTextField
+                    name="password"
+                    label="Password"
+                    placeholder="Password"
+                    type={password.value ? 'text' : 'password'}
+                    InputProps={{
+                      endAdornment: (
+                        <InputAdornment position="end">
+                          <IconButton onClick={password.onToggle} edge="end">
+                            <Iconify icon={password.value ? 'solar:eye-bold' : 'solar:eye-closed-bold'} />
+                          </IconButton>
+                        </InputAdornment>
+                      ),
+                    }}
+                  />
+                </Grid>
+                <Grid size={{ xs: 12, md: 12 }}>
+                  <RHFTextField
+                    name="verifyPassword"
+                    label="Verify Password"
+                    placeholder="Verify Password"
+                    type={verifyPassword.value ? 'text' : 'password'}
+                    InputProps={{
+                      endAdornment: (
+                        <InputAdornment position="end">
+                          <IconButton onClick={verifyPassword.onToggle} edge="end">
+                            <Iconify icon={verifyPassword.value ? 'solar:eye-bold' : 'solar:eye-closed-bold'} />
+                          </IconButton>
+                        </InputAdornment>
+                      ),
+                    }}
+                  />
+                </Grid>
+                <Grid size={{ xs: 12, md: 12 }}>
+                  <RHFAutocomplete
+                    name='role'
+                    options={roles?.length > 0 ? roles?.map(x => x.name) : []}
+                    label="Role"
+                    placeholder="Role"
+                  />
+                </Grid>
+              </Grid>
+              <Stack spacing={2} marginTop={2}>
                 <Stack
                   flexDirection="row"
                   justifyContent="end"

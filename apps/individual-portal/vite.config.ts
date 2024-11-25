@@ -12,25 +12,35 @@ export default defineConfig({
   server: {
     proxy: {
       '/api/auth': {
-        target: 'https://verisure-server.vercel.app/',
+        target: 'https://a696-74-12-88-104.ngrok-free.app',
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api\/auth/, '/api/auth'),
       },
       '/api/user': {
-        target: 'https://verisure-server.vercel.app/',
+        target: 'https://a696-74-12-88-104.ngrok-free.app',
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api\/user/, '/api/user'),
       },
-      '/api/role': {
-        target: 'https://verisure-server.vercel.app/',
+      '/api/aws': {
+        target: 'https://a696-74-12-88-104.ngrok-free.app',
         changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/api\/user/, '/api/role'),
+        rewrite: (path) => path.replace(/^\/api\/aws/, '/api/aws'),
+      },
+      '/api/role': {
+        target: 'https://a696-74-12-88-104.ngrok-free.app',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api\/role/, '/api/role'),
       },
       '/api/kyc': {
-        target: 'https://verisure-server.vercel.app/',
+        target: 'https://a696-74-12-88-104.ngrok-free.app',
         changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/api\/user/, '/api/kyc'),
+        rewrite: (path) => path.replace(/^\/api\/kyc/, '/api/kyc'),
       },
+      // '/': {
+      //   target: 'https://verisure-project.s3.us-east-2.amazonaws.com/',
+      //   changeOrigin: true,
+      //   rewrite: (path) => path,
+      // },
     },
   },
 
