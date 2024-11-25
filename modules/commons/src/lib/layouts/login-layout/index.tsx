@@ -4,6 +4,7 @@ import { useBoolean } from '@verisure-core';
 import { LoginBottomIllustration, LoginTopIllustration } from '@verisure-assets';
 import Main from './main';
 import NavVertical from './nav-vertical';
+import { Stack } from '@mui/material';
 
 // ----------------------------------------------------------------------
 

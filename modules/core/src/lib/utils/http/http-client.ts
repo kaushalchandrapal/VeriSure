@@ -76,6 +76,16 @@ export const HttpClient = {
     return axiosInstance.postForm<T>(url, data, AuthRequestTransformer(config, noAuth) as AxiosRequestConfig<T>);
   },
 
+  uploadPut: <T>(
+    url: string,
+    data?: any,
+    config?: AxiosRequestConfig<T>,
+    noAuth = true
+  ) => {
+    const finalConfig = AuthRequestTransformer(config, noAuth) as AxiosRequestConfig<T>;
+    return axiosInstance.put<T>(url, data, finalConfig);
+  },
+
   // NOTE: For GET pass config = { method: 'GET' }
   download: <T>(url: string, data: any, config?: AxiosRequestConfig<T>, noAuth = false, downloadDoc = true) => {
     return axiosInstance<T>(url, { method: 'POST', data: data, responseType: 'blob', ...AuthRequestTransformer(config, noAuth) }).then((response) => {

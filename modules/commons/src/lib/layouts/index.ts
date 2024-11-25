@@ -1,4 +1,5 @@
 export * from './login-layout';
+export * from './register-layout';
 export * from './config-layout';
 export * from './compact-layout';
 export * from './common/constants';

@@ -2,7 +2,7 @@ import { lazy, Suspense } from 'react';
 import { ErrorBoundary } from 'react-error-boundary';
 import { Navigate, Outlet } from 'react-router-dom';
 
-import { LoginLayout, CompactErrorPage } from '@verisure-commons';
+import { LoginLayout, CompactErrorPage, RegisterLayout } from '@verisure-commons';
 import { LoadingScreen } from '@verisure-core';
 import LoggedInErrorBoundary from './error-boundries/logged-in';
 
@@ -18,21 +18,27 @@ const AuthRoutes = [
         path: '',
         element: (
           <ErrorBoundary FallbackComponent={CompactErrorPage}>
-            <LoginLayout>
-              <Suspense fallback={<LoadingScreen />}>
-                <Outlet />
-              </Suspense>
-            </LoginLayout>
+            <Suspense fallback={<LoadingScreen />}>
+              <Outlet />
+            </Suspense>
           </ErrorBoundary>
         ),
         children: [
           {
             path: 'login',
-            element: <LoginPage />,
+            element: (
+              <LoginLayout>
+                <LoginPage />
+              </LoginLayout>
+            ),
           },
           {
             path: 'register',
-            element: <RegisterPage />,
+            element: (
+              <RegisterLayout>
+                <RegisterPage />
+              </RegisterLayout>
+            ),
           },
           {
             path: '',

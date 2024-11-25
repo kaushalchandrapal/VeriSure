@@ -25,7 +25,7 @@ export default function Main({ children, sx, ...other }: BoxProps) {
         }}
         {...other}
       >
-        <Stack justifyContent="center" alignItems="center" height="100vh" spacing={7}>
+        <Stack justifyContent="center" alignItems="center" height="100vh" spacing={7} sx={{ sm: { marginBottom: 90 } }}>
           {!lgUp && (
             <Stack alignItems='center'>
               <Box sx={{ width: 250 }}>
@@ -54,7 +54,6 @@ export default function Main({ children, sx, ...other }: BoxProps) {
             }}
           >
             <CardContent sx={{ padding: 6, paddingBottom: 6 }}>
-              
               {children}
             </CardContent>
           </Card>
