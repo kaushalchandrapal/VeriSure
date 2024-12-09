@@ -12,17 +12,17 @@ export default defineConfig({
   server: {
     proxy: {
       '/api/auth': {
-        target: 'https://b857-216-209-2-105.ngrok-free.app/',
+        target: 'https://verisure-server.vercel.app/',
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api\/auth/, '/api/auth'),
       },
       '/api/user': {
-        target: 'https://b857-216-209-2-105.ngrok-free.app/',
+        target: 'https://verisure-server.vercel.app/',
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api\/user/, '/api/user'),
       },
       '/api/role': {
-        target: 'https://b857-216-209-2-105.ngrok-free.app/',
+        target: 'https://verisure-server.vercel.app/',
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api\/user/, '/api/role'),
       },
