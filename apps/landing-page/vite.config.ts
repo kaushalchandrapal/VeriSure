@@ -7,7 +7,7 @@ import { nxCopyAssetsPlugin } from '@nx/vite/plugins/nx-copy-assets.plugin';
 
 export default defineConfig({
   root: __dirname,
-  cacheDir: '../../node_modules/.vite/apps/individual-portal',
+  cacheDir: '../../node_modules/.vite/apps/landing-page',
 
   server: {
     proxy: {
