@@ -11,27 +11,27 @@ export default defineConfig({
   server: {
     proxy: {
       '/api/auth': {
-        target: 'https://a696-74-12-88-104.ngrok-free.app/',
+        target: 'https://b857-216-209-2-105.ngrok-free.app/',
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api\/auth/, '/api/auth'),
       },
       '/api/user': {
-        target: 'https://a696-74-12-88-104.ngrok-free.app/',
+        target: 'https://b857-216-209-2-105.ngrok-free.app/',
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api\/user/, '/api/user'),
       },
       '/api/aws': {
-        target: 'https://a696-74-12-88-104.ngrok-free.app/',
+        target: 'https://b857-216-209-2-105.ngrok-free.app/',
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api\/aws/, '/api/aws'),
       },
       '/api/role': {
-        target: 'https://a696-74-12-88-104.ngrok-free.app/',
+        target: 'https://b857-216-209-2-105.ngrok-free.app/',
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api\/role/, '/api/role'),
       },
       '/api/kyc': {
-        target: 'https://a696-74-12-88-104.ngrok-free.app/',
+        target: 'https://b857-216-209-2-105.ngrok-free.app/',
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api\/kyc/, '/api/kyc'),
       },

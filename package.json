@@ -7,6 +7,7 @@
     "build:all": "concurrently \"bun run nx build individual-portal\" \"bun run nx build admin-portal\"",
     "deploy:all": "concurrently \"bun run nx build individual-portal && vercel --prod ./dist/apps/individual-portal\" \"bun run nx build admin-portal && vercel --prod ./dist/apps/admin-portal\"",
     "dev:individual": "bun run nx serve individual-portal",
+    "dev:landing": "bun run nx serve landing-page",
     "dev:server": "bun run nx serve verisure-server",
     "dev:admin": "bun run nx serve admin-portal",
     "dev:ops": "bun run nx serve ops-portal",
@@ -31,6 +32,7 @@
     "@mui/x-date-pickers": "^6.20.2",
     "@tanstack/react-query": "^5.59.0",
     "@types/lodash": "^4.17.10",
+    "@types/three": "^0.170.0",
     "apexcharts": "^3.54.0",
     "axios": "^1.6.0",
     "concurrently": "^9.0.1",
@@ -64,6 +66,7 @@
     "simplebar-react": "^3.2.6",
     "stylis-plugin-rtl": "^2.1.1",
     "tailwind": "^4.0.0",
+    "three": "^0.171.0",
     "yup": "^1.4.0"
   },
   "devDependencies": {

@@ -2,7 +2,7 @@ import { HttpClient } from '@verisure-core';
 import { KYC_SERVICE } from '../services-path';
 import { APIResponse } from '../auth-services';
 import { IKYCDetails, IPaginationInfo } from '../common';
-import { IAssignKYCCaseRequestPayload, IAssignKYCCaseResponse, IGetAllKycRequestPayload, IKycDetailsResponse } from './types';
+import { IAssignKYCCaseRequestPayload, IAssignKYCCaseResponse, IGetAllKycRequestPayload, IKycDeatilsById, IKycDetailsResponse } from './types';
 
 export interface ICreateKycRequest {
   documentType: string;
@@ -54,6 +54,7 @@ export interface IDocumentValidationResponse {
 export interface IUpdateKYCRequestPayload {
   kycId: string;
   status: string;
+  message: string | null;
 }
 
 export const KYCService = () => {
@@ -71,6 +72,10 @@ export const KYCService = () => {
     updateKYC: (payload: IUpdateKYCRequestPayload) => HttpClient.put(`${KYC_SERVICE}/status`, payload),
 
     assignKycCase: (payload: IAssignKYCCaseRequestPayload): APIResponse<IAssignKYCCaseResponse> => HttpClient.post(`${KYC_SERVICE}/assign`, payload),
+
+    getKYCByID: (payload: string): APIResponse<IKycDeatilsById> => HttpClient.get(`${KYC_SERVICE}/${payload}`),
+
+    downloadKycReport: (payload: string): APIResponse<IKycDeatilsById> => HttpClient.download(`${KYC_SERVICE}/pdf/${payload}`, '', { method: 'GET' }),
 
   };
 };

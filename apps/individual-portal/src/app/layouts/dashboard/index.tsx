@@ -29,6 +29,7 @@ export function DashboardLayout({ children }: Props) {
               bgcolor: theme.palette.grey[300],
             }),
           }),
+          marginBottom: 4,
         }}
       >
         <Container maxWidth={settings.themeStretch ? false : 'lg'}>

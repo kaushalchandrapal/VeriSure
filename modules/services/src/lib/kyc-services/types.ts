@@ -1,3 +1,5 @@
+import { IAssignedCase, IUserID } from "../user-services/types";
+
 export interface IKycDetailsResponseElement {
   kycDetails: IKycDetail[];
   pagination: IPagination;
@@ -9,8 +11,9 @@ export interface IKycDetailsResponse {
 
 export interface IKycDetail {
   _id: string;
-  user_id: string;
+  user_id: IUserID;
   status: "Rejected" | "Pending" | "In Progress" | "Completed";
+  ai_status: "Rejected" | "Pending" | "In Progress" | "Completed";
   documents: string[];
   assigner_id: string | null;
   worker_id: string | null;
@@ -18,6 +21,10 @@ export interface IKycDetail {
   created_at: string;
   updated_at: string;
   __v: number;
+}
+
+export interface IKycDeatilsById {
+  data: IAssignedCase;
 }
 
 export interface IPagination {

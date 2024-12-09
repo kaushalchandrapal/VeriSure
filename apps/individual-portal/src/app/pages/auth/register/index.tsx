@@ -62,7 +62,7 @@ const RegisterPage = () => {
           onChange={handleChange("personalInfo")}
           sx={{
             '&.MuiAccordion-root': {
-              border: `1px solid ${alpha(theme.palette.primary.main, 1)}`,
+              border: expanded === "personalInfo" ? `1px solid ${alpha(theme.palette.primary.main, 1)}`:  `1px solid ${alpha(theme.palette.text.disabled, 0.5)}`,
               mb: 1,
               borderRadius: 1.5,
             },
@@ -102,7 +102,7 @@ const RegisterPage = () => {
           onChange={handleChange("accountInfo")}
           sx={{
             '&.MuiAccordion-root': {
-              border: `1px solid ${alpha(theme.palette.primary.main, 1)}`,
+              border: expanded === "accountInfo" ? `1px solid ${alpha(theme.palette.primary.main, 1)}`:  `1px solid ${alpha(theme.palette.text.disabled, 0.5)}`,
               mb: 1,
               borderRadius: 1.5,
             },

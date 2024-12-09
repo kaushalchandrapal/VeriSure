@@ -1,9 +1,9 @@
-import { Card, Chip, Paper, Stack, Table, TableBody, TableCell, TableContainer, TableRow, Typography, useTheme } from "@mui/material";
+import { Card, Chip, Paper, Stack, Table, TableBody, TableCell, TableContainer, TableRow, useTheme } from "@mui/material";
 import Grid from '@mui/material/Grid2';
-import { CustomBreadcrumbs, Iconify, jwtDecode, LoadingScreen, Scrollbar, TableHeadCustom, TablePaginationCustom, useTable } from "@verisure-core";
+import { CustomBreadcrumbs, Iconify, LoadingScreen, Scrollbar, TableHeadCustom, TablePaginationCustom, useTable } from "@verisure-core";
 import AppWidget from "../common/app-widget";
 import { useMutation } from "@tanstack/react-query";
-import { ICreateKycRequest, IKycCounts, IKycStatusCounts, KYCService } from "@verisure-services";
+import { IKycStatusCounts, KYCService } from "@verisure-services";
 import { AxiosResponse } from "axios";
 import { useEffect, useState } from "react";
 import AppPie from "../common/app-pie";
@@ -15,11 +15,6 @@ const UserDashboard = () => {
     defaultRowsPerPage: 5,
   });
   const theme = useTheme();
-  // const createKycApiCall = useMutation({
-  //   mutationFn: (payload: ICreateKycRequest) => KYCService().createKyc(payload),
-
-
-  // });
 
   const [counts, setCounts] = useState<IKycStatusCounts>({
     counts: {
@@ -55,6 +50,9 @@ const UserDashboard = () => {
     table.page * table.rowsPerPage,
     table.page * table.rowsPerPage + table.rowsPerPage
   );
+
+  console.log(paginatedKYCRequests);
+  
 
   return (
     <>
