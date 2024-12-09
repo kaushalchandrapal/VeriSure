@@ -5,5 +5,19 @@
   "projectType": "application",
   "tags": [],
   "// targets": "to see all targets run: nx show project landing-page --web",
-  "targets": {}
+  "targets": {
+    "build": {
+      "executor": "@nx/web:build",
+      "options": {
+        "outputPath": "dist/apps/landing-page",
+        "index": "apps/landing-page/src/index.html",
+        "main": "apps/landing-page/src/main.tsx",
+        "polyfills": "apps/landing-page/src/polyfills.ts",
+        "tsConfig": "apps/landing-page/tsconfig.app.json",
+        "assets": ["apps/landing-page/src/assets"],
+        "styles": ["apps/landing-page/src/styles.css"],
+        "scripts": []
+      }
+    }
+  }
 }
