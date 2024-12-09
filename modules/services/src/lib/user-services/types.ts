@@ -9,9 +9,10 @@ export interface IDocument {
 
 export interface IAssignedCase {
   _id: string;
-  user_id: IUserID;
-  status: string;
-  ai_status: string;
+  user_id?: IUserID;
+  user: IUserID;
+  status: "Rejected" | "Pending" | "In Progress" | "Completed";
+  ai_status: "Rejected" | "Pending" | "In Progress" | "Completed";
   documents: IDocument[];
   assigner_id: string;
   worker_id: string;

@@ -10,7 +10,8 @@ import {
   TablePagination,
   Card,
   Stack,
-  Chip
+  Chip,
+  IconButton
 } from '@mui/material';
 import { useMutation } from '@tanstack/react-query';
 import { CustomBreadcrumbs, enqueueSnackbar, Iconify, LoadingScreen, TableHeadCustom } from '@verisure-core';
@@ -26,6 +27,7 @@ const KycRequestHead = [
   { label: 'Expires On', minWidth: 250 },
   { label: 'Requested Date', minWidth: 250 },
   { label: 'Date Updated', minWidth: 250 },
+  { label: '', minWidth: 10 },
 ];
 
 const MyKycPage = () => {
@@ -69,6 +71,10 @@ const MyKycPage = () => {
   const handleNewKycRequest = () => {
     navigate(RouterLinks.requestNewKyc);
   };
+
+  const downloadKycReportApiCall = useMutation({
+    mutationFn: (payload: string) => KYCService().downloadKycReport(payload),
+  });
 
   return (
     <>
@@ -125,13 +131,20 @@ const MyKycPage = () => {
                         />
                       </TableCell>
                       <TableCell>
-                        {dayjs(request?.expires_at ?? null).isValid() ? dayjs(request.expires_at).format('DD MMMM YYYY, hh:mm A') : '--'}
+                        {dayjs(request?.valid_until ?? null).isValid() ? dayjs(request.valid_until).format('DD MMMM YYYY, hh:mm A') : '--'}
                       </TableCell>
                       <TableCell>
                         {dayjs(request.created_at).format('DD MMMM YYYY, hh:mm A')}
                       </TableCell>
                       <TableCell>
                         {dayjs(request.updated_at).format('DD MMMM YYYY, hh:mm A')}
+                      </TableCell>
+                      <TableCell>
+                        {(request.status === 'Completed' || request.status === 'Rejected') && (
+                          <IconButton onClick={() => downloadKycReportApiCall.mutateAsync(request._id)}>
+                            <Iconify width={24} icon='heroicons-solid:document-download' />
+                          </IconButton>
+                        )}
                       </TableCell>
                     </TableRow>
                   ))}
