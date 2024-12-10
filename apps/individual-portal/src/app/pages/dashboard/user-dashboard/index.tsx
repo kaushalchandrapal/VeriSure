@@ -46,7 +46,7 @@ const UserDashboard = () => {
   
   const calculatePercentage = (count: number, total: number) => total ? Math.round((count / total) * 100) : 0;
 
-  const paginatedKYCRequests = counts.allKYCRequests.slice(
+  const paginatedKYCRequests = counts?.allKYCRequests?.slice(
     table.page * table.rowsPerPage,
     table.page * table.rowsPerPage + table.rowsPerPage
   );
