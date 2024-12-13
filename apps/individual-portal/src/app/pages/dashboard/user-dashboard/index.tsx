@@ -1,10 +1,10 @@
 import { Card, Chip, Paper, Stack, Table, TableBody, TableCell, TableContainer, TableRow, useTheme } from "@mui/material";
 import Grid from '@mui/material/Grid2';
-import { CustomBreadcrumbs, Iconify, LoadingScreen, Scrollbar, TableHeadCustom, TablePaginationCustom, useTable } from "@verisure-core";
+import { CustomBreadcrumbs, enqueueSnackbar, Iconify, LoadingScreen, Scrollbar, TableHeadCustom, TablePaginationCustom, useTable } from "@verisure-core";
 import AppWidget from "../common/app-widget";
 import { useMutation } from "@tanstack/react-query";
 import { IKycStatusCounts, KYCService } from "@verisure-services";
-import { AxiosResponse } from "axios";
+import { AxiosError, AxiosResponse } from "axios";
 import { useEffect, useState } from "react";
 import AppPie from "../common/app-pie";
 import dayjs from "dayjs";
@@ -32,6 +32,10 @@ const UserDashboard = () => {
 
     onSuccess: (response: AxiosResponse<IKycStatusCounts>) => {
       setCounts(response?.data);
+    },
+
+    onError: (error: AxiosError<{ message: string }>) => {
+      enqueueSnackbar(error?.response?.data?.message, { variant: "error" });
     }
   });
 

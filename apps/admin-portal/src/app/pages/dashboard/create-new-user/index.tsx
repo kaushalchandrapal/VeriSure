@@ -5,7 +5,7 @@ import Grid from '@mui/material/Grid2';
 import { useMutation } from '@tanstack/react-query'
 import { CustomBreadcrumbs, enqueueSnackbar, FormProvider, Iconify, LoadingScreen, RHFAutocomplete, RHFDatePicker, RHFTextField, useBoolean } from '@verisure-core';
 import { AuthService, ICreateUserFromAdminPayload, IRole, IUserCreationResponse, RolesService } from '@verisure-services';
-import { AxiosResponse } from 'axios';
+import { AxiosError, AxiosResponse } from 'axios';
 import { useEffect, useState } from 'react'
 import { useForm } from 'react-hook-form';
 import { useNavigate } from 'react-router-dom';
@@ -24,6 +24,9 @@ const CreateNewUserPage = () => {
     mutationFn: () => RolesService().getAllRoles(),
     onSuccess: (response: AxiosResponse<IRole[]>) => {
       setRoles(response.data);
+    },
+    onError: (error: AxiosError<{ message: string }>) => {
+      enqueueSnackbar(error?.response?.data?.message, { variant: "error" });
     }
   });
 

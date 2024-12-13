@@ -11,6 +11,7 @@ import { AuthService, SignupPayload } from '@verisure-services';
 import { LoadingButton } from '@mui/lab';
 import { useState } from 'react';
 import dayjs from 'dayjs';
+import { AxiosError } from 'axios';
 
 const RegisterPage = () => {
   const theme = useTheme();
@@ -35,6 +36,10 @@ const RegisterPage = () => {
       enqueueSnackbar('Registration Successful', { variant: 'success' });
 
       navigate('/auth/login');
+    },
+
+    onError: (error: AxiosError<{ message: string }>) => {
+      enqueueSnackbar(error?.response?.data?.message, { variant: "error" });
     }
   });
 

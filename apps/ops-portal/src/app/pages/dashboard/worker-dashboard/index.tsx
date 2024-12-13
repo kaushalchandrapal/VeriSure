@@ -1,8 +1,8 @@
 import { Card, Chip, IconButton, Paper, Stack, Table, TableBody, TableCell, TableContainer, TableRow } from "@mui/material";
 import { useMutation } from "@tanstack/react-query"
-import { CustomBreadcrumbs, Iconify, LoadingScreen, TableHeadCustom } from "@verisure-core";
+import { CustomBreadcrumbs, enqueueSnackbar, Iconify, LoadingScreen, TableHeadCustom } from "@verisure-core";
 import { IAssignedCase, IUserDetailsResponse, UserService } from "@verisure-services";
-import { AxiosResponse } from "axios";
+import { AxiosError, AxiosResponse } from "axios";
 import dayjs from "dayjs";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
@@ -22,6 +22,10 @@ const WorkerDashboardMain = () => {
       const { data: response } = rowResponse;
 
       setAssignedCases(response.user.assigned_cases);
+    },
+
+    onError: (error: AxiosError<{ message: string }>) => {
+      enqueueSnackbar(error?.response?.data?.message, { variant: "error" });
     }
   });
 

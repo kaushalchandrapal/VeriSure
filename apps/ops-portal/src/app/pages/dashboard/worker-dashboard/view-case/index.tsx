@@ -5,7 +5,7 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import { CustomBreadcrumbs, enqueueSnackbar, Iconify, LoadingScreen } from '@verisure-core';
 import { AIButton, DocumentRejected, DocumentVerified, PieChartLoading } from '@verisure-commons';
 import { useMutation } from '@tanstack/react-query';
-import { AxiosResponse } from 'axios';
+import { AxiosError, AxiosResponse } from 'axios';
 import { RouterLinks } from '../../../../app-route-paths';
 import { useEffect, useState } from 'react';
 import SummaryCards from './summary-cards';
@@ -27,6 +27,10 @@ const ViewCasePageWorker = () => {
       const { data: response } = rawResponse;
 
       setCaseDetails(response.data);
+    },
+
+    onError: (error: AxiosError<{ message: string }>) => {
+      enqueueSnackbar(error?.response?.data?.message, { variant: "error" });
     }
   });
 
@@ -46,6 +50,10 @@ const ViewCasePageWorker = () => {
         getKYCByIDApiCall.mutateAsync(state.assignedCase._id);
       }
       
+    },
+
+    onError: (error: AxiosError<{ message: string }>) => {
+      enqueueSnackbar(error?.response?.data?.message, { variant: "error" });
     }
   });
 
@@ -75,6 +83,10 @@ const ViewCasePageWorker = () => {
       if (state.assignedCase._id) {
         getKYCByIDApiCall.mutateAsync(state.assignedCase._id);
       }
+    },
+
+    onError: (error: AxiosError<{ message: string }>) => {
+      enqueueSnackbar(error?.response?.data?.message, { variant: "error" });
     }
   });
   

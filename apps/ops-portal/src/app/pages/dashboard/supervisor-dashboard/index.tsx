@@ -2,7 +2,7 @@ import { Autocomplete, Box, Card, Chip, Paper, Stack, Table, TableBody, TableCel
 import { useMutation } from "@tanstack/react-query"
 import { CustomBreadcrumbs, enqueueSnackbar, Iconify, jwtDecode, LoadingScreen, TableHeadCustom } from "@verisure-core";
 import { IAssignKYCCaseRequestPayload, IAssignKYCCaseResponse, IGetAllKycRequestPayload, IKycDetail, IKycDetailsResponse, IKycDetailsResponseElement, IWorker, IWorkerResponse, KYCService, UserService } from "@verisure-services";
-import { AxiosResponse } from "axios";
+import { AxiosError, AxiosResponse } from "axios";
 import dayjs from "dayjs";
 import { useEffect, useState } from "react";
 
@@ -28,6 +28,10 @@ const SupervisorDashboardMain = () => {
     onSuccess: (rawResponse: AxiosResponse<IKycDetailsResponse>) => {
       const { data: response } = rawResponse;
       setData(response.data);
+    },
+
+    onError: (error: AxiosError<{ message: string }>) => {
+      enqueueSnackbar(error?.response?.data?.message, { variant: "error" });
     }
   });
 
@@ -38,6 +42,10 @@ const SupervisorDashboardMain = () => {
       const { data: response } = rawResponse;
 
       setAllWorkers(response.workers);
+    },
+
+    onError: (error: AxiosError<{ message: string }>) => {
+      enqueueSnackbar(error?.response?.data?.message, { variant: "error" });
     }
   });
 
@@ -65,6 +73,10 @@ const SupervisorDashboardMain = () => {
         limit: rowsPerPage,
       };
       getAllKycAPICall.mutateAsync(payload);
+    },
+
+    onError: (error: AxiosError<{ message: string }>) => {
+      enqueueSnackbar(error?.response?.data?.message, { variant: "error" });
     }
   });
 

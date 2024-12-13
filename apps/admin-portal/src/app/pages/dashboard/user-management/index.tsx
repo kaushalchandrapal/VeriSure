@@ -1,8 +1,8 @@
 import { Box, Paper, Table, TableBody, TableCell, TableContainer, TableRow, Typography, TablePagination, Card, Stack, Button, Chip } from "@mui/material";
 import { useMutation } from "@tanstack/react-query";
-import { CustomBreadcrumbs, Iconify, LoadingScreen, TableHeadCustom } from "@verisure-core";
+import { CustomBreadcrumbs, enqueueSnackbar, Iconify, LoadingScreen, TableHeadCustom } from "@verisure-core";
 import { IWorkersAndSupervisorsResponse, UserService } from "@verisure-services";
-import { AxiosResponse } from "axios";
+import { AxiosError, AxiosResponse } from "axios";
 import dayjs from "dayjs";
 import { IPagination } from "modules/services/src/lib/common";
 import { useEffect, useState } from "react";
@@ -27,7 +27,10 @@ const AdminDashboard = () => {
     mutationFn: (payload: IPagination) => UserService().getWorkersAndSupervisors(payload),
     onSuccess: (response: AxiosResponse<IWorkersAndSupervisorsResponse>) => {
       setData(response.data);
-    }    
+    },
+    onError: (error: AxiosError<{ message: string }>) => {
+      enqueueSnackbar(error?.response?.data?.message, { variant: "error" });
+    }
   });
 
   useEffect(() => {

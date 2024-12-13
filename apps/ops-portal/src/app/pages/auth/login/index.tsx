@@ -1,4 +1,4 @@
-import { AxiosResponse } from 'axios';
+import { AxiosError, AxiosResponse } from 'axios';
 import { Box, Button, IconButton, InputAdornment, Stack, Typography } from "@mui/material"
 import { InferType } from "yup";
 import { LoadingButton } from "@mui/lab";
@@ -8,7 +8,7 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from '@hookform/resolvers/yup';
 
 import { AuthService, ILoginResponse, LoginPayload } from "@verisure-services";
-import { FormProvider, Iconify, RHFTextField, useBoolean } from "@verisure-core";
+import { enqueueSnackbar, FormProvider, Iconify, RHFTextField, useBoolean } from "@verisure-core";
 import { loginDefaultValues, loginSchema } from "./form-helpers";
 
 const LoginPage = () => {
@@ -32,7 +32,11 @@ const LoginPage = () => {
 
         navigate('/dashboard');
       }
-    } 
+    },
+
+    onError: (error: AxiosError<{ message: string }>) => {
+      enqueueSnackbar(error?.response?.data?.message, { variant: "error" });
+    }
   });
 
   const onSubmit = (data: loginSchemaType) => {

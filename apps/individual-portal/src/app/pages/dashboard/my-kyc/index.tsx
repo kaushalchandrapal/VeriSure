@@ -79,8 +79,11 @@ const MyKycPage = () => {
       const { data: response } = rawResponse;
       console.log(rawResponse);
       window.open(response.data.pdfUrl, '_blank', 'noopener,noreferrer');
-      
-    } 
+    },
+
+    onError: (error: AxiosError<{ message: string }>) => {
+      enqueueSnackbar(error?.response?.data?.message, { variant: "error" });
+    }
   });
 
   return (

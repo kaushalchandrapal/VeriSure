@@ -46,6 +46,10 @@ const RequestNewKycPage = () => {
     onSuccess: () => {
       enqueueSnackbar('File Uploaded Successfully', { variant: 'success' });
     },
+
+    onError: (error: AxiosError<{ message: string }>) => {
+      enqueueSnackbar(error?.response?.data?.message, { variant: "error" });
+    }
   });
 
   const fileUploadAwsNameGetterApi = useMutation({
@@ -62,6 +66,10 @@ const RequestNewKycPage = () => {
         methods.setValue('documentName', response.data[0].fileName);
         methods.trigger();
       });
+    },
+
+    onError: (error: AxiosError<{ message: string }>) => {
+      enqueueSnackbar(error?.response?.data?.message, { variant: "error" });
     }
   });  
 
