@@ -12,22 +12,43 @@ export default defineConfig({
   server: {
     proxy: {
       '/api/auth': {
-        target: 'https://verisure-server.vercel.app/',
+        target: 'verisure-server.vercel.app',
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api\/auth/, '/api/auth'),
       },
       '/api/user': {
-        target: 'https://verisure-server.vercel.app/',
+        target: 'verisure-server.vercel.app',
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api\/user/, '/api/user'),
       },
-      '/api/role': {
-        target: 'https://verisure-server.vercel.app/',
+      '/api/aws': {
+        target: 'verisure-server.vercel.app',
         changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/api\/user/, '/api/role'),
+        rewrite: (path) => path.replace(/^\/api\/aws/, '/api/aws'),
       },
+      '/api/role': {
+        target: 'verisure-server.vercel.app',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api\/role/, '/api/role'),
+      },
+      '/api/kyc': {
+        target: 'verisure-server.vercel.app',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api\/kyc/, '/api/kyc'),
+      },
+      '/api/admin': {
+        target: 'verisure-server.vercel.app',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api\/kyc/, '/api/admin'),
+      },
+      // '/': {
+      //   target: 'https://verisure-project.s3.us-east-2.amazonaws.com/',
+      //   changeOrigin: true,
+      //   rewrite: (path) => path,
+      // },
     },
   },
+
 
   preview: {
     port: 4300,

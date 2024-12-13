@@ -20,7 +20,6 @@ import { useEffect, useState } from 'react';
 export default function AccountPopover() {
   const router = useRouter();
   const theme = useTheme();
-  const navigate = useNavigate();
   const [decodedToken, setDecodedToken] = useState<IJwtPayload | null>(null);
   // const { firstName, lastName, role } = useUserDetailsStore((state) => state.user);
   // const profileProgressStore = useProfileProgressStore((state) => state);
@@ -32,7 +31,6 @@ export default function AccountPopover() {
   const handleLogout = async () => {
     try {
       await signOut();
-      // profileProgressStore.updateProfileSetupStatus(null, false);
       popover.onClose();
       router.replace('/');
     } catch (error) {
@@ -40,17 +38,14 @@ export default function AccountPopover() {
     }
   };
 
+  console.log(decodedToken);
+  
+
   useEffect(() => {
     const accessToken = sessionStorage.getItem('accessToken');
     const decoded = jwtDecode(accessToken);
     setDecodedToken(decoded);
   }, []);
-
-  // const handleSettings = () => {
-  //   popover.setOpen(null);
-  //   if (role === 'Admin') setTimeout(() => navigate(RouterLinks.organisationProfile), 200);
-  //   else setTimeout(() => navigate(RouterLinks.myProfile), 200);
-  // };
 
   return (
     <>

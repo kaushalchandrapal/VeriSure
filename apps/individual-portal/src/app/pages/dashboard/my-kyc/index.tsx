@@ -15,7 +15,7 @@ import {
 } from '@mui/material';
 import { useMutation } from '@tanstack/react-query';
 import { CustomBreadcrumbs, enqueueSnackbar, Iconify, LoadingScreen, TableHeadCustom } from '@verisure-core';
-import { ICreateKycRequest, IGetKYCRequestsResponse, IGetUserKycRequestsPayload, IKYCRequestCreationResponse, KYCService } from '@verisure-services';
+import { ICreateKycRequest, IGetKYCRequestsResponse, IGetUserKycRequestsPayload, IKYCRequestCreationResponse, IPdfResponse, KYCService } from '@verisure-services';
 import dayjs from 'dayjs';
 import { AxiosError, AxiosResponse } from 'axios';
 import { LoadingButton } from '@mui/lab';
@@ -74,6 +74,13 @@ const MyKycPage = () => {
 
   const downloadKycReportApiCall = useMutation({
     mutationFn: (payload: string) => KYCService().downloadKycReport(payload),
+
+    onSuccess: (rawResponse: AxiosResponse<IPdfResponse>) => {
+      const { data: response } = rawResponse;
+      console.log(rawResponse);
+      window.open(response.data.pdfUrl, '_blank', 'noopener,noreferrer');
+      
+    } 
   });
 
   return (

@@ -4,5 +4,6 @@ export * from './lib/kyc-services';
 export * from './lib/roles-services';
 export * from './lib/services-path';
 export * from './lib/user-services';
+export * from './lib/admin-services';
 export * from './lib/user-services/types';
 export * from './lib/kyc-services/types';

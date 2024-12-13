@@ -22,11 +22,23 @@ export interface Props {
   hideNavOptions?: boolean;
 }
 
-const Header = ({ navData, noData, hideNavOptions }: Props) => {
+export const navData = [
+  { title: 'Dashboard', path: RouterLinks.dashboard, icon: "ic:baseline-dashboard" },
+  { title: 'User Management', path: RouterLinks.userManagement, icon: "fluent-mdl2:workforce-management" },
+];
+
+const Header = ({ noData, hideNavOptions }: Props) => {
   const theme = useTheme();
   const lgUp = useResponsive('up', 'lg');
   const { pathname } = useLocation();
   const offset = useOffSetTop(DASHBOARD_CONFIG.HEADER.DESKTOP_HEIGHT);
+
+  const getLinkColor = (isActive: boolean) => {
+    if (isActive) return theme.palette.primary.light;
+    return theme.palette.mode === 'dark'
+      ? theme.palette.text.primary
+      : theme.palette.background.default;
+  };
 
   const linkColor = (active: boolean) => {
     let color;
@@ -41,6 +53,12 @@ const Header = ({ navData, noData, hideNavOptions }: Props) => {
 
     return color;
   };
+
+  const navButtonStyles = (active: boolean) => ({
+    color: getLinkColor(active),
+    '&:hover': { bgcolor: 'transparent !important' },
+  });
+
 
   return (
     <AppBar
@@ -68,7 +86,32 @@ const Header = ({ navData, noData, hideNavOptions }: Props) => {
         </Stack>
 
         {lgUp && (
-          <Stack direction="row" justifyContent="center" width="100%" gap={4} />
+          <List component={Stack} direction="row" justifyContent="center" width="100%" gap={4} disablePadding>
+            {!(noData || hideNavOptions) &&
+              (navData || []).map((item) => {
+                const active = pathname === item.path || pathname.startsWith(item.path);
+                return (
+                  <ListItem disableGutters disablePadding sx={{ width: 'max-content' }} key={item.path}>
+                    <ListItemButton
+                      LinkComponent={RouterLink}
+                      sx={navButtonStyles(active)}
+                      aria-current={active ? 'page' : undefined}
+                      disableGutters
+                      disableRipple
+                      disableTouchRipple
+                      href={item.path}
+                    >
+                      <ListItemIcon>
+                        <Iconify icon={item.icon} />
+                      </ListItemIcon>
+                      <ListItemText
+                        primary={<Typography variant="body2">{item.title}</Typography>}
+                      />
+                    </ListItemButton>
+                  </ListItem>
+                );
+              })}
+          </List>
         )}
 
         <Stack alignItems="center" direction={{ xs: 'row-reverse', md: 'row-reverse' }} spacing={1}>

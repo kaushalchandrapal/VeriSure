@@ -12,27 +12,27 @@ export default defineConfig({
   server: {
     proxy: {
       '/api/auth': {
-        target: 'https://verisure-server.vercel.app/',
+        target: 'verisure-server.vercel.app',
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api\/auth/, '/api/auth'),
       },
       '/api/user': {
-        target: 'https://verisure-server.vercel.app/',
+        target: 'verisure-server.vercel.app',
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api\/user/, '/api/user'),
       },
       '/api/aws': {
-        target: 'https://verisure-server.vercel.app/',
+        target: 'verisure-server.vercel.app',
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api\/aws/, '/api/aws'),
       },
       '/api/role': {
-        target: 'https://verisure-server.vercel.app/',
+        target: 'verisure-server.vercel.app',
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api\/role/, '/api/role'),
       },
       '/api/kyc': {
-        target: 'https://verisure-server.vercel.app/',
+        target: 'verisure-server.vercel.app',
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api\/kyc/, '/api/kyc'),
       },

@@ -3,4 +3,7 @@ export const RouterLinks = {
 
   auth: '/auth',
   login: '/auth/login',
+
+  dashboard: '/dashboard/admin-dashboard',
+  userManagement: '/dashboard/user-management',
 };
