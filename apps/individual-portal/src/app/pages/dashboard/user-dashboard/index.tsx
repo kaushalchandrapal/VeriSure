@@ -28,15 +28,15 @@ const UserDashboard = () => {
   });
 
   const getKycCountsApiCall = useMutation({
-    mutationFn: () => KYCService().getKycCounts(),
+    mutationFn: () => KYCService()?.getKycCounts(),
 
     onSuccess: (response: AxiosResponse<IKycStatusCounts>) => {
-      setCounts(response.data);
+      setCounts(response?.data);
     }
   });
 
   useEffect(() => {
-    getKycCountsApiCall.mutateAsync();    
+    getKycCountsApiCall?.mutateAsync();    
   }, []);
 
   const KYCRequestsHead = [
@@ -44,11 +44,11 @@ const UserDashboard = () => {
     { label: "Status", minWidth: 100 },
   ];
   
-  const calculatePercentage = (count: number, total: number) => total ? Math.round((count / total) * 100) : 0;
+  const calculatePercentage = (count: number, total: number) => total ? Math?.round((count / total) * 100) : 0;
 
   const paginatedKYCRequests = counts?.allKYCRequests?.slice(
-    table.page * table.rowsPerPage,
-    table.page * table.rowsPerPage + table.rowsPerPage
+    table?.page * table?.rowsPerPage,
+    table?.page * table?.rowsPerPage + table?.rowsPerPage
   );  
 
   return (
@@ -157,20 +157,20 @@ const UserDashboard = () => {
                       <TableHeadCustom headLabel={KYCRequestsHead} />
                       <TableBody>
                         {paginatedKYCRequests?.map((request) => (
-                          <TableRow key={request._id}>
+                          <TableRow key={request?._id}>
                             <TableCell>
-                              {dayjs(request.created_at).format("DD MMMM YYYY, hh:mm A")}
+                              {dayjs(request?.created_at)?.format("DD MMMM YYYY, hh:mm A")}
                             </TableCell>
                             <TableCell>
                               <Chip
-                                label={request.status}
+                                label={request?.status}
                                 variant="soft"
                                 color={
-                                  request.status === "Pending"
+                                  request?.status === "Pending"
                                     ? "warning"
-                                    : request.status === "Completed"
+                                    : request?.status === "Completed"
                                     ? "success"
-                                    : request.status === "Rejected"
+                                    : request?.status === "Rejected"
                                     ? "error"
                                     : "info"
                                 }
@@ -183,11 +183,11 @@ const UserDashboard = () => {
                   </Scrollbar>
                 </TableContainer>
                 <TablePaginationCustom
-                  count={counts?.allKYCRequests.length}
-                  page={table.page}
-                  rowsPerPage={table.rowsPerPage}
-                  onPageChange={table.onChangePage}
-                  onRowsPerPageChange={table.onChangeRowsPerPage}
+                  count={counts?.allKYCRequests?.length}
+                  page={table?.page}
+                  rowsPerPage={table?.rowsPerPage}
+                  onPageChange={table?.onChangePage}
+                  onRowsPerPageChange={table?.onChangeRowsPerPage}
                   rowsPerPageOptions={[5]}
                 />
               </Card>
