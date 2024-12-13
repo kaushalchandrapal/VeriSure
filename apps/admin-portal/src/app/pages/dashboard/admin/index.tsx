@@ -16,18 +16,18 @@ const AdminDashboard = () => {
 
   const userLabels = ["Applicant", "Supervisor", "Admin", "Worker"];
   const userSeries = [
-    adminCounts?.data.users.Applicant || 0,
-    adminCounts?.data.users.Supervisor || 0,
-    adminCounts?.data.users.Admin || 0,
-    adminCounts?.data.users.Worker || 0,
+    adminCounts?.data?.users?.Applicant || 0,
+    adminCounts?.data?.users?.Supervisor || 0,
+    adminCounts?.data?.users?.Admin || 0,
+    adminCounts?.data?.users?.Worker || 0,
   ];
 
   const kycLabels = ["Completed", "In Progress", "Pending", "Rejected"];
   const kycSeries = [
-    adminCounts?.data.kycRequests["Completed"] || 0,
-    adminCounts?.data.kycRequests["In Progress"] || 0,
-    adminCounts?.data.kycRequests["Pending"] || 0,
-    adminCounts?.data.kycRequests["Rejected"] || 0,
+    adminCounts?.data?.kycRequests["Completed"] || 0,
+    adminCounts?.data?.kycRequests["In Progress"] || 0,
+    adminCounts?.data?.kycRequests["Pending"] || 0,
+    adminCounts?.data?.kycRequests["Rejected"] || 0,
   ];  
 
   const adminCountsApiCall = useMutation({
