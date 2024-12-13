@@ -66,9 +66,9 @@ const LoginPage = () => {
           }}
         />
 
-        <Button variant="text" color="primary" sx={{ alignSelf: 'flex-end' }} onClick={() => navigate('/auth/forgot-password')}>
+        {/* <Button variant="text" color="primary" sx={{ alignSelf: 'flex-end' }} onClick={() => navigate('/auth/forgot-password')}>
           Forgot Password?
-        </Button>
+        </Button> */}
 
         <LoadingButton loading={accountLoginApiCall.isPending} fullWidth color="primary" size="large" type="submit" variant="contained">
           {'Login'}
