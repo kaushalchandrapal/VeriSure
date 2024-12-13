@@ -346,7 +346,6 @@ const LandingPage = () => {
                         <Typography
                           color="primary"
                           variant="h5"
-                          color={theme.palette.grey[900]}
                           gutterBottom
                         >
                           {sector.title}
