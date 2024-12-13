@@ -29,10 +29,9 @@ export function DashboardLayout({ children }: Props) {
               bgcolor: theme.palette.grey[300],
             }),
           }),
-          marginBottom: 4,
         }}
       >
-        <Container maxWidth={settings.themeStretch ? false : 'lg'}>
+        <Container maxWidth={settings.themeStretch ? false : 'lg'} sx={{ marginBottom: 30 }}>
           {children}
         </Container>
       </Box>

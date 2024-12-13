@@ -45,6 +45,24 @@ export interface IAssignKYCCaseRequestPayload {
   workerId: string;
 }
 
-  export interface IAssignKYCCaseResponse {
+export interface IAssignKYCCaseResponse {
   message: string;
+}
+
+
+export interface IPdfMeta {
+  name: string;
+  display_name: string;
+  encoding: string;
+  contentType: string;
+  publicId: string;
+}
+
+export interface IPdfData {
+  pdfUrl: string;
+  meta: IPdfMeta;
+}
+
+export interface IPdfResponse {
+  data: IPdfData;
 }

@@ -2,7 +2,7 @@ import { HttpClient } from '@verisure-core';
 import { KYC_SERVICE } from '../services-path';
 import { APIResponse } from '../auth-services';
 import { IKYCDetails, IPaginationInfo } from '../common';
-import { IAssignKYCCaseRequestPayload, IAssignKYCCaseResponse, IGetAllKycRequestPayload, IKycDeatilsById, IKycDetailsResponse } from './types';
+import { IAssignKYCCaseRequestPayload, IAssignKYCCaseResponse, IGetAllKycRequestPayload, IKycDeatilsById, IKycDetailsResponse, IPdfResponse } from './types';
 
 export interface ICreateKycRequest {
   documentType: string;
@@ -75,7 +75,7 @@ export const KYCService = () => {
 
     getKYCByID: (payload: string): APIResponse<IKycDeatilsById> => HttpClient.get(`${KYC_SERVICE}/${payload}`),
 
-    downloadKycReport: (payload: string): APIResponse<IKycDeatilsById> => HttpClient.download(`${KYC_SERVICE}/pdf/${payload}`, '', { method: 'GET' }),
+    downloadKycReport: (payload: string): APIResponse<IPdfResponse> => HttpClient.download(`${KYC_SERVICE}/pdf/${payload}`, '', { method: 'GET' }),
 
   };
 };

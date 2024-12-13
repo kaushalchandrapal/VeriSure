@@ -31,7 +31,7 @@ const UserDashboard = () => {
     mutationFn: () => KYCService().getKycCounts(),
 
     onSuccess: (response: AxiosResponse<IKycStatusCounts>) => {
-      setCounts(response.data)
+      setCounts(response.data);
     }
   });
 
@@ -49,10 +49,7 @@ const UserDashboard = () => {
   const paginatedKYCRequests = counts?.allKYCRequests?.slice(
     table.page * table.rowsPerPage,
     table.page * table.rowsPerPage + table.rowsPerPage
-  );
-
-  console.log(paginatedKYCRequests);
-  
+  );  
 
   return (
     <>
@@ -87,7 +84,7 @@ const UserDashboard = () => {
                 icon="icon-park-solid:success"
                 color="success"
                 chart={{
-                  series: calculatePercentage(counts.counts.Completed, counts.counts.total),
+                  series: calculatePercentage(counts.counts?.Completed || 0, counts.counts.total || 0),
                 }}
               />
             </Grid>

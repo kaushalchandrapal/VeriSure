@@ -8,6 +8,7 @@ import { AuthGuard } from '../auth/auth-guard';
 import DashboardLayout from '../layouts/dashboard';
 
 const AdminDashboardPage = lazy(() => import('../pages/dashboard/admin'));
+const UserManagementPage = lazy(() => import('../pages/dashboard/user-management'));
 const CreateNewUserPage = lazy(() => import('../pages/dashboard/create-new-user'));
 
 const DashboardRoutes = [
@@ -31,6 +32,10 @@ const DashboardRoutes = [
           {
             path: 'admin-dashboard',
             element: <AdminDashboardPage />,
+          },
+          {
+            path: 'user-management',
+            element: <UserManagementPage />,
           },
           {
             path: 'create-new-user',
