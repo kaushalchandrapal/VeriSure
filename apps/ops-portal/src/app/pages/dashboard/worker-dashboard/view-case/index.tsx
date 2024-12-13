@@ -127,6 +127,10 @@ const ViewCasePageWorker = () => {
               <SummaryCards title={'Email'} color='info' value={caseDetails?.user.email || '--'} icon="cib:mail-ru" />
             </Grid>
 
+            <Grid size={{ xs: 12, md: 12 }}>
+              <SummaryCards title={'Address'} color='info' value={caseDetails?.user.address || '--'} icon="mdi:address-marker" />
+            </Grid>
+
             <Grid size={{ xs: 12, md: 5 }}>
               <Card
                 sx={{
