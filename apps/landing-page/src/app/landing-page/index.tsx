@@ -346,11 +346,12 @@ const LandingPage = () => {
                         <Typography
                           color="primary"
                           variant="h5"
+                          color={theme.palette.grey[900]}
                           gutterBottom
                         >
                           {sector.title}
                         </Typography>
-                        <Typography variant="body2">
+                        <Typography variant="body2" color={theme.palette.grey[900]}>
                           {sector.description}
                         </Typography>
                       </Box>
