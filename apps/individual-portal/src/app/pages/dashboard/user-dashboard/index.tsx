@@ -79,48 +79,48 @@ const UserDashboard = () => {
             <Grid size={{ xs: 12, md: 3 }}>
               <AppWidget
                 title="Completed"
-                total={counts.counts?.total || 0}
-                displayTotal={counts.counts?.Completed || 0}
+                total={counts?.counts?.total || 0}
+                displayTotal={counts?.counts?.Completed || 0}
                 icon="icon-park-solid:success"
                 color="success"
                 chart={{
-                  series: calculatePercentage(counts.counts?.Completed || 0, counts.counts.total || 0),
+                  series: calculatePercentage(counts?.counts?.Completed || 0, counts?.counts?.total || 0),
                 }}
               />
             </Grid>
             <Grid size={{ xs: 12, md: 3 }}>
               <AppWidget
                 title="Rejected"
-                total={counts.counts?.total || 0}
-                displayTotal={counts.counts?.Rejected || 0}
+                total={counts?.counts?.total || 0}
+                displayTotal={counts?.counts?.Rejected || 0}
                 icon="subway:error"
                 color="error"
                 chart={{
-                  series: calculatePercentage(counts.counts.Rejected, counts.counts.total),
+                  series: calculatePercentage(counts?.counts?.Rejected, counts?.counts?.total),
                 }}
               />
             </Grid>
             <Grid size={{ xs: 12, md: 3 }}>
               <AppWidget
                 title="In Progress"
-                total={counts.counts?.total || 0}
-                displayTotal={counts.counts?.InProgress || 0}
+                total={counts?.counts?.total || 0}
+                displayTotal={counts?.counts?.InProgress || 0}
                 icon="entypo:progress-two"
                 color="info"
                 chart={{
-                  series: calculatePercentage(counts.counts.InProgress, counts.counts.total),
+                  series: calculatePercentage(counts?.counts?.InProgress, counts?.counts?.total),
                 }}
               />
             </Grid>
             <Grid size={{ xs: 12, md: 3 }}>
               <AppWidget
                 title="Pending"
-                total={counts.counts?.total || 0}
-                displayTotal={counts.counts?.Pending || 0}
+                total={counts?.counts?.total || 0}
+                displayTotal={counts?.counts?.Pending || 0}
                 icon="material-symbols-light:pending-actions-sharp"
                 color="warning"
                 chart={{
-                  series: calculatePercentage(counts.counts.Pending, counts.counts.total),
+                  series: calculatePercentage(counts?.counts?.Pending, counts?.counts?.total),
                 }}
               />
             </Grid>
@@ -133,10 +133,10 @@ const UserDashboard = () => {
                 chart={{
                   colors: [theme.palette.success.dark, theme.palette.error.dark, theme.palette.info.dark, theme.palette.warning.dark],
                   series: [
-                    { label: 'Completed', value: counts.counts.Completed },
-                    { label: 'Rejected', value: counts.counts.Rejected },
-                    { label: 'In Progress', value: counts.counts.InProgress },
-                    { label: 'Pending', value: counts.counts.Pending },
+                    { label: 'Completed', value: counts?.counts?.Completed },
+                    { label: 'Rejected', value: counts?.counts?.Rejected },
+                    { label: 'In Progress', value: counts?.counts?.InProgress },
+                    { label: 'Pending', value: counts?.counts?.Pending },
                   ],
                 }}
               />
