@@ -156,7 +156,7 @@ const UserDashboard = () => {
                     <Table>
                       <TableHeadCustom headLabel={KYCRequestsHead} />
                       <TableBody>
-                        {paginatedKYCRequests.map((request) => (
+                        {paginatedKYCRequests?.map((request) => (
                           <TableRow key={request._id}>
                             <TableCell>
                               {dayjs(request.created_at).format("DD MMMM YYYY, hh:mm A")}
